@@ -1,3 +1,7 @@
+# ================================================================================================================
+# This script contains the utility functions for the computational prediction of receptor-binding proteins (RBPs).
+# ================================================================================================================
+
 import os
 import shutil
 from collections import defaultdict
