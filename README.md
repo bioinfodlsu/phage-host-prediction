@@ -10,6 +10,9 @@
 ## Authors
 - **Mark Edward M. Gonzales** <br>
   mark_gonzales@dlsu.edu.ph 
+ 
+- **Ms. Jennifer C. Ureta** <br>
+  jennifer.ureta@dlsu.edu.ph 
   
 - **Dr. Anish M.S. Shrestha** <br>
   anish.shrestha@dlsu.edu.ph
