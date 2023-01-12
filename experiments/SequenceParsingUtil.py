@@ -1,6 +1,9 @@
-# ======================================================================
-# This script contains the utility functions for sequence preprocessing.
-# ======================================================================
+"""
+======================================================================
+This script contains the utility functions for sequence preprocessing.
+@author    Mark Edward M. Gonzales
+======================================================================
+"""
 
 import regex as re
 import os
@@ -12,6 +15,14 @@ from Bio import SeqIO
 
 class SequenceParsingUtil(object):
     def __init__(self, display_progress = None, misspelling_threshold = None, min_len_keyword = None):
+        """
+        Constructor
+        
+        Parameters:
+        - display_progress: True if the number of entries processed is to be displayed periodically; False, otherwise
+        - misspelling_threshold: Minimum edit distance to be considered a possible misspelling
+        - min_len_keyword: Minimum length for a 
+        """
         self.display_progress = display_progress
         self.misspelling_threshold = misspelling_threshold
         self.min_len_keyword = min_len_keyword
@@ -37,6 +48,12 @@ class SequenceParsingUtil(object):
         self.hypothetical_proteins = None
         
     def __display_progress(self, ctr):
+        """
+        Periodically displays the number of processed entries
+        
+        Parameters:
+        - ctr: Number of processed entries
+        """
         if ctr % self.display_progress == 0:
             print("Processed", ctr, "records")
             
@@ -45,6 +62,9 @@ class SequenceParsingUtil(object):
     # =======
         
     def set_inphared_gb(self, inphared_gb):
+        """
+        Sets the 
+        """
         self.inphared_gb = inphared_gb
         
     def set_inphared(self, inphared):

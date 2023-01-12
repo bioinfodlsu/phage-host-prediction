@@ -1,6 +1,9 @@
-# =======================================================
-# This script contains the constants used in the project.
-# =======================================================
+"""
+=======================================================
+This script contains the constants used in the project.
+@author    Mark Edward M. Gonzales
+=======================================================
+"""
 
 class ConstantsUtil(object):    
     # ===========
@@ -130,6 +133,12 @@ class ConstantsUtil(object):
     XGB_RBP_PREDICTION = 'rbp_prediction/RBPdetect_xgb_model.json'
     
     def __init__(self, date = ''):
+        """
+        Constructor
+        
+        Parameters:
+        - date: Download date of the dataset
+        """
         self.DATE = date
         self.INPHARED_GENOME = f'/datasets/{self.INPHARED}/{self.INPHARED}/GenomesDB'
         self.INPHARED_TSV = f'{self.INPHARED}/{self.DATE}_data_excluding_refseq.tsv'
