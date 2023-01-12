@@ -26,29 +26,35 @@ class ConstantsUtil(object):
     # =============
     PREPROCESSING = 'preprocessing'
     GENUS_TYPO = f'{PREPROCESSING}/genus_typo.txt'
-    CANDIDATE_REGEX = r'candidat(e|us)'
     
     ARCHAEA = f'{PREPROCESSING}/genus_typo.txt'
     BACTERIA_NOT_GENUS = f'{PREPROCESSING}/bacteria_not_genus.txt'
     EXCLUDED_HOSTS = f'{PREPROCESSING}/excluded_hosts.txt'
     
     NCBI_STANDARD_NOMENCLATURE = f'{PREPROCESSING}/ncbi_standard_nomenclature.txt'
-
+        
+    # Regex for candidate genera
+    CANDIDATE_REGEX = r'candidat(e|us)'
+    # Regex for selecing annotated RBPs
     RBP_REGEX = r'tail?(.?|\s*)(?:spike?|fib(?:er|re))|recept(?:o|e)r(.?|\s*)(?:bind|recogn).*(?:protein)?|(?<!\w)RBP(?!a)'
+    # Regex for token delimiters in gene product annotations
     TOKEN_DELIMITER = '[-\|,.\/\s]'
     
     HYPOTHETICAL_KEYWORDS = f'{PREPROCESSING}/hypothetical_keywords.txt'
     RBP_RELATED_NOT_RBP = f'{PREPROCESSING}/rbp_related_not_rbp.txt'
     PUTATIVE_FUNCTIONS = f'{PREPROCESSING}/putative_functions.txt'
     
+    # Number of entries for displayed progress
     DISPLAY_PROGRESS = 1000
+    # Minimum edit distance to be considered a possible misspelling
     MISSPELLING_THRESHOLD = 2
+    # Minimum length for a token to be considered a keyword of interest
     MIN_LEN_KEYWORD = 6
     
+    # Bounds for the length of RBPs (excluding those with outlying lengths)
     LOWER_BOUND_RBP_LENGTH = -533.0
     UPPER_BOUND_RBP_LENGTH = 1587.0
 
-    
     # ===============
     # Temporary Files
     # ===============
