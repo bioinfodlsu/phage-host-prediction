@@ -35,7 +35,7 @@ class ConstantsUtil(object):
         
     # Regex for candidate genera
     CANDIDATE_REGEX = r'candidat(e|us)'
-    # Regex for selecing annotated RBPs
+    # Regex for selecting annotated RBPs
     RBP_REGEX = r'tail?(.?|\s*)(?:spike?|fib(?:er|re))|recept(?:o|e)r(.?|\s*)(?:bind|recogn).*(?:protein)?|(?<!\w)RBP(?!a)'
     # Regex for token delimiters in gene product annotations
     TOKEN_DELIMITER = '[-\|,.\/\s]'
