@@ -21,7 +21,7 @@ class SequenceParsingUtil(object):
         Parameters:
         - display_progress: True if the number of entries processed is to be displayed periodically; False, otherwise
         - misspelling_threshold: Minimum edit distance to be considered a possible misspelling
-        - min_len_keyword: Minimum length for a 
+        - min_len_keyword: Minimum length for a token to be considered a keyword of interest
         """
         self.display_progress = display_progress
         self.misspelling_threshold = misspelling_threshold
@@ -63,26 +63,65 @@ class SequenceParsingUtil(object):
         
     def set_inphared_gb(self, inphared_gb):
         """
-        Sets the 
+        Sets the consolidated GenBank entries of the entries fetched via INPHARED
+        
+        Parameters:
+        - inphared_gb: File path of the consolidated GenBank entries of the entries fetched via INPHARED
         """
         self.inphared_gb = inphared_gb
         
     def set_inphared(self, inphared):
+        """
+        Sets the dataset (phage-host table, along with other information)
+        
+        Parameters:
+        - inphared: File path of the dataset (phage-host table, along with other information)
+        """
         self.inphared = inphared
            
     def set_no_cds_annot(self, no_cds_annot):
+        """
+        Sets the phage entries without coding sequence information
+        
+        Parameters:
+        - no_cds_annot: Set of phage entries without coding sequence information
+        """
         self.no_cds_annot = no_cds_annot
         
     def set_annot_products(self, annot_products):
+        """
+        Sets the gene product annotations
+        
+        Parameters:
+        - annot_products: Set of gene product annotations
+        """
         self.annot_products = annot_products
         
     def set_rbp_products(self, rbp_products):
+        """
+        Sets the RBP annotations
+        
+        Parameters:
+        - rbp_products: Set of RBP annotations
+        """
         self.rbp_products = rbp_products
         
     def set_hypothetical_proteins(self, hypothetical_proteins):
+        """
+        Sets the hypothetical protein annotations
+        
+        Parameters:
+        - hypothetical_proteins: Set of hypothetical protein annotations
+        """
         self.hypothetical_proteins = hypothetical_proteins
         
     def set_token_delimiter(self, token_delimiter):
+        """
+        Sets the possible token delimiters for gene product annotations
+        
+        Parameters:
+        - token_delimiters: Regular expression for the possible token delimiters for gene product annotations
+        """
         self.token_delimiter = token_delimiter
 
     # ==================
@@ -90,6 +129,16 @@ class SequenceParsingUtil(object):
     # ==================
         
     def get_phages_unspec_host(self, inphared_unspec_host):
+        """
+        Retrieves the isolation host information for phages where the returned host information of INPHARED is "unspecified"
+        
+        Parameters:
+        - inphared_unspec_host: DataFrame containing the phage entries with unspecified host information
+        
+        Returns:
+        - Dictionary where each key is a phage with unspecified host information and the value is the list of isolation
+          hosts retrieved from GenBank
+        """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
         accession_np = inphared_unspec_host['Accession'].to_numpy()
@@ -128,6 +177,12 @@ class SequenceParsingUtil(object):
         return phages_unspec_host
     
     def get_unfiltered_hosts(self):
+        """
+        Retrieves the isolation hosts of phages where the returned host information of INPHARED is "unspecified"
+        
+        Returns:
+        - Set of isolation hosts of phages where the returned host information of INPHARED is "unspecified"
+        """
         unfiltered_hosts = set()
         for key, value in self.phages_unspec_host.items():
             for host in value[0]:
@@ -140,6 +195,15 @@ class SequenceParsingUtil(object):
         return unfiltered_hosts
     
     def get_genus_typo(self, filename):
+        """
+        Retrieves the genera with typographical errors
+        
+        Parameters:
+        - filename: File path of the text file recording the genera with typographical errors
+        
+        Returns:
+        - Dictionary where each key is the misspelled genus and the value is the correct spelling
+        """
         genus_typo = {}
         with open(filename) as typo_file:
             for entry in typo_file:
@@ -153,6 +217,15 @@ class SequenceParsingUtil(object):
         return genus_typo
     
     def __get_suspected_genus(self, candidate_regex, host):
+        """
+        Returns the genus of the isolation host of a phage where the returned host information of INPHARED is "unspecified"
+        
+        Parameters:
+        - candidate_regex: Regex for matching candidate genera
+        
+        Returns:
+        - Genus of the isolation host of a phage where the returned host information of INPHARED is "unspecified"
+        """
         host_tokens = host.split(' ')
 
         if re.search(candidate_regex, host_tokens[0], re.IGNORECASE):
@@ -170,6 +243,15 @@ class SequenceParsingUtil(object):
         return genus
     
     def get_unfiltered_suspected_genera(self, candidate_regex):
+        """
+        Returns the genera of the isolation hosts of phages where the returned host information of INPHARED is "unspecified"
+        
+        Parameters:
+        - candidate_regex: Regex for matching candidate genera
+        
+        Returns:
+        - Set of genera of the isolation hosts of phages where the returned host information of INPHARED is "unspecified"
+        """
         unfiltered_suspected_genera = set()
 
         for unfiltered_host in self.unfiltered_hosts:
@@ -180,6 +262,16 @@ class SequenceParsingUtil(object):
         return unfiltered_suspected_genera
     
     def get_excluded_hosts(self, *exclusion_files):
+        """
+        Retrieves the isolation hosts that do not pertain to bacterial hosts or those that are less specific than genus level
+        
+        Parameters:
+        - exclusion files: File path(s) of the text file(s) recording the isolation hosts in GenBank that do not pertain
+          to bacterial hosts or those that are less specific than genus level
+        
+        Returns:
+        - Set of isolation hosts that do not pertain to bacterial hosts or those that are less specific than genus level
+        """
         excluded_hosts = set()
         
         for exclusion_file in exclusion_files:
@@ -192,14 +284,40 @@ class SequenceParsingUtil(object):
         return excluded_hosts
     
     def get_valid_hosts(self):
+        """
+        Returns the isolation hosts that pertain to bacterial hosts at the genus level
+        
+        Returns:
+        - Set of isolation hosts that pertain to bacterial hosts at the genus level
+        """
         self.valid_hosts = self.unfiltered_suspected_genera - self.excluded_hosts
         return self.valid_hosts
     
     def is_possible_misspelling(self, typo, keyword):
+        """
+        Returns True if a word is a possible misspelling; False, otherwise. This function uses the minimum edit distance
+        as a heuristic for identifying possible misspellings
+        
+        Parameters:
+        - typo: Potentially misspelled word
+        - keyword: Correct spelling
+        
+        Returns:
+        - True if a word is a possible misspelling; False, otherwise. This function uses the minimum edit distance
+          as a heuristic for identifying possible misspellings
+        """
         return (len(keyword) >= self.min_len_keyword and 
                 nltk.edit_distance(typo, keyword, transpositions = True) <= self.misspelling_threshold)
     
     def update_host_column(self, candidate_regex, inphared_unspec_host, inphared_augmented):
+        """
+        Updates the host column of the phage-host table with the isolation host information from GenBank
+        
+        Parameters:
+        - candidate_regex: Regex for matching candidate genera
+        - inphared_unspec_host: DataFrame containing the phage entries with unspecified host information
+        - inphared_augmented: Original phage-host table to be updated
+        """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
         accession_unspec_np = inphared_unspec_host['Accession'].to_numpy()
@@ -246,6 +364,12 @@ class SequenceParsingUtil(object):
                 iter_flag = False
     
     def get_ncbi_standard_nomenclature(self, filename):
+        """
+        Retrieves the standard nomenclature following NCBI Taxonomy
+        
+        Parameters:
+        - filename: File path of the text file containing the equivalent nomenclature of a genus following NCBI Taxonomy
+        """
         nomenclature = {}
         with open(filename) as nomenclature_file:
             for entry in nomenclature_file:
@@ -261,6 +385,12 @@ class SequenceParsingUtil(object):
     # ==================
     
     def get_no_cds_annot(self):
+        """
+        Returns the set of phage entries without coding sequence information
+        
+        Returns:
+        - Set of phage entries without coding sequence information
+        """
         records = SeqIO.parse(self.inphared_gb, 'gb')
         
         accession_np = self.inphared['Accession'].to_numpy()
@@ -304,6 +434,17 @@ class SequenceParsingUtil(object):
     # ====================================
     
     def construct_keyword_list(self, hypothetical_file, rbp_related_file, putative_functions_file):
+        """
+        Constructs a list of keywords associated with hypothetical proteins, proteins with putative functions, and RBP-related
+        proteins that are not RBPs themselves
+        
+        Parameters:
+        - hypothetical_file: File path of the text file containing keywords associated with hypothetical proteins
+        - rbp_related_file: File path of the text file containing keywords associated with RBP-related proteins 
+                            that are not RBPs themselves
+        - putative_functions_file: File path of the text file containing keywords associated with proteins with
+                                   putative functions
+        """
         with open(hypothetical_file) as file:
             for keyword in file:
                 self.hypothetical_keywords.add(keyword.rstrip('\n'))
@@ -319,6 +460,12 @@ class SequenceParsingUtil(object):
         self.putative_functions = self.putative_functions.union(self.rbp_related_not_rbp)
     
     def get_annot_products(self):
+        """
+        Retrieves the annotations for the gene products in GenBank
+        
+        Returns:
+        - Set of annotations for the gene products in GenBank
+        """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
         accession_np = self.inphared['Accession'].to_numpy()
@@ -357,6 +504,15 @@ class SequenceParsingUtil(object):
         return annot_products
     
     def __is_rbp_related_but_not_rbp(self, product):
+        """
+        Checks if a given annotation pertains to an RBP-related protein that is not an RBP itself
+        
+        Parameters:
+        - product: Annotation for a gene product
+        
+        Returns:
+        - True if a given annotation pertains to an RBP-related protein that is not an RBP itself; False, otherwise
+        """
         for keyword in self.rbp_related_not_rbp:
             if keyword in product:
                 return True
@@ -368,7 +524,16 @@ class SequenceParsingUtil(object):
 
         return False
     
-    def __has_putative_function(self, product):        
+    def __has_putative_function(self, product):
+        """
+        Checks if a given annotation pertains to a protein with a putative function
+        
+        Parameters:
+        - product: Annotation for a gene product
+        
+        Returns:
+        - True if a given annotation pertains to a protein with a putative function; False, otherwise
+        """
         for keyword in self.putative_functions:
             if keyword in product:
                 return True
@@ -385,6 +550,16 @@ class SequenceParsingUtil(object):
         return False
     
     def get_rbp_hypothetical_proteins(self, rbp_regex):
+        """
+        Construct a list of annotations for RBPs and hypothetical proteins from GenBank annotations
+        
+        Parameters:
+        - rbp_regex: Regex for selecting annotated RBPs
+        
+        Returns:
+        - List of annotations for RBPs from GenBank annotations
+        - List of annotations for hypothetical proteins from GenBank annotations
+        """
         rbp_products = set()
         hypothetical_proteins = set()
 
@@ -428,6 +603,15 @@ class SequenceParsingUtil(object):
     # ===================================
     
     def __has_unknown_amino_acid(self, sequence):
+        """
+        Checks if a protein sequence has an undetermined or unrecognized amino acid
+        
+        Parameters:
+        - sequence: Protein sequence to be checked
+        
+        Returns:
+        - True if a protein sequence has an undetermined or unrecognized amino acid; False, otherwise
+        """
         unknown_aa_expr = r'[^ACDEFGHIKLMNPQRSTVWY]'
         if re.search(unknown_aa_expr, sequence):
             return True
@@ -435,9 +619,26 @@ class SequenceParsingUtil(object):
         return False
  
     def __is_acceptable_length(self, sequence, lower_bound, upper_bound):
+        """
+        Checks if a protein sequence does not have an outlying length
+        
+        Parameters:
+        - sequence: Protein sequence to be checked
+        - lower_bound: Lower bound of the lengths of RBPs (excluding outliers)
+        - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
+        """
         return lower_bound <= len(sequence) and len(sequence) <= upper_bound
     
     def __is_rbp(self, product, sequence, lower_bound = -1, upper_bound = -1):
+        """
+        Checks if a given annotation pertains to an RBP
+        
+        Parameters:
+        - product: Annotation for a gene product
+        - sequence: Protein sequence of the gene product
+        - lower_bound: Lower bound of the lengths of RBPs (excluding outliers)
+        - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
+        """
         if lower_bound == -1 and upper_bound == -1:
             return (product in self.rbp_products
                     and not self.__has_unknown_amino_acid(sequence))
@@ -447,6 +648,12 @@ class SequenceParsingUtil(object):
                 and self.__is_acceptable_length(sequence, lower_bound, upper_bound))
     
     def generate_rbp_len_distribution(self):
+        """
+        Returns a dictionary containing the counts of the lengths (number of amino acids) of the RBPs based on GenBank annotation
+        
+        Returns:
+        - Dictionary where each key is an RBP length and the value is its count (i.e., the number of RBPs with that length)
+        """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
         accession_np = self.inphared['Accession'].to_numpy()
@@ -491,6 +698,12 @@ class SequenceParsingUtil(object):
         return len_distribution
     
     def generate_rbp_len_distribution_prokka(self, len_distribution, complete_genome_dir):
+        """
+        Returns the lengths (number of amino acids) of the RBPs based on the functional annotation obtained using PHROG
+        
+        Parameters:
+        - len_distribution: Dictionary containing the counts of the lengths of the RBPs based on GenBank annotation 
+        """
         ctr = 0
         for phage in self.no_cds_annot:
             with open(os.path.dirname(os.getcwd()) + f'/{complete_genome_dir}/{phage[1]}/{phage[1]}.faa') as handle:                
@@ -798,6 +1011,9 @@ class SequenceParsingUtil(object):
                 
     
     def get_seq_in_fasta(self, protein_id, fasta):
+        """
+        
+        """
         for record in SeqIO.parse(fasta, 'fasta'):
             record_id = record.description.split(' ', 1)[0]
             
@@ -808,6 +1024,17 @@ class SequenceParsingUtil(object):
     
     def generate_rbp_hypothetical_nucleotide_prokka(self, complete_genome_dir, rbp_prokka_dir, hypothetical_prokka_dir,
                                                     lower_bound, upper_bound):
+        """
+        Generates the FFN files containing the genomic sequences of the phages whose functional annotation
+        was obtained using PHROG
+        
+        Parameters:
+        - complete_genome_dir: File path to the directory with the genomic sequences of all the phage entries retrieved via INPHARED
+        - rbp_prokka_dir: File path to the 
+        - hypothetical_prokka_dir:
+        - lower_bound: Lower bound of the lengths of RBPs (excluding outliers)
+        - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
+        """
         ctr = 0
         for phage in self.no_cds_annot:
             with open(os.path.dirname(os.getcwd()) + f'{complete_genome_dir}/{phage[1]}/{phage[1]}.faa') as handle:                
