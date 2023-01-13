@@ -604,13 +604,13 @@ class SequenceParsingUtil(object):
     
     def __has_unknown_amino_acid(self, sequence):
         """
-        Checks if a protein sequence has an undetermined or unrecognized amino acid
+        Checks if a given protein sequence has an undetermined or unrecognized amino acid
         
         Parameters:
         - sequence: Protein sequence to be checked
         
         Returns:
-        - True if a protein sequence has an undetermined or unrecognized amino acid; False, otherwise
+        - True if the protein sequence has an undetermined or unrecognized amino acid; False, otherwise
         """
         unknown_aa_expr = r'[^ACDEFGHIKLMNPQRSTVWY]'
         if re.search(unknown_aa_expr, sequence):
@@ -620,24 +620,30 @@ class SequenceParsingUtil(object):
  
     def __is_acceptable_length(self, sequence, lower_bound, upper_bound):
         """
-        Checks if a protein sequence does not have an outlying length
+        Checks if a given protein sequence does not have an outlying length
         
         Parameters:
         - sequence: Protein sequence to be checked
         - lower_bound: Lower bound of the lengths of RBPs (excluding outliers)
         - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
+        
+        Returns:
+        - True if the protein sequence does not have an outlying length; False, otherwise
         """
         return lower_bound <= len(sequence) and len(sequence) <= upper_bound
     
     def __is_rbp(self, product, sequence, lower_bound = -1, upper_bound = -1):
         """
-        Checks if a given annotation pertains to an RBP
+        Checks if a given gene product is an RBP
         
         Parameters:
-        - product: Annotation for a gene product
+        - product: Annotation for the gene product
         - sequence: Protein sequence of the gene product
         - lower_bound: Lower bound of the lengths of RBPs (excluding outliers)
         - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
+        
+        Returns:
+        - True if the gene product is an RBP; False, otherwise
         """
         if lower_bound == -1 and upper_bound == -1:
             return (product in self.rbp_products
@@ -699,10 +705,12 @@ class SequenceParsingUtil(object):
     
     def generate_rbp_len_distribution_prokka(self, len_distribution, complete_genome_dir):
         """
-        Returns the lengths (number of amino acids) of the RBPs based on the functional annotation obtained using PHROG
+        Updates the dictionary containing the counts of the lengths of the RBPs with the lengths of the RBPs annotated 
+        using Prokka
         
         Parameters:
-        - len_distribution: Dictionary containing the counts of the lengths of the RBPs based on GenBank annotation 
+        - len_distribution: Dictionary containing the counts of the lengths of the RBPs based on GenBank annotation
+        - complete_genome_dir: File path of the directory with the genomes of all the phage entries retrieved via INPHARED
         """
         ctr = 0
         for phage in self.no_cds_annot:
@@ -723,11 +731,34 @@ class SequenceParsingUtil(object):
     # Generate FASTA for entries with CDS information
     # ===============================================    
     def __is_hypothetical_protein(self, product, sequence, lower_bound, upper_bound):
+        """
+        Checks if a given gene product is a hypothetical protein with length within the bounds for RBP lengths
+        
+        Parameters:
+        - product: Annotation for the gene product
+        - sequence: Protein sequence of the gene product
+        - lower_bound: Lower bound of the lengths of RBPs (excluding outliers)
+        - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
+        
+        Returns:
+        - True if the gene product is a hypothetical protein with length less within the bounds for RBP lengths
+        """
         return (product in self.hypothetical_proteins 
                 and not self.__has_unknown_amino_acid(sequence) 
                 and self.__is_acceptable_length(sequence, lower_bound, upper_bound))
     
     def generate_rbp_hypothetical_fasta(self, rbp_genbank_dir, hypothetical_genbank_dir, lower_bound, upper_bound):
+        """
+        Generates the FASTA files containing the proteomes of the phages with coding sequence information in GenBank
+        
+        Parameters:
+        - rbp_genbank_dir: File path of the directory with the RBP protein sequences of the phages with coding sequence
+                           information in GenBank
+        - hypothetical_genbank_dir: File path of the directory with the hypothetical protein sequences of the phages 
+                                    with coding sequence information in GenBank
+        - lower_bound: Lower bound of the lengths of RBPs (excluding outliers)
+        - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
+        """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
         accession_np = self.inphared['Accession'].to_numpy()
@@ -786,6 +817,19 @@ class SequenceParsingUtil(object):
                 iter_flag = False
                                  
     def check_fasta_embeddings_per_phage(self, suffix, fasta_dir, embed_dir):
+        """
+        Returns the difference between the phages in the embeddings and in the FASTA directories.
+        There should be a one-to-one correspondence between the phages in the embeddings and in the FASTA directories
+        
+        Parameters:
+        - suffix: 'hypothetical' for hypothetical proteins or 'rbp' for RBPs
+        - fasta_dir: File path of the directory containing the FASTA files with the RBP sequences
+        - embed_dir: File path of the directory containing the embeddings of the RBP sequences
+        
+        Returns:
+        - Set of phages in the embeddings directory but not in the FASTA directory
+        - Set of phages in the FASTA directory but not in the embeddings directory
+        """
         fasta = set()
         for file in os.listdir(fasta_dir):
             fasta.add(file[:-(1 + len(suffix) + len('.fasta'))])
@@ -797,6 +841,18 @@ class SequenceParsingUtil(object):
         return embeddings - fasta, fasta - embeddings
     
     def check_fasta_embeddings_per_protein(self, suffix, fasta_dir, embed_dir):
+        """
+        Prints the difference between the protein IDs in the embeddings and in the FASTA directories.
+        There should be a one-to-one correspondence between the protein IDs in the embeddings and in the FASTA directories
+        
+        Parameters:
+        - suffix: 'hypothetical' for hypothetical proteins or 'rbp' for RBPs
+        - fasta_dir: File path of the directory containing the FASTA files with the RBP sequences
+        - embed_dir: File path of the directory containing the embeddings of the RBP sequences
+        
+        Returns:
+        - List of phages where there are differences in the protein IDs in the embeddings and in the FASTA directories
+        """
         erroneous = []
         
         ctr = 0
@@ -820,6 +876,16 @@ class SequenceParsingUtil(object):
         return erroneous
     
     def __get_proteins_fasta(self, fasta):
+        """
+        Returns the protein IDs and the number of proteins in a file containing the proteome of a phage
+        
+        Parameters:
+        - fasta: Contents of the file containing the proteome of a phage
+        
+        Returns:
+        - Set of protein IDs in the file containing the proteome of a phage
+        - Number of proteins in the file containing the proteome of a phage
+        """
         proteins = set()
         num_lines = 0
         
@@ -836,6 +902,17 @@ class SequenceParsingUtil(object):
         return proteins, num_lines
     
     def get_proteins_embeddings(self, embeddings):
+        """
+        Returns the protein IDs and the number of proteins in a file containing the embeddings of the protein sequences
+        of a phage
+        
+        Parameters:
+        - embeddings: Contents of the file containing the embeddings of the protein sequences of a phage
+        
+        Returns:
+        - Set of protein IDs in the file containing the embeddings of the protein sequences of a phage
+        - Number of proteins in the file containing the embeddings of the protein sequences of a phage
+        """
         proteins = set()
         # Ignore header row
         num_lines = -1
@@ -855,6 +932,15 @@ class SequenceParsingUtil(object):
     # =======================================    
     
     def get_annot_products_prokka(self, complete_genome_dir):
+        """
+        Retrieves the annotations for the gene products predicted using PHROG
+        
+        Parameters:
+        - complete_genome_dir: File path of the directory with the genomes of all the phage entries retrieved via INPHARED
+        
+        Returns:
+        - Set of annotations for the gene products predicted using PHROG
+        """
         annot_products = set()
         phages = set()
         for folder in os.listdir(os.path.dirname(os.getcwd()) + f'/{complete_genome_dir}'):
@@ -876,6 +962,17 @@ class SequenceParsingUtil(object):
         return annot_products
     
     def get_rbp_hypothetical_proteins_prokka(self, rbp_regex, annot_products):
+        """
+        Construct a list of annotations for RBPs and hypothetical proteins from PHROG annotations 
+        
+        Parameters:
+        - rbp_regex: Regex for selecting annotated RBPs
+        - annot_products: Set of annotations for the gene products predicted using PHROG
+        
+        Returns:
+        - List of annotations for RBPs from PHROG annotations
+        - List of annotations for hypothetical proteins from PHROG annotations
+        """
         rbp_products = set()
         hypothetical_proteins = set()
 
@@ -913,6 +1010,16 @@ class SequenceParsingUtil(object):
     
     def generate_rbp_hypothetical_fasta_prokka(self, complete_genome_dir, rbp_prokka_dir, hypothetical_prokka_dir, 
                                                lower_bound, upper_bound):
+        """
+        Generates the FASTA files containing the proteomes of the phages annotated using Prokka
+        
+        Parameters:
+        - rbp_genbank_dir: File path of the directory with the RBP protein sequences of the phages annotated using Prokka
+        - hypothetical_genbank_dir: File path of the directory with the hypothetical protein sequences of the phages 
+                                    annotated using Prokka
+        - lower_bound: Lower bound of the lengths of RBPs (excluding outliers)
+        - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
+        """
         ctr = 0
         for phage in self.no_cds_annot:
             with open(os.path.dirname(os.getcwd()) + f'/{complete_genome_dir}/{phage[1]}/{phage[1]}.faa') as handle:                
@@ -952,6 +1059,17 @@ class SequenceParsingUtil(object):
     # =============================    
                 
     def generate_rbp_hypothetical_nucleotide(self, rbp_genbank_dir, hypothetical_genbank_dir, lower_bound, upper_bound):
+        """
+        Generates the FFN files containing the genomes of the phages with coding sequence information in GenBank
+        
+        Parameters:
+        - rbp_genbank_dir: File path of the directory with the RBP protein sequences of the phages with coding sequence
+                           information in GenBank
+        - hypothetical_genbank_dir: File path of the directory with the hypothetical protein sequences of the phages with
+                                    coding sequence information in GenBank
+        - lower_bound: Lower bound of the lengths of RBPs (excluding outliers)
+        - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
+        """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
         accession_np = self.inphared['Accession'].to_numpy()
@@ -1012,7 +1130,14 @@ class SequenceParsingUtil(object):
     
     def get_seq_in_fasta(self, protein_id, fasta):
         """
+        Gets the sequence associated with a given protein ID
         
+        Parameters:
+        - protein_id: Protein ID
+        - fasta: File path of the FASTA file with the protein sequences
+        
+        Returns:
+        - Sequence associated with the protein ID
         """
         for record in SeqIO.parse(fasta, 'fasta'):
             record_id = record.description.split(' ', 1)[0]
@@ -1025,13 +1150,13 @@ class SequenceParsingUtil(object):
     def generate_rbp_hypothetical_nucleotide_prokka(self, complete_genome_dir, rbp_prokka_dir, hypothetical_prokka_dir,
                                                     lower_bound, upper_bound):
         """
-        Generates the FFN files containing the genomic sequences of the phages whose functional annotation
-        was obtained using PHROG
+        Generates the FFN files containing the genomes of the phages annotated using Prokka
         
         Parameters:
-        - complete_genome_dir: File path to the directory with the genomic sequences of all the phage entries retrieved via INPHARED
-        - rbp_prokka_dir: File path to the 
-        - hypothetical_prokka_dir:
+        - complete_genome_dir: File path of the directory with the genomes of all the phage entries retrieved via INPHARED
+        - rbp_prokka_dir: File path of the directory with the RBP protein sequences of the phages annotated using Prokka
+        - hypothetical_prokka_dir: File path of the directory with the hypothetical protein sequences of the phages
+                                   annotated using Prokka
         - lower_bound: Lower bound of the lengths of RBPs (excluding outliers)
         - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
         """
