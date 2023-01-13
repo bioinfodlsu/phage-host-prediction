@@ -1,6 +1,9 @@
-# ================================================================================================================
-# This script contains the utility functions for the computational prediction of receptor-binding proteins (RBPs).
-# ================================================================================================================
+"""
+================================================================================================================
+This script contains the utility functions for the computational prediction of receptor-binding proteins (RBPs).
+@author    Mark Edward M. Gonzales
+================================================================================================================
+"""
 
 import os
 import shutil
@@ -15,9 +18,23 @@ from xgboost import XGBClassifier
 
 class RBPPredictionUtil(object):
     def __init__(self):
+        """
+        Constructor
+        """
         pass
     
     def predict_rbps(self, xgb_rbp_prediction, hypothetical_genbank_dir, complete_genbank_dir):
+        """
+        Write the embeddings of the predicted RBPs to the pertinent CSV files, with each CSV file corresponding to a phage
+        
+        Parameters:
+        - xgb_rbp_prediction: File path of the XGBoost model for the computational prediction of RBPs
+                              (taken from https://github.com/dimiboeckaerts/PhageRBPdetection/blob/main/data/RBPdetect_xgb_model.json)
+        - hypothetical_genbank_dir: File path of the directory containing the ProtBert embeddings of the annotated
+                                    hypothetical proteins
+        - complete_genbank_dir: File path of the directory containing the ProtBert embeddings of the annotated RBPs,
+                                along with those that will be computationally predicted as RBPs
+        """
         for file in os.listdir(hypothetical_genbank_dir):
             embeddings_df = pd.read_csv(f'{hypothetical_genbank_dir}/{file}')
             embeddings = np.asarray(embeddings_df.iloc[:, 1:])
@@ -40,7 +57,7 @@ class RBPPredictionUtil(object):
                 newly_created = False
                 if not os.path.exists(filename):
                     header = 'ID'
-                    # 1024 is the size of the dense vector representation yielded by ProtTransBert
+                    # 1024 is the size of the dense vector representation yielded by ProtBert
                     for i in range(1024):
                         header += ',' + str(i)
                     header += '\n'
