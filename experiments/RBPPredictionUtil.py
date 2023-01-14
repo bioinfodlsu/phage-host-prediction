@@ -74,6 +74,21 @@ class RBPPredictionUtil(object):
                             file.write(entry)
                             
     def check_differences(self, prottransbert_complete_dir, plm_complete_dir):
+        """
+        Prints the difference between the protein IDs in the ProtBert embeddings folder and in the embeddings folder
+        of a given protein language model. There should be a one-to-one correspondence between the protein IDs in these
+        two directories
+        
+        Parameters:
+        - prottransbert_complete_dir: File path of the directory containing the ProtBert embeddings of the annotated RBPs,
+                                      along with those that will be computationally predicted as RBPs
+        - plm_complete_dir: File path of the directory containing the protein embeddings of the annotated RBPs,
+                            along with those that will be computationally predicted as RBPs
+        
+        Returns:
+        - Set of phages where there are differences in the protein IDs in the ProtBert embeddings folder and in the embeddings
+          folder of the protein language model
+        """
         erroneous = set()
         util = SequenceParsingUtil()
 
@@ -105,6 +120,17 @@ class RBPPredictionUtil(object):
         return erroneous
     
     def get_sequence(self, protein_id, phage_accession, protein, *fasta_folders):
+        """
+        Retrieves the sequence associated with a given protein ID
+        
+        Parameters:
+        - protein_id: Protein ID
+        - phage_accession: Accession ID of the phage to which the protein belongs
+        - fasta_folders: Folders containing the FASTA files of the proteomes
+        
+        Returns:
+        - Sequence associated with the protein ID
+        """
         util = SequenceParsingUtil()
         
         extension = ''
@@ -131,6 +157,14 @@ class RBPPredictionUtil(object):
         return None
                 
     def generate_fasta_addl_phages(self, phage, prottransbert_complete_dir, dest_dir, *fasta_folders):
+        """
+        Generate FASTA files containing the RBP sequences (including computationally predicted RBPs) of the given phage 
+        
+        - phage: Accession number of the phage
+        - prottransbert_complete_dir: File path of the directory containing the ProtBert embeddings of the annotated RBPs,
+                                      along with those that will be computationally predicted as RBPs
+        - dest_dir: File path of the directory to which the FASTA files will be saved
+        """
         util = SequenceParsingUtil()
         
         with open(f'{prottransbert_complete_dir}/{phage}-rbp-embeddings.csv', 'r') as embeddings:
