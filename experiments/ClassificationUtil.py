@@ -1,22 +1,40 @@
-# ==============================================================
-# This script contains the utility functions for classification.
-# ==============================================================
+"""
+==============================================================
+This script contains the utility functions for classification.
+@author    Mark Edward M. Gonzales
+==============================================================
+"""
 
 import os
 import copy
-
-from RBPPredictionUtil import RBPPredictionUtil
+import math
+import pickle
 
 import pandas as pd
 import numpy as np
 
 from ete3 import NCBITaxa
+from Bio import SeqIO
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, precision_recall_fscore_support
-from Bio import SeqIO
+from sklearn.model_selection import RandomizedSearchCV, StratifiedKFold
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.utils.fixes import loguniform
+from scipy.stats import randint
+from joblib import dump
+
+from RBPPredictionUtil import RBPPredictionUtil
+from ConstantsUtil import ConstantsUtil
 
 class ClassificationUtil(object):
     def __init__(self, complete_embeddings_dir = None, RANDOM_NUM = 42):
+        """
+        Constructor
+        
+        Parameters:
+        - complete_embeddings_dir: File path of the directory containing the embeddings of the RBPs
+        - RANDOM_NUM: Random number for reproducibility
+        """
         self.complete_embeddings_dir = complete_embeddings_dir
         self.RANDOM_NUM = RANDOM_NUM
         self.inphared_gb = None
@@ -25,9 +43,21 @@ class ClassificationUtil(object):
     # Preprocessing
     # =============
     def set_inphared_gb(self, inphared_gb):
+        """
+        Sets the consolidated GenBank entries of the entries fetched via INPHARED
+        
+        Parameters:
+        - inphared_gb: File path of the consolidated GenBank entries of the entries fetched via INPHARED
+        """
         self.inphared_gb = inphared_gb
     
     def get_phages(self):
+        """
+        Retrieves the phage IDs of the phages in the dataset
+        
+        Returns:
+        - Set of phage IDs of the phages in the dataset
+        """
         phages = set()
         for file in os.listdir(f'{self.complete_embeddings_dir}'):
             phages.add(file[:-len('-rbp-embeddings.csv')])
@@ -35,6 +65,12 @@ class ClassificationUtil(object):
         return phages
     
     def get_rbps(self):
+        """
+        Retrieves the protein IDs of the RBPs in the dataset
+        
+        Returns:
+        - Set of protein IDs of the RBPs in the dataset
+        """
         rbps = []
         for file in os.listdir(f'{self.complete_embeddings_dir}'):
             phage_name = file[:-len('-rbp-embeddings.csv')]
@@ -47,6 +83,17 @@ class ClassificationUtil(object):
         return rbps
     
     def get_host_taxonomy(self, rbp_embeddings, host_column = 'Host'):
+        """
+        Retrieves the taxonomical information of the hosts (particularly the superkingdom, phylum, class, order, and family)
+        since INPHARED returns only the hosts at genus level
+        
+        Parameters:
+        - rbp_embeddings: DataFrame containing the RBP embeddings
+        - host_column: Name of the host genus
+        
+        Returns:
+        - List containing the taxonomical information of the hosts; each item in the list corresponds to one host
+        """
         host_taxonomy = []
         ncbi = NCBITaxa()
         for genus in rbp_embeddings[host_column].unique():
@@ -82,6 +129,17 @@ class ClassificationUtil(object):
         return host_taxonomy
     
     def get_sequences(self, rbps_with_accession, protein, *fasta_folders):
+        """
+        Retrieves the RBP protein (or nucleotide) sequences
+        
+        Parameters:
+        - rbps_with_accession: DataFrame containing the RBP embeddings
+        - protein: Protein ID
+        - fasta_folders: File paths of the directories containing the FASTA (or FFN) files with the sequences
+        
+        Returns:
+        - List containing the RBP protein (or nucleotide) sequences; each item in the list corresponds to one RBP 
+        """
         util = RBPPredictionUtil()
         
         sequences = []
@@ -101,6 +159,9 @@ class ClassificationUtil(object):
     # Embedding Files
     # ===============
     def get_rbp_embeddings(self, folder):
+        """
+        
+        """
         rbps = []
             
         for file in os.listdir(f'{folder}'):
@@ -188,30 +249,6 @@ class ClassificationUtil(object):
         
         return X, y
     
-    # ========
-    # PhagesDB
-    # ========
-    
-    def get_names_no_accession(self, start, end, phages, not_in_genbank_dir):
-        phage_names = set()
-
-        for i in range(start, end + 1):
-            if str(i) in phages:
-                for record in SeqIO.parse(f'{not_in_genbank_dir}/{str(i)}.ffn', 'fasta'):
-                    phage_names.add(record.description.split(' ')[1])
-                    
-        return phage_names
-    
-    def get_names_no_accession_with_accession(self, start, end, phages, not_in_genbank_dir):
-        phage_names = {}
-
-        for i in range(start, end + 1):
-            if str(i) in phages:
-                for record in SeqIO.parse(f'{not_in_genbank_dir}/{str(i)}.ffn', 'fasta'):
-                    phage_names[record.description.split(' ')[1]] = record.description.split(' ')[0]
-                    
-        return phage_names
-    
     def predict_with_threshold(self, proba, y_test, y_pred, unknown_threshold = 0, display = False):
         y_pred_copy = copy.deepcopy(y_pred)
 
@@ -242,3 +279,162 @@ class ClassificationUtil(object):
                 y_test,
                 y_pred,
                 y_pred_copy)
+    
+    def classify(self, plm, save_feature_importance = False, display_feature_importance = False, feature_columns = None):
+        constants = ConstantsUtil()
+
+        # Load data
+        rbp_embeddings = pd.read_csv(f'{constants.INPHARED}/{constants.DATA}/{constants.PLM_EMBEDDINGS_CSV[plm]}', 
+                                     low_memory = False)
+        rbp_embeddings['Modification Date'] = pd.to_datetime(rbp_embeddings['Modification Date'])
+
+        # Get only the top 25% hosts
+        all_counts = rbp_embeddings['Host'].value_counts()
+        TOP_X_PERCENT = 0.25
+        top_x = math.floor(all_counts.shape[0] * TOP_X_PERCENT)
+
+        top_genus = set()
+        genus_counts = all_counts.index
+        for entry in genus_counts[:top_x]:
+            top_genus.add(entry)
+
+        # Construct the training and test sets
+        print("Constructing training and test sets...")
+
+        rbp_embeddings_top = rbp_embeddings[rbp_embeddings['Host'].isin(top_genus)]
+
+        counts = X_train = X_test = y_train = y_test = None
+        if feature_columns is None:
+            counts, X_train, X_test, y_train, y_test = self.random_train_test_split(rbp_embeddings_top, 'Host',
+                                                                                    embeddings_size = rbp_embeddings.shape[1] - constants.INPHARED_EXTRA_COLS)
+        else:
+            counts, X_train, X_test, y_train, y_test = self.random_train_test_split(rbp_embeddings_top, 'Host',
+                                                                                    feature_columns = feature_columns)
+
+        counts_df = pd.DataFrame(counts, columns = ['Genus', f'Train', f'Test', 'Total'])
+
+        unknown_hosts_X = unknown_hosts_y = None
+        if feature_columns is None:
+            unknown_hosts_X, unknown_hosts_y = self.get_unknown_hosts(rbp_embeddings[~rbp_embeddings['Host'].isin(top_genus)], 'Host',
+                                                                      embeddings_size = rbp_embeddings.shape[1] - constants.INPHARED_EXTRA_COLS)
+        else:
+            unknown_hosts_X, unknown_hosts_y = self.get_unknown_hosts(rbp_embeddings[~rbp_embeddings['Host'].isin(top_genus)], 'Host',
+                                                                      feature_columns = feature_columns)
+
+        X_test = X_test.append(unknown_hosts_X)
+        y_test = y_test.append(unknown_hosts_y)
+
+        # Construct the model
+        print("Training the model...")
+
+        clf = RandomForestClassifier(random_state = self.RANDOM_NUM, class_weight = 'balanced',
+                                     max_features = 'sqrt',
+                                     min_samples_leaf = 1,
+                                     min_samples_split = 2,
+                                     n_estimators = 150,
+                                     n_jobs = -1)
+
+        clf.fit(X_train, y_train.values.ravel())
+        y_pred = clf.predict(X_test)
+        proba = clf.predict_proba(X_test)
+
+        # Save the results
+        print("Saving evaluation results...")
+
+        results = []
+        for threshold in range(0, 101, 10):
+            results.append(self.predict_with_threshold(proba, y_test, y_pred, unknown_threshold = threshold / 100, display = False))
+
+        if not os.path.exists(constants.TEMP_RESULTS):
+            os.makedirs(constants.TEMP_RESULTS)
+
+        with open(constants.PLM_RESULTS[plm], 'wb') as f:
+            pickle.dump(results, f)
+
+        # Save the trained model
+        if not os.path.exists(constants.TRAINED_MODEL):
+            os.makedirs(constants.TRAINED_MODEL)
+
+        dump(clf, constants.PLM_TRAINED_MODEL[plm])
+
+        # Only for the best-performing model (ProtT5)
+        if save_feature_importance:
+            # Save feature importance
+            feature_importances = clf.feature_importances_
+            # Add 1 so that component 1 is mapped to 1 (instead of 0)
+            indices = [x + 1 for _, x in sorted(zip(feature_importances, range(len(feature_importances))), reverse = True)]
+                
+            with open(constants.FEATURE_IMPORTANCE, 'wb') as f:
+                pickle.dump(indices, f)
+                
+        if display_feature_importance:
+            feature_importances = clf.feature_importances_
+            indices = [x for _, x in sorted(zip(feature_importances, range(len(feature_importances))), reverse = True)]
+            names = [feature_columns[index] for index in indices]
+            print(names)
+            
+            return names
+            
+        # Display progress
+        print("Finished")
+        print("==============")
+        
+    def classify_handpicked_embeddings(self, feature_columns, filename):
+        constants = ConstantsUtil()
+        
+        # Load data
+        boeckaerts = pd.read_csv(f'{constants.INPHARED}/{constants.DATA}/{constants.PLM_EMBEDDINGS_CSV["BOECKAERTS"]}',
+                                 low_memory = False)
+        prott5 = pd.read_csv(f'{constants.INPHARED}/{constants.DATA}/{constants.PLM_EMBEDDINGS_CSV["PROTT5"]}',
+                             low_memory = False)
+        rbp_embeddings = pd.merge(boeckaerts, prott5, how = 'inner', validate = 'one_to_one')
+        
+        # Get only the top 25% hosts
+        all_counts = rbp_embeddings['Host'].value_counts()
+        TOP_X_PERCENT = 0.25
+        top_x = math.floor(all_counts.shape[0] * TOP_X_PERCENT)
+
+        top_genus = set()
+        genus_counts = all_counts.index
+        for entry in genus_counts[:top_x]:
+            top_genus.add(entry)
+            
+        merged_top = rbp_embeddings[rbp_embeddings['Host'].isin(top_genus)]
+        
+        # Construct the training and test sets
+        print("Constructing training and test sets...")
+
+        counts, X_train, X_test, y_train, y_test = self.random_train_test_split(merged_top, 'Host',
+                                                                                feature_columns = feature_columns + [str(i) for i in range(1, prott5.shape[1] - constants.INPHARED_EXTRA_COLS + 1)])
+
+        unknown_hosts_X, unknown_hosts_y = self.get_unknown_hosts(rbp_embeddings[~rbp_embeddings['Host'].isin(top_genus)], 'Host',
+                                                                  feature_columns = feature_columns + [str(i) for i in range(1, prott5.shape[1] - constants.INPHARED_EXTRA_COLS + 1)])
+        X_test = X_test.append(unknown_hosts_X)
+        y_test = y_test.append(unknown_hosts_y)
+        
+        # Construct the model
+        print("Training the model...")
+
+        clf = RandomForestClassifier(random_state = self.RANDOM_NUM, class_weight = 'balanced',
+                                     max_features = 'sqrt',
+                                     min_samples_leaf = 1,
+                                     min_samples_split = 2,
+                                     n_estimators = 150,
+                                     n_jobs = -1)
+
+        clf.fit(X_train, y_train.values.ravel())
+        y_pred = clf.predict(X_test)
+        proba = clf.predict_proba(X_test)
+
+        # Save the results
+        print("Saving evaluation results...")
+
+        results = []
+        for threshold in range(0, 101, 10):
+            results.append(self.predict_with_threshold(proba, y_test, y_pred, unknown_threshold = threshold / 100, display = False))
+
+        if not os.path.exists(constants.TEMP_RESULTS):
+            os.makedirs(constants.TEMP_RESULTS)
+
+        with open(f'{constants.TEMP_RESULTS}/prott5_{filename}.pickle', 'wb') as f:
+            pickle.dump(results, f)
