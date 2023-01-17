@@ -267,14 +267,14 @@ class ClassificationUtil(object):
                 y_pred_copy[idx] = unknown
 
         if display:
-            print('Unknown threshold:', str(unknown_threshold * 100) + '%')
-            print(classification_report(y_test, y_pred_copy, digits = 4))
+            print('Uncertainty threshold:', str(unknown_threshold * 100) + '%')
+            print(classification_report(y_test, y_pred_copy, digits = 4, zero_division = 0))
             print('===================')
             
-        return (precision_recall_fscore_support(y_test, y_pred_copy, average = None),
-                precision_recall_fscore_support(y_test, y_pred_copy, average = 'micro'),
-                precision_recall_fscore_support(y_test, y_pred_copy, average = 'macro'),
-                precision_recall_fscore_support(y_test, y_pred_copy, average = 'weighted'),
+        return (precision_recall_fscore_support(y_test, y_pred_copy, average = None, zero_division = 0),
+                precision_recall_fscore_support(y_test, y_pred_copy, average = 'micro', zero_division = 0),
+                precision_recall_fscore_support(y_test, y_pred_copy, average = 'macro', zero_division = 0),
+                precision_recall_fscore_support(y_test, y_pred_copy, average = 'weighted', zero_division = 0),
                 proba,
                 y_test,
                 y_pred,
@@ -343,7 +343,7 @@ class ClassificationUtil(object):
 
         results = []
         for threshold in range(0, 101, 10):
-            results.append(self.predict_with_threshold(proba, y_test, y_pred, unknown_threshold = threshold / 100, display = False))
+            results.append(self.predict_with_threshold(proba, y_test, y_pred, unknown_threshold = threshold / 100, display = True))
 
         if not os.path.exists(constants.TEMP_RESULTS):
             os.makedirs(constants.TEMP_RESULTS)
