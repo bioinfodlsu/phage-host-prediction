@@ -236,7 +236,7 @@ class ClassificationUtil(object):
         X = rbp_embeddings.loc[:, rbp_embeddings.columns.isin(feature_columns)]
         y = rbp_embeddings.loc[:, rbp_embeddings.columns.isin([taxon])]
         
-        y[taxon] = y[taxon].apply(lambda x: 'unknown')
+        y[taxon] = y[taxon].apply(lambda x: 'others')
 
         return X, y
     
@@ -252,7 +252,7 @@ class ClassificationUtil(object):
     def predict_with_threshold(self, proba, y_test, y_pred, unknown_threshold = 0, display = False):
         y_pred_copy = copy.deepcopy(y_pred)
 
-        unknown = 'unknown'
+        unknown = 'others'
         
         largest = []
         second_largest = []
@@ -267,7 +267,7 @@ class ClassificationUtil(object):
                 y_pred_copy[idx] = unknown
 
         if display:
-            print('Uncertainty threshold:', str(unknown_threshold * 100) + '%')
+            print('Confidence threshold k:', str(unknown_threshold * 100) + '%')
             print(classification_report(y_test, y_pred_copy, digits = 4, zero_division = 0))
             print('===================')
             
