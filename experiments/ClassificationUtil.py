@@ -160,7 +160,13 @@ class ClassificationUtil(object):
     # ===============
     def get_rbp_embeddings(self, folder):
         """
+        Retrieves the protein IDs and embeddings of the RBPs in the given directory
         
+        Parameters:
+        - folder: File path of the directory containing the embeddings of the RBPs
+        
+        Returns:
+        - List containing the protein IDs and embeddings of the RBPs in the directory; each item in the list corresponds to one RBP
         """
         rbps = []
             
@@ -176,6 +182,16 @@ class ClassificationUtil(object):
         return rbps
     
     def get_rbp_embeddings_df(self, plm, folder):
+        """
+        Constructs a DataFrame containing the protein IDs and embeddings of the RBPs in the given directory
+        
+        Parameters:
+        - plm: Protein language model used to generate the embeddings
+        - folder: File path of the directory containing the embeddings of the RBPs
+        
+        Returns:
+        - DataFrame containing the protein IDs and embeddings of the RBPs in the directory
+        """
         if plm == 'PROTTRANSBERT':
             folder += '/master'
             
@@ -195,6 +211,22 @@ class ClassificationUtil(object):
     # Classification
     # ==============
     def random_train_test_split(self, rbp_embeddings, taxon, embeddings_size = None, feature_columns = None):
+        """
+        Constructs the training and test sets for model training and evaluation
+        
+        Parameters:
+        - rbp_embeddings: DataFrame containing the phages, hosts, and vector representations of the phages
+        - taxon: Taxonomical level of classification
+        - embeddings_size: Dimension of the embedding space
+        - feature_columns: List of the column headers corresponding to the features
+        
+        Returns:
+        - List containing the number of training and test samples for each class label; each item in the list corresponds to one class label
+        - List containing the feature representations of the samples in the training set
+        - List containing the class labels of the samples in the training set
+        - List containing the feature representations of the samples in the test set
+        - List containing the class labels of the samples in the test set
+        """
         if not feature_columns:
             feature_columns = [str(i) for i in range(1, embeddings_size + 1)]
         
@@ -230,6 +262,21 @@ class ClassificationUtil(object):
         return counts, X_train, X_test, y_train, y_test
     
     def get_unknown_hosts(self, rbp_embeddings, taxon, embeddings_size = None, feature_columns = None):
+        """
+        Isolates the samples whose host is outside the class labels (i.e., outside the top 25% hosts)
+        
+        Parameters:
+        - rbp_embeddings: DataFrame containing the phages, hosts, and vector representations of the phages
+        - taxon: Taxonomical level of classification
+        - embeddings_size: Dimension of the embedding space
+        - feature_columns: List of the column headers corresponding to the features
+        
+        Returns:
+        - List containing the feature representations of the samples whose host is outside the class labels 
+          (i.e., outside the top 25% hosts)
+        - List containing the class labels of the samples whose host is outside the class labels
+          (i.e., outside the top 25% hosts). The class label of each of these samples is set to 'others'.
+        """
         if not feature_columns:
             feature_columns = [str(i) for i in range(1, embeddings_size + 1)]
         
@@ -241,6 +288,19 @@ class ClassificationUtil(object):
         return X, y
     
     def xy_split(self, rbp_embeddings, taxon, embeddings_size = None, feature_columns = None):
+        """
+        Separates the feature representations and the class labels of the samples
+        
+        Parameters:
+        - rbp_embeddings: DataFrame containing the phages, hosts, and vector representations of the phages
+        - taxon: Taxonomical level of classification
+        - embeddings_size: Dimension of the embedding space
+        - feature_columns: List of the column headers corresponding to the features
+        
+        Returns:
+        - List containing the feature representations of the samples
+        - List containing the class labels of the samples
+        """
         if not feature_columns:
             feature_columns = [str(i) for i in range(1, embeddings_size + 1)]
         
@@ -250,6 +310,29 @@ class ClassificationUtil(object):
         return X, y
     
     def predict_with_threshold(self, proba, y_test, y_pred, unknown_threshold = 0, display = False):
+        """
+        Adjusts the predicted class labels in view of the given confidence threshold.
+        In particular, a sample is classified under its predicted class label if and only if the difference between the largest
+           and second largest class probabilities is greater than or equal to the given confidence threshold. Otherwise,
+           the sample is classified as 'others' (i.e., falling outside the class labels).
+        
+        Parameters:
+        - proba: Class probabilities
+        - y_test: True class labels
+        - y_pred: Predicted class labels
+        - unknown_threshold: Confidence threshold
+        - display: True if the per-class evaluation results are to be displayed; False, otherwise
+        
+        Returns:
+        - List containing the per-class precision, recall, and F1
+        - List containing the micro-precision, recall, and F1
+        - List containing the macro-precision, recall, and F1
+        - List containing the weighted precision, recall, and F1
+        - Class probabilities
+        - True class labels
+        - Original predicted class labels 
+        - Predicted class labels in view of the confidence threshold
+        """
         y_pred_copy = copy.deepcopy(y_pred)
 
         unknown = 'others'
@@ -281,6 +364,21 @@ class ClassificationUtil(object):
                 y_pred_copy)
     
     def classify(self, plm, save_feature_importance = False, display_feature_importance = False, feature_columns = None):
+        """
+        Trains a random forest model for phage-host interaction prediction and evaluates the model performance
+        
+        Parameters:
+        - plm: Protein language model used to generate the embeddings
+        - save_feature_importance: True if the components with the highest Gini importance are to be saved in a Pickle file;
+                                   False, otherwise
+        - display_feature_importance: True if the components with the highest Gini importance are to be displayed;
+                                      False, otherwise
+        - feature_columns: List of the column headers corresponding to the features
+        
+        Returns:
+        - If display_feature_importance is set to True, the features with the highest Gini importance are returned
+        - Otherwise, the function returns None
+        """
         constants = ConstantsUtil()
 
         # Load data
@@ -380,6 +478,14 @@ class ClassificationUtil(object):
         print("==============")
         
     def classify_handpicked_embeddings(self, feature_columns, filename):
+        """
+        Trains a random forest model for phage-host interaction prediction and evaluates the model performance.
+        This method is for investigating the change in performance when the ProtT5 embeddings are combined with handcrafted features.
+        
+        Parameters:
+        - feature_columns: List of the column headers corresponding to the features
+        - filename: File name of the Pickle file in which the evaluation results are to be saved
+        """
         constants = ConstantsUtil()
         
         # Load data
