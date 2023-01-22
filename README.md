@@ -26,6 +26,24 @@ Directory | Description
 
 ### Python Scripts
 
+## Dependencies
+The following Python libraries and modules were used. 
+
+Libraries/Modules | Description | License
+-- | -- | --
+[`regex`](https://pypi.org/project/regex/)
+[`nltk`](https://pypi.org/project/nltk/)
+[`biopython`](https://pypi.org/project/biopython/)
+[`ete3`](https://pypi.org/project/ete3/)
+[`pandas`](https://pypi.org/project/pandas/)
+[`numpy`](https://pypi.org/project/numpy/)
+[`scipy`](https://pypi.org/project/scipy/)
+[`scikit-learn`](https://pypi.org/project/scikit-learn/)
+[`xgboost`](https://pypi.org/project/xgboost/)
+[`joblib`](https://pypi.org/project/joblib/)
+[`numba`](https://pypi.org/project/numba/)
+[`matplotlib`](https://pypi.org/project/matplotlib/)
+[`umap`](https://pypi.org/project/umap-learn/)
 
 ## Authors
 - **Mark Edward M. Gonzales** <br>
