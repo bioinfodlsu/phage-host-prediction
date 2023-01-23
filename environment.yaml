@@ -1,0 +1,19 @@
+name: phage-host-prediction
+channels:
+    - anaconda
+    - conda-forge
+    - defaults
+dependencies:
+    - regex
+    - nltk
+    - biopython == 1.78
+    - ete3 == 3.1.2
+    - pandas
+    - numpy
+    - scipy
+    - scikit-learn == 1.0.2
+    - xgboost
+    - joblib
+    - numba
+    - matplotlib
+    - umap-learn == 0.5.3
