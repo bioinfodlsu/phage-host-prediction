@@ -31,19 +31,19 @@ The following Python libraries and modules were used.
 
 Libraries/Modules | Description | License
 -- | -- | --
-[`regex`](https://pypi.org/project/regex/)
-[`nltk`](https://pypi.org/project/nltk/)
-[`biopython`](https://pypi.org/project/biopython/)
-[`ete3`](https://pypi.org/project/ete3/)
-[`pandas`](https://pypi.org/project/pandas/)
-[`numpy`](https://pypi.org/project/numpy/)
-[`scipy`](https://pypi.org/project/scipy/)
-[`scikit-learn`](https://pypi.org/project/scikit-learn/)
-[`xgboost`](https://pypi.org/project/xgboost/)
-[`joblib`](https://pypi.org/project/joblib/)
-[`numba`](https://pypi.org/project/numba/)
-[`matplotlib`](https://pypi.org/project/matplotlib/)
-[`umap`](https://pypi.org/project/umap-learn/)
+[`regex`](https://github.com/mrabarnett/mrab-regex)
+[`nltk`](https://www.nltk.org/)
+[`biopython`](https://biopython.org/)
+[`ete3`](http://etetoolkit.org/)
+[`pandas`](https://pandas.pydata.org/)
+[`numpy`](https://numpy.org/)
+[`scipy`](https://scipy.org/)
+[`scikit-learn`](https://scikit-learn.org/)
+[`xgboost`](https://xgboost.readthedocs.io/en/stable/)
+[`joblib`](https://joblib.readthedocs.io/en/latest/)
+[`numba`](https://numba.pydata.org/)
+[`matplotlib`](https://matplotlib.org/)
+[`umap-learn`](https://umap-learn.readthedocs.io/en/latest/)
 
 ## Authors
 - **Mark Edward M. Gonzales** <br>
