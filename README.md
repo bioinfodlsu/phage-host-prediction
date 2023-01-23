@@ -41,7 +41,7 @@ Each notebook contains detailed instructions about the required files and output
 Notebook | Description | Required Files | Output Files
 -- | -- | -- | --
 [`1. Sequence Preprocessing.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/1.%20Sequence%20Preprocessing.ipynb) | Preprocessing of host information and selection of annotated RBPs | [GenomesDB](https://millardlab-inphared.s3.climb.ac.uk/GenomesDB_20201412.tar.gz), <br> [`16Sep2022_phages_downloaded_from_genbank.gb`](https://drive.google.com/file/d/14LG1iGa1CqPbAjofZT1EY8VKnE8Iy45Q/view?usp=sharing) | [FASTA files of genomic and protein sequences](https://drive.google.com/drive/folders/16ZBXZCpC0OmldtPPIy5sEBtS4EVohorT?usp=sharing)
-[`2. Exploratory Data Analysis.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/2.%20Exploratory%20Data%20Analysis.ipynb) | Exploratory Data Analysis | Protein embeddings ([Part 1](https://drive.google.com/drive/folders/1deenrDQIr3xcl9QCYH-nPhmpY8x2drQw?usp=sharing) and [Part 2](https://drive.google.com/drive/folders/1jnBFNsC6zJISkc6IAz56257MSXKjY0Ez?usp=sharing)), <br> [Phage-host-features CSV](https://drive.google.com/drive/folders/1xNoA6dxkN4jzVNCg_7YNjdPZzl51Jo9M?usp=sharing) | -
+[`2. Exploratory Data Analysis.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/2.%20Exploratory%20Data%20Analysis.ipynb) | Exploratory Data Analysis | Protein embeddings ([Part 1](https://drive.google.com/drive/folders/1deenrDQIr3xcl9QCYH-nPhmpY8x2drQw?usp=sharing) and [Part 2](https://drive.google.com/drive/folders/1jnBFNsC6zJISkc6IAz56257MSXKjY0Ez?usp=sharing)), <br> [Phage-host-features CSV](https://drive.google.com/drive/folders/1xNoA6dxkN4jzVNCg_7YNjdPZzl51Jo9M?usp=sharing) | &ndash;
 
 ### Python Scripts
 
@@ -50,19 +50,21 @@ The following Python libraries and modules were used.
 
 Libraries/Modules | Description | License
 -- | -- | --
-[`regex`](https://github.com/mrabarnett/mrab-regex)
-[`nltk`](https://www.nltk.org/)
-[`biopython`](https://biopython.org/)
-[`ete3`](http://etetoolkit.org/)
-[`pandas`](https://pandas.pydata.org/)
-[`numpy`](https://numpy.org/)
-[`scipy`](https://scipy.org/)
-[`scikit-learn`](https://scikit-learn.org/)
+[`regex`](https://github.com/mrabarnett/mrab-regex) | Provides additional functionality over the standard [`re`](https://docs.python.org/3/library/re.html) module while maintaining backwards-compatibility	| Apache License 2.0 
+[`nltk`](https://www.nltk.org/) | Provides interfaces to corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning	| Apache License 2.0
+[`biopython`](https://biopython.org/) | Provides tools for computational molecular biology | Biopython License Agreement, BSD 3-Clause License
+[`ete3`](http://etetoolkit.org/) | Provides functions for automated manipulation, analysis, and visualization of phylogenetic trees | GNU General Public License v3.0
+[`pandas`](https://pandas.pydata.org/) | Provides functions for data analysis and manipulation	| BSD 3-Clause "New" or "Revised" License
+[`numpy`](https://numpy.org/) | Provides a multidimensional array object, various derived objects, and an assortment of routines for fast operations on arrays | BSD 3-Clause "New" or "Revised" License 
+[`scipy`](https://scipy.org/) | Provides efficient numerical routines, such as those for numerical integration, interpolation, optimization, linear algebra, and statistics | BSD 3-Clause "New" or "Revised" License
+[`scikit-learn`](https://scikit-learn.org/) | 
 [`xgboost`](https://xgboost.readthedocs.io/en/stable/)
 [`joblib`](https://joblib.readthedocs.io/en/latest/)
 [`numba`](https://numba.pydata.org/)
-[`matplotlib`](https://matplotlib.org/)
+[`matplotlib`](https://matplotlib.org/) | Provides functions for creating static, animated, and interactive visualizations | Matplotlib License (BSD-Compatible)
 [`umap-learn`](https://umap-learn.readthedocs.io/en/latest/)
+
+*The descriptions are taken from their respective websites.*
 
 ## Authors
 - **Mark Edward M. Gonzales** <br>
