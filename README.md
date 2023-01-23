@@ -5,10 +5,20 @@
 ![badge][badge-pandas]
 ![badge][badge-numpy]
 ![badge][badge-scipy]
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white)
-
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white)  <br>
 [![Actions Status](https://github.com/bioinfodlsu/phage-host-prediction/workflows/Check%20for%20syntax%20errors/badge.svg)](https://github.com/bioinfodlsu/phage-host-prediction/actions)
 ![badge][badge-github-actions]
+
+Our paper can be accessed via this [link]().
+
+## Table of Contents
+- [Description](https://github.com/bioinfodlsu/phage-host-prediction#description)
+- [Project Structure](https://github.com/bioinfodlsu/phage-host-prediction#project-structure)
+  - [Directories](https://github.com/bioinfodlsu/phage-host-prediction#directories)
+  - [Jupyter Notebooks](https://github.com/bioinfodlsu/phage-host-prediction#jupyter-notebooks)
+  - [Python Scripts](https://github.com/bioinfodlsu/phage-host-prediction#python-scripts)
+- [Dependencies](https://github.com/bioinfodlsu/phage-host-prediction#dependencies)
+- [Authors](https://github.com/bioinfodlsu/phage-host-prediction#authors)
 
 ## Description
 **ABSTRACT**: With the growing interest in using phages to combat antimicrobial resistance, computational methods for predicting phage-host interactions have been explored to help shortlist candidate phages. While existing systems have been successful in integrating multiple features to improve performance, most consider entire proteomes and rely on manual feature engineering, which poses difficulty in selecting the most informative sequence properties to serve as input to the model. In this paper, we focused on the phages' receptor-binding proteins, which are known to be the key machinery for host recognition, and explored different protein language models to automatically encode these protein sequences into meaningful dense embeddings without the need for additional alignment or structural information. Our experiments showed that the use of embeddings of receptor-binding proteins presents improvements over handcrafted genomic and protein sequence features for phage-host interaction prediction. The highest performance was obtained using the transformer-based protein language model ProtT5, resulting in a 3% to 4% increase in the weighted F1 scores across different thresholds for prediction confidence.
@@ -26,6 +36,12 @@ Directory | Description
 [`temp`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments/temp) | Contains intermediate output files during preprocessng and performance evaluation
 
 ### Jupyter Notebooks
+Each notebook contains detailed instructions about the required files and output files, including the download links and where to save them.
+
+Notebook | Description | Required Files | Output Files
+-- | -- | -- | --
+[`1. Sequence Preprocessing.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/1.%20Sequence%20Preprocessing.ipynb) | Preprocessing of host information and selection of annotated RBPs | [GenomesDB](https://millardlab-inphared.s3.climb.ac.uk/GenomesDB_20201412.tar.gz), <br> [`16Sep2022_phages_downloaded_from_genbank.gb`](https://drive.google.com/file/d/14LG1iGa1CqPbAjofZT1EY8VKnE8Iy45Q/view?usp=sharing) | [FASTA files of genomic and protein sequences](https://drive.google.com/drive/folders/16ZBXZCpC0OmldtPPIy5sEBtS4EVohorT?usp=sharing)
+[`2. Exploratory Data Analysis.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/2.%20Exploratory%20Data%20Analysis.ipynb) | Exploratory Data Analysis | Protein embeddings ([Part 1](https://drive.google.com/drive/folders/1deenrDQIr3xcl9QCYH-nPhmpY8x2drQw?usp=sharing) and [Part 2](https://drive.google.com/drive/folders/1jnBFNsC6zJISkc6IAz56257MSXKjY0Ez?usp=sharing)), <br> [Phage-host-features CSV](https://drive.google.com/drive/folders/1xNoA6dxkN4jzVNCg_7YNjdPZzl51Jo9M?usp=sharing) | -
 
 ### Python Scripts
 
