@@ -126,7 +126,7 @@ To activate this environment, run the following command:
 conda activate phage-host-prediction
 ```
 
-Note that [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has dependencies that are not defined in [`requirements.txt`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/requirements.txt) and [`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml), as we recommend running this notebook on Google Colab (any cloud-based service with GPU) in view of the heavy memory requirement of loading pretrained protein embeddings. The commands for installing the dependencies are already included in this notebook as shell commands.
+Note that [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has dependencies that are not defined in [`requirements.txt`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/requirements.txt) and [`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml), as we recommend running this notebook on [Google Colab](https://colab.research.google.com/) (any cloud-based service with GPU) in view of the heavy memory requirement of loading pretrained protein embeddings. The commands for installing the dependencies are already included in this notebook as shell commands.
 
 The complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library) are as follows: 
 
