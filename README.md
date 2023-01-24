@@ -111,12 +111,30 @@ Once you have cloned this repository and finished downloading (or generating) al
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
 ## Dependencies
-The following Python libraries and modules were used: 
+The dependencies can be installed via Python's package installer `pip` by running the following command on the terminal:
+```
+pip install -r requirements.txt
+```
+
+Alternatively, the dependencies can also be installed via [Conda](https://docs.conda.io/en/latest/), an open-source package and environment management system. Run the following command to create a virtual environment with the dependencies installed:
+```
+conda env create -f environment.yaml
+```
+
+To activate this environment, run the following command:
+```
+conda activate phage-host-prediction
+```
+
+Note that [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has dependencies that are not defined in [`requirements.txt`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/requirements.txt) and [`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml), as we recommend running this notebook on Google Colab (any cloud-based service with GPU) in view of the heavy memory requirement of loading pretrained protein embeddings. The commands for installing the dependencies are already included in this notebook as shell commands.
+
+The complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library) are as follows: 
 
 Libraries/Modules | Description | License
 -- | -- | --
 [`regex`](https://github.com/mrabarnett/mrab-regex) | Provides additional functionality over the standard [`re`](https://docs.python.org/3/library/re.html) module while maintaining backwards-compatibility	| Apache License 2.0 
 [`nltk`](https://www.nltk.org/) | Provides interfaces to corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning	| Apache License 2.0
+[`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) | Provides an interface for the use of language model-based biological sequence representations for transfer-learning | MIT License
 [`biopython`](https://biopython.org/) | Provides tools for computational molecular biology | Biopython License Agreement, BSD 3-Clause License
 [`ete3`](http://etetoolkit.org/) | Provides functions for automated manipulation, analysis, and visualization of phylogenetic trees | GNU General Public License v3.0
 [`pandas`](https://pandas.pydata.org/) | Provides functions for data analysis and manipulation	| BSD 3-Clause "New" or "Revised" License
@@ -128,6 +146,8 @@ Libraries/Modules | Description | License
 [`numba`](https://numba.pydata.org/) | Translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library | BSD 2-Clause "Simplified" License
 [`matplotlib`](https://matplotlib.org/) | Provides functions for creating static, animated, and interactive visualizations | Matplotlib License (BSD-Compatible)
 [`umap-learn`](https://umap-learn.readthedocs.io/en/latest/) | Implements uniform manifold approximation and projection, a dimension reduction technique that can be used for visualisation similarly and general non-linear dimension reduction | BSD 3-Clause "New" or "Revised" License
+[`pyyaml`](https://pyyaml.org/) | Supports standard YAML tags and provides Python-specific tags that allow to represent an arbitrary Python object | MIT License
+[`tqdm`](https://tqdm.github.io/) | Allows the creation of progress bars by wrapping around any iterable | Mozilla Public Licence (MPL) v. 2.0, MIT License
 
 *The descriptions are taken from their respective websites.*
 
