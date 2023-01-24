@@ -17,6 +17,7 @@ Our paper can be accessed via this [link]().
   - [Directories](https://github.com/bioinfodlsu/phage-host-prediction#directories)
   - [Jupyter Notebooks](https://github.com/bioinfodlsu/phage-host-prediction#jupyter-notebooks)
   - [Python Scripts](https://github.com/bioinfodlsu/phage-host-prediction#python-scripts)
+  - [Folder Structure](https://github.com/bioinfodlsu/phage-host-prediction#folder-structure)
 - [Dependencies](https://github.com/bioinfodlsu/phage-host-prediction#dependencies)
 - [Authors](https://github.com/bioinfodlsu/phage-host-prediction#authors)
 
@@ -36,7 +37,7 @@ Directory | Description
 -- | --
 [`inphared`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments/inphared) | Contains the list of phage-host pairs in TSV format. The GenBank and FASTA files with the genomic and protein sequences of the phages, the embeddings of the receptor-binding proteins, and the phage-host-features CSV files should also be saved in this folder
 [`preprocessing`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments/preprocessing) | Contains text files related to the preprocessing of host information and the selection of annotated RBPs
-[`rbp_prediction`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments/rbp_prediction) | Contains the JSON file of the trained XGBoost model proposed by [Boeckaerts <i>et al.</i> (2022)](https://www.mdpi.com/1999-4915/14/6/1329) for the computational prediction of receptor-binding proteins
+[`rbp_prediction`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments/rbp_prediction) | Contains the JSON file of the trained XGBoost model proposed by [Boeckaerts <i>et al.</i> (2022)](https://www.mdpi.com/1999-4915/14/6/1329) for the computational prediction of receptor-binding proteins. Downloaded from this [repository](https://github.com/dimiboeckaerts/PhageRBPdetection/blob/main/data/RBPdetect_xgb_model.json) (under the MIT License)
 [`temp`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments/temp) | Contains intermediate output files during preprocessng and performance evaluation
 
 ### Jupyter Notebooks
@@ -54,6 +55,14 @@ Notebook | Description | Required Files | Output Files
 
 ### Python Scripts
 
+Script | Description |
+-- | --
+[`ClassificationUtil.py`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/ClassificationUtil.py) | Contains the utility functions for the generation of the phage-host-features CSV files, construction of the phage-host interaction model, and performance evaluation
+[`ConstantsUtil.py`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/ConstantsUtil.py) | Contains the constants used in the notebooks and scripts
+[`EDAUtil.py`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/EDAUtil.py) | Contains the utility functions for exploratory data analysis
+[`RBPPredictionUtil.py`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/RBPPredictionUtil.py) | Contains the utility functions for the computational prediction of receptor-binding proteins
+[`SequenceParsing.py`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/SequenceParsingUtil.py) | Contains the utility functions for preprocessing host information and selecting annotated receptor-binding proteins
+[`boeckaerts.py`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/boeckaerts.py) | Contains the utility functions written by [Boeckaerts <i>et al.</i> (2021)](https://www.nature.com/articles/s41598-021-81063-4) for running his phage-host interaction prediction tool (with which we benchmarked our model). Downloaded from this [repository](https://github.com/dimiboeckaerts/BacteriophageHostPrediction/blob/master/RBP_functions.py) (under the MIT License)
 
 ### Folder Structure
 Once you have cloned this repository and finished downloading (or generating) all the additional required files following the instructions in the Jupyter notebooks, your folder structure should be similar to the one below:
@@ -84,6 +93,7 @@ Once you have cloned this repository and finished downloading (or generating) al
     - `models` ([Download](https://drive.google.com/drive/folders/1U5ugmkhD4LHElYnLj3B8Xt2TcPx-TOjB?usp=sharing))
       - `boeckaerts.joblib`
       - `esm.joblib`
+      - ...
     - `preprocessing`
     - `rbp_prediction`
     - `temp`
