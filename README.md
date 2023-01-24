@@ -130,7 +130,7 @@ Note that [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodl
 
 The complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library) are as follows: 
 
-Libraries/Modules | Description | License
+Library/Module | Description | License
 -- | -- | --
 [`regex`](https://github.com/mrabarnett/mrab-regex) | Provides additional functionality over the standard [`re`](https://docs.python.org/3/library/re.html) module while maintaining backwards-compatibility	| Apache License 2.0 
 [`nltk`](https://www.nltk.org/) | Provides interfaces to corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning	| Apache License 2.0
