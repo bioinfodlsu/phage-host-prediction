@@ -380,16 +380,16 @@ class SequenceParsingUtil(object):
                                 
         return nomenclature
     
-    # ==================
-    # CDS Identification
-    # ==================
+    # ===============
+    # Gene annotation
+    # ===============
     
     def get_no_cds_annot(self):
         """
-        Returns the set of phage entries without coding sequence information
+        Returns the set of phage entries without gene annotation
         
         Returns:
-        - Set of phage entries without coding sequence information
+        - Set of phage entries without gene annotation
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
         
@@ -430,7 +430,7 @@ class SequenceParsingUtil(object):
         return no_cds_annot
     
     # ====================================
-    # Process entries with CDS information
+    # Process entries with gene annotation
     # ====================================
     
     def construct_keyword_list(self, hypothetical_file, rbp_related_file, putative_functions_file):
@@ -728,7 +728,7 @@ class SequenceParsingUtil(object):
             self.__display_progress(ctr)
     
     # ===============================================
-    # Generate FASTA for entries with CDS information
+    # Generate FASTA for entries with gene annotation
     # ===============================================    
     def __is_hypothetical_protein(self, product, sequence, lower_bound, upper_bound):
         """
@@ -928,7 +928,7 @@ class SequenceParsingUtil(object):
         return proteins, num_lines
         
     # =======================================
-    # Process entries without CDS information
+    # Process entries without gene annotation
     # =======================================    
     
     def get_annot_products_prokka(self, complete_genome_dir):
@@ -1060,7 +1060,7 @@ class SequenceParsingUtil(object):
                 
     def generate_rbp_hypothetical_nucleotide(self, rbp_genbank_dir, hypothetical_genbank_dir, lower_bound, upper_bound):
         """
-        Generates the FFN files containing the genomes of the phages with coding sequence information in GenBank
+        Generates the FFN files containing the genomes of the phages with gene annotation in GenBank
         
         Parameters:
         - rbp_genbank_dir: File path of the directory with the RBP protein sequences of the phages with coding sequence
