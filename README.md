@@ -9,7 +9,7 @@
 [![Actions Status](https://github.com/bioinfodlsu/phage-host-prediction/workflows/Check%20for%20syntax%20errors/badge.svg)](https://github.com/bioinfodlsu/phage-host-prediction/actions)
 ![badge][badge-github-actions]
 
-Our paper can be accessed via this [link]().
+Our paper can be accessed via this [link](https://biorxiv.org/cgi/content/short/2023.02.26.530154v1).
 
 ## Table of Contents
 - [Description](https://github.com/bioinfodlsu/phage-host-prediction#description)
