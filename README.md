@@ -11,6 +11,22 @@
 
 Our preprint can be accessed via this [link](https://biorxiv.org/cgi/content/short/2023.02.26.530154v1).
 
+If you find our work useful, please consider citing:
+
+```
+@article {Gonzales2023.02.26.530154,
+  author = {Mark Edward M. Gonzales and Jennifer C. Ureta and Anish M.S. Shrestha},
+  title = {Protein embeddings improve phage-host interaction prediction},
+  elocation-id = {2023.02.26.530154},
+  year = {2023},
+  doi = {10.1101/2023.02.26.530154},
+  publisher = {Cold Spring Harbor Laboratory},
+  URL = {https://www.biorxiv.org/content/early/2023/02/27/2023.02.26.530154},
+  eprint = {https://www.biorxiv.org/content/early/2023/02/27/2023.02.26.530154.full.pdf},
+  journal = {bioRxiv}
+}
+```
+
 ## Table of Contents
 - [Description](https://github.com/bioinfodlsu/phage-host-prediction#description)
 - [Project Structure](https://github.com/bioinfodlsu/phage-host-prediction#project-structure)
