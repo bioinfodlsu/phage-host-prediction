@@ -42,6 +42,8 @@ If you find our work useful, please consider citing:
 
 <img src="https://github.com/bioinfodlsu/phage-host-prediction/blob/main/figure.png?raw=True" alt="Teaser Figure" width = 800> 
 
+**AUTHOR SUMMARY**: Antimicrobial resistance is among the major global health issues at present. As alternatives to the usual antibiotics, drug formulations based on phages (bacteria-infecting viruses) have received increased interest, as phages are known to attack only a narrow range of bacterial hosts and antagonize the target pathogen with minimal side effects. The screening of candidate phages has recently been facilitated through the use of machine learning models for inferring phage-host pairs. The performance of these models relies heavily on the transformation of raw biological sequences into a collection of numerical features. However, since a wide array of potentially informative features can be extracted from sequences, selecting the most relevant ones is challenging. Our approach eliminates the need for this manual feature engineering by employing protein language models to automatically generate numerical representations for specific subsets of tail proteins known as receptor-binding proteins. These proteins are responsible for a phage's initial contact with the host bacterium and are thus regarded as important determinants of host specificity. Our results show that this approach presents improvements over using handcrafted genomic and protein sequence features in predicting phage-host interaction.
+
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
 ## Project Structure
