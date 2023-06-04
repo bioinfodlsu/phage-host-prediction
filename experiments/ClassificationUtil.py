@@ -15,6 +15,7 @@ import numpy as np
 
 from ete3 import NCBITaxa
 from Bio import SeqIO
+from Bio.Blast.Applications import NcbiblastpCommandline
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, precision_recall_fscore_support
 from sklearn.model_selection import RandomizedSearchCV, StratifiedKFold
@@ -544,3 +545,42 @@ class ClassificationUtil(object):
 
         with open(f'{constants.TEMP_RESULTS}/prott5_{filename}.pickle', 'wb') as f:
             pickle.dump(results, f)
+            
+    # ============================================
+    # Additional Experiment: Prediction via BLASTp
+    # ============================================
+    
+    def __construct_fasta_entry(self, index, rbp_embeddings):
+        sequence = rbp_embeddings.iloc[index]['Protein Sequence']
+        host = rbp_embeddings.iloc[index]['Host']
+        fasta_entry = f'> {index} {host}\n{sequence}\n\n'
+        
+        return fasta_entry
+    
+    def construct_fasta_file(self, indices, rbp_embeddings, filename):
+        constants = ConstantsUtil()
+ 
+        fasta_str = ''
+        for index in indices:
+            fasta_str += self.__construct_fasta_entry(index, rbp_embeddings)
+                  
+        if not os.path.exists(constants.TEMP_FASTA_BLAST):
+            os.makedirs(constants.TEMP_FASTA_BLAST)
+            
+        with open(f'{constants.TEMP_FASTA_BLAST}/{filename}.fasta', 'w') as fasta_file:
+            fasta_file.write(fasta_str)
+    
+    def predict_via_blastp(self, index, rbp_embeddings):
+        constants = ConstantsUtil()
+        
+        self.construct_fasta_file([index], rbp_embeddings, index)
+        
+        if not os.path.exists(constants.TEMP_RESULTS_BLAST):
+            os.makedirs(constants.TEMP_RESULTS_BLAST)
+            
+        blastp = NcbiblastpCommandline(query = f'{constants.TEMP_FASTA_BLAST}/{index}.fasta', 
+                                       subject = f'{constants.TEMP_FASTA_BLAST}/train-set.fasta', 
+                                       evalue = 10,
+                                       outfmt = 5, 
+                                       out = f'{constants.TEMP_RESULTS_BLAST}/{index}.xml')
+        stdout, stderr = blastp()

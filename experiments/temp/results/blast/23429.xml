@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.14.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db></BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>23429 arthrobacter</BlastOutput_query-def>
+  <BlastOutput_query-len>296</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>23429 arthrobacter</Iteration_query-def>
+  <Iteration_query-len>296</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>23445</Hit_id>
+  <Hit_def>23445 arthrobacter</Hit_def>
+  <Hit_accession>Subject_12929</Hit_accession>
+  <Hit_len>294</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>226.483</Hsp_bit-score>
+      <Hsp_score>576</Hsp_score>
+      <Hsp_evalue>2.75696e-73</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>164</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>164</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>134</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQNQAHNADLFRQALSSLIPNTGGVVEVGDLLVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANIT</Hsp_qseq>
+      <Hsp_hseq>MALSSVPFALQNTAHSAEIFRQAVSSLLPNAGGIQQPGDFNVTQTGTPSMAVSVSVGRCWIPGTNVSNLSGQTYSKQGMYFGLNDAAVTKTIAASDPTNPRIDVVYLCVKDSFYSGATDSIDLYVVTGTPAATPVEPTVPANSIALATIAVAANATTIVNANIT</Hsp_hseq>
+      <Hsp_midline>MALSS+PFA+QN AH+A++FRQA+SSL+PN GG+ + GD  VTQTGTPSM V ++ GR W+ GT   +LSG+TY KQG+YF LNDAAVTKTI  ++ TNPRIDV Y+ VKD+ YSG  D+ID  + TGTPAA+PV P+VPAN++ALA IAVAANAT+I NANIT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>19690</Hit_id>
+  <Hit_def>19690 streptomyces</Hit_def>
+  <Hit_accession>Subject_8508</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>3.96185e-09</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>153</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQNQAHNADLFRQALSSLIPNT-------GGVVEVGDLLVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQY--SGVLDNIDFGIATGTPAASPVAPSVPANA-LALANIAVAA</Hsp_qseq>
+      <Hsp_hseq>MTIRSV-WHINNTQTREDTRFAPLGIMTPNSTSALSTANGVVPTSNNPMNLTSTGAMTAQVEIGRAVVQGLL----------TQGCYPVVITAPEALTFADGDATNPRIDSVMIVIRDDPYDSSGFTD-VRVIVEPGTPAASPVAPALPTEASLRLWDVRVEA</Hsp_hseq>
+      <Hsp_midline>M + S+ + + N     D     L  + PN+        GVV   +  +  T T +M  Q+  GRA V+G             QG Y  +  A    T    +ATNPRID   I ++D  Y  SG  D +   +  GTPAASPVAP++P  A L L ++ V A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>1301</Hit_id>
+  <Hit_def>1301 escherichia</Hit_def>
+  <Hit_accession>Subject_3309</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>5.47296e-05</Hsp_evalue>
+      <Hsp_query-from>95</Hsp_query-from>
+      <Hsp_query-to>164</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>132</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>ANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANIT</Hsp_qseq>
+      <Hsp_hseq>APSANPRIDRVYLDLNDRTYHRVV---------GTEAATPTPPAIPFGVFPICQISLEPDDTAILNAMIT</Hsp_hseq>
+      <Hsp_midline>A + NPRID  Y+ + D  Y  V+         GT AA+P  P++P     +  I++  + T+I NA IT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>18326</Hit_id>
+  <Hit_def>18326 acinetobacter</Hit_def>
+  <Hit_accession>Subject_16334</Hit_accession>
+  <Hit_len>324</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.891</Hsp_bit-score>
+      <Hsp_score>89</Hsp_score>
+      <Hsp_evalue>0.00159886</Hsp_evalue>
+      <Hsp_query-from>99</Hsp_query-from>
+      <Hsp_query-to>164</Hsp_query-to>
+      <Hsp_hit-from>75</Hsp_hit-from>
+      <Hsp_hit-to>131</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>66</Hsp_align-len>
+      <Hsp_qseq>NPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANIT</Hsp_qseq>
+      <Hsp_hseq>NPRIDRIYFDLNLRQFQRVV---------GAEAATPTKPALPFGVFPVCSIYMTVGQTSIVNANIT</Hsp_hseq>
+      <Hsp_midline>NPRID  Y  +   Q+  V+         G  AA+P  P++P     + +I +    TSI NANIT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>6544</Hit_id>
+  <Hit_def>6544 salmonella</Hit_def>
+  <Hit_accession>Subject_6209</Hit_accession>
+  <Hit_len>1280</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0176155</Hsp_evalue>
+      <Hsp_query-from>100</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>392</Hsp_hit-from>
+      <Hsp_hit-to>448</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>PRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANITTL</Hsp_qseq>
+      <Hsp_hseq>PRIDAIYLA----------DNGVFGVARGISSNNLASPAIPANAMRLYELLIPPYTPNIDDIQIRTI</Hsp_hseq>
+      <Hsp_midline>PRID  Y+A          DN  FG+A G  + +  +P++PANA+ L  + +     +I +  I T+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>19726</Hit_id>
+  <Hit_def>19726 streptomyces</Hit_def>
+  <Hit_accession>Subject_15523</Hit_accession>
+  <Hit_len>424</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0258518</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>49</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQ--NQAHNADLFRQALSSLIPNTG--GVVEVGDLLVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANITTL</Hsp_qseq>
+      <Hsp_hseq>MAQSSYPFDGQATTESQFSQFFRQ-----LQDTGVAASASATDLKVSADSS-GMNVAVQPGFAIVRG----------------HAYLSTAAESVTIPAADSS-ARIDIVVLRLDPTANSITLEVVKGTAGAGAPALTQT--DTDTYEFALASVAVGANVTTISPANVTDL</Hsp_hseq>
+      <Hsp_midline>MA SS PF  Q   ++  +  FRQ     + +TG        DL V+   +  M V +  G A V+G                +  L+ AA + TI  A+++  RID+  + +  T  S  L+ +      G PA +           ALA++AV AN T+I+ AN+T L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>19719</Hit_id>
+  <Hit_def>19719 streptomyces</Hit_def>
+  <Hit_accession>Subject_10598</Hit_accession>
+  <Hit_len>438</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>0.0558462</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>167</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQ--NQAHNADLFRQALSSLIPNTGGVVEVGDL--LVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANI</Hsp_qseq>
+      <Hsp_hseq>MAQSSYPFDGQTTSETQYSQLFRE-----FQDSGVCAQTSDLALRVGAAGT-GMTVTVQPGQAIVRG-----------------FAYSSTAVETLTIAASESQARTDRVVLRLDPAVNTIVLAVVKGTAGGGYPAL--VQTDTGIYELLLANVAVGANVTTITSANV</Hsp_hseq>
+      <Hsp_midline>MA SS PF  Q  ++   + LFR+       ++G   +  DL   V   GT  M V +  G+A V+G                 FA +  AV      A+ +  R D   + +     + VL  +      G PA   V        L LAN+AV AN T+IT+AN+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>19747</Hit_id>
+  <Hit_def>19747 streptomyces</Hit_def>
+  <Hit_accession>Subject_8355</Hit_accession>
+  <Hit_len>438</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0702414</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>167</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQ--NQAHNADLFRQALSSLIPNTGGVVEVGDL--LVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANI</Hsp_qseq>
+      <Hsp_hseq>MAQSSYPFDGQTTSETQYSQLFRE-----FQDSGVCAQTSDLALRVGAAGT-GMTVTVQPGQAIVRG-----------------FAYSSTAVETLTIAASESQARTDRVVLRLDPAVNTIVLAVVKGTAGGGYPAL--VQTDTGIYELLLANVAVGANVTTITSANV</Hsp_hseq>
+      <Hsp_midline>MA SS PF  Q  ++   + LFR+       ++G   +  DL   V   GT  M V +  G+A V+G                 FA +  AV      A+ +  R D   + +     + VL  +      G PA   V        L LAN+AV AN T+IT+AN+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>19698</Hit_id>
+  <Hit_def>19698 streptomyces</Hit_def>
+  <Hit_accession>Subject_15464</Hit_accession>
+  <Hit_len>438</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0721246</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>167</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQ--NQAHNADLFRQALSSLIPNTGGVVEVGDL--LVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANI</Hsp_qseq>
+      <Hsp_hseq>MAQSSYPFDGQTTSETQYSQLFRE-----FQDSGVCAQTSDLALRVGAAGT-GMTVTVQPGQAIVRG-----------------FAYSSTAVETLTIAASESQARTDRVVLRLDPAVNTIVLAVVKGTAGGGYPAL--VQTDTGIYELLLANVAVGANVTTITSANV</Hsp_hseq>
+      <Hsp_midline>MA SS PF  Q  ++   + LFR+       ++G   +  DL   V   GT  M V +  G+A V+G                 FA +  AV      A+ +  R D   + +     + VL  +      G PA   V        L LAN+AV AN T+IT+AN+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>19705</Hit_id>
+  <Hit_def>19705 streptomyces</Hit_def>
+  <Hit_accession>Subject_13517</Hit_accession>
+  <Hit_len>443</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0756419</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>68</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>165</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQ--NQAHNADLFRQALSSLIPNTGGVVEVGDLLVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANI</Hsp_qseq>
+      <Hsp_hseq>MAQSSYPFDGQTTSETQYSQLFREFQDSGV--VGQSADL-DLRVGAAGT-GMSVTVQPGLAIVRG-----------------FAYSSTAVETLTIAASESQSRTDRVILRLDPTANTIVLAVVKGTAGGGLPAL--VQTDTGIYELLLADVTVGANVTTITTANV</Hsp_hseq>
+      <Hsp_midline>MA SS PF  Q  ++   + LFR+   S +   G   ++ DL V   GT  M V +  G A V+G                 FA +  AV      A+ +  R D   + +  T  + VL  +      G PA   V        L LA++ V AN T+IT AN+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>19666</Hit_id>
+  <Hit_def>19666 streptomyces</Hit_def>
+  <Hit_accession>Subject_16350</Hit_accession>
+  <Hit_len>438</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0767171</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>29</Hsp_gaps>
+      <Hsp_align-len>167</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQ--NQAHNADLFRQALSSLIPNTGGVVEVGDL--LVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANI</Hsp_qseq>
+      <Hsp_hseq>MAQSSYPFDGQTTSETQYSQLFRE-----FQDSGVCAQTSDLALRVGAAGT-GMTVTVQPGQAIVRG-----------------FAYSSTAVETLTLAASESQARTDRVVLRLDPAVNTIVLAVVKGTAGGGYPAL--VQTDTGIYELLLANVAVGANVTTITSANV</Hsp_hseq>
+      <Hsp_midline>MA SS PF  Q  ++   + LFR+       ++G   +  DL   V   GT  M V +  G+A V+G                 FA +  AV      A+ +  R D   + +     + VL  +      G PA   V        L LAN+AV AN T+IT+AN+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>19677</Hit_id>
+  <Hit_def>19677 streptomyces</Hit_def>
+  <Hit_accession>Subject_15189</Hit_accession>
+  <Hit_len>443</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.0848269</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>191</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>195</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQ--NQAHNADLFRQALSSLIPNTGGVVEVGDLLVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANITTLAGPIGG--ANLLTGAVPAVSNFTPSGY</Hsp_qseq>
+      <Hsp_hseq>MAQSSYPFDGQTTSETQYSQLFREFQDSGV--VGQSADL-DLRVGAAGT-GMSVTVQPGLAIVRG-----------------FAYSSTAVETLTIAASESQSRTDRVILRLDPTANTIVLAVVKGTAGGGLPAL--VQTDTGIYELLLADVTVGANVTTITTANVKRQRSFVGHRVGHWETAQRPASPRMGKLGY</Hsp_hseq>
+      <Hsp_midline>MA SS PF  Q  ++   + LFR+   S +   G   ++ DL V   GT  M V +  G A V+G                 FA +  AV      A+ +  R D   + +  T  + VL  +      G PA   V        L LA++ V AN T+IT AN+      +G    +  T   PA       GY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>20762</Hit_id>
+  <Hit_def>20762 pantoea</Hit_def>
+  <Hit_accession>Subject_7445</Hit_accession>
+  <Hit_len>529</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>32.3426</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>0.257634</Hsp_evalue>
+      <Hsp_query-from>182</Hsp_query-from>
+      <Hsp_query-to>272</Hsp_query-to>
+      <Hsp_hit-from>287</Hsp_hit-from>
+      <Hsp_hit-to>372</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>AVSNFTPSGYWYAIPFGARKLVIGQFQLVRTNSTLSVPGGGVSYTSIGTVAPSSMFAPVGTPSIQINAFLSGGGSSADLQCNFNPNTGFLQ</Hsp_qseq>
+      <Hsp_hseq>AVNKFTSKEEYFTVPDNADRIVVNQYHFPSTAKSGVSKARNVILTKVSRTSKTTGTAAIGVNGIRIDV-----ARERDSSGNDNPLTGLLK</Hsp_hseq>
+      <Hsp_midline>AV+ FT    ++ +P  A ++V+ Q+    T  +       V  T +   + ++  A +G   I+I+          D   N NP TG L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>19738</Hit_id>
+  <Hit_def>19738 streptomyces</Hit_def>
+  <Hit_accession>Subject_784</Hit_accession>
+  <Hit_len>424</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.5722</Hsp_bit-score>
+      <Hsp_score>70</Hsp_score>
+      <Hsp_evalue>0.394685</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>164</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>52</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>168</Hsp_align-len>
+      <Hsp_qseq>MALSSIPF--AMQNQAHNADLFRQALSSLIPNTGGVV--EVGDLLVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANIT</Hsp_qseq>
+      <Hsp_hseq>MAQTSYPFDNSVVNEAQYSSYFRELQDS------GVVGSSNGTSLKVTAGT-NMSLNVAIGSAIVRG----------------HFYDNSAVQPVTIAAADTT-ARTDLVVLRL-DPVANSILLTVIKGPVGGT--AAPTQTAQGTFDLVLASVAVGASVTSISAANIT</Hsp_hseq>
+      <Hsp_midline>MA +S PF  ++ N+A  +  FR+   S      GVV    G  L    GT +M + +A G A V+G                +F  N A    TI  A+ T  R D+  + + D   + +L  +  G   GT  A+P   +     L LA++AV A+ TSI+ ANIT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>2805</Hit_id>
+  <Hit_def>2805 escherichia</Hit_def>
+  <Hit_accession>Subject_3638</Hit_accession>
+  <Hit_len>1283</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.187</Hsp_bit-score>
+      <Hsp_score>69</Hsp_score>
+      <Hsp_evalue>0.565652</Hsp_evalue>
+      <Hsp_query-from>100</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>395</Hsp_hit-from>
+      <Hsp_hit-to>451</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>67</Hsp_align-len>
+      <Hsp_qseq>PRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANITTL</Hsp_qseq>
+      <Hsp_hseq>PRIDAVYLA----------DNGVFNVARGVSSNNLASPAIPDNGMRLYELMIPPYTANIDDIQIRTI</Hsp_hseq>
+      <Hsp_midline>PRID  Y+A          DN  F +A G  + +  +P++P N + L  + +     +I +  I T+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>19707</Hit_id>
+  <Hit_def>19707 streptomyces</Hit_def>
+  <Hit_accession>Subject_290</Hit_accession>
+  <Hit_len>425</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>30.0314</Hsp_bit-score>
+      <Hsp_score>66</Hsp_score>
+      <Hsp_evalue>1.32991</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>164</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQ--NQAHNADLFRQALSSLIPNTGGVVEVGDLLVTQTGTPSMGVQIAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLDNIDFGIATGTPAASPVAPSVPANAL-----ALANIAVAANATSITNANIT</Hsp_qseq>
+      <Hsp_hseq>MAQSSYPFDGQTVSETQYSQFFRELQDNGVASSS---TANDLEVSADSS-GMNVKVQPGTAIIRG----------------HAYTSTAIETLTIAASDATQSRTDRIVLRLDPAANSIVL-----AVITGTPGGG--TPSLTQTDTGIYESVLANVAVGANVTTITPSDVT</Hsp_hseq>
+      <Hsp_midline>MA SS PF  Q  ++   +  FR+   + + ++       DL V+   +  M V++  G A ++G                +   + A  T TI  ++AT  R D   + +     S VL      + TGTP      PS+           LAN+AV AN T+IT +++T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>19938</Hit_id>
+  <Hit_def>19938 rhizobium</Hit_def>
+  <Hit_accession>Subject_10694</Hit_accession>
+  <Hit_len>543</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>29.261</Hsp_bit-score>
+      <Hsp_score>64</Hsp_score>
+      <Hsp_evalue>2.25509</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>227</Hsp_query-to>
+      <Hsp_hit-from>151</Hsp_hit-from>
+      <Hsp_hit-to>311</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>176</Hsp_align-len>
+      <Hsp_qseq>IAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLD-NIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANITTLAGPIGGANLLTGAVPAVSNFTPSGYWYAIPFGARKLVIGQFQLVRT-NSTLSVPGGGVSYTS</Hsp_qseq>
+      <Hsp_hseq>VPAGGNFVAGYRVQRHRGETFRGAGSLAAL------KTLVAANGNTPELDVFYNTVGNQSNSQQLAFGPDFMVAKGDWDGRPVMLVTP-DSIGEARQEIAHSADD--RGNLGVLRRFLDAPGSIFGRVPHMFIAGPGAA------ASRELTTGAFQRWRVLDQIIAMNGGKWPFTC</Hsp_hseq>
+      <Hsp_midline>+ AG  +V G       G+T+   G   AL      KT+  AN   P +DV Y  V +   S  L    DF +A G     PV    P +++  A   +A +A      N+  L   +     + G VP +    P          +R+L  G FQ  R  +  +++ GG   +T </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>19941</Hit_id>
+  <Hit_def>19941 rhizobium</Hit_def>
+  <Hit_accession>Subject_8935</Hit_accession>
+  <Hit_len>543</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>29.261</Hsp_bit-score>
+      <Hsp_score>64</Hsp_score>
+      <Hsp_evalue>2.25509</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>227</Hsp_query-to>
+      <Hsp_hit-from>151</Hsp_hit-from>
+      <Hsp_hit-to>311</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>45</Hsp_identity>
+      <Hsp_positive>69</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>176</Hsp_align-len>
+      <Hsp_qseq>IAAGRAWVKGTEGGDLSGKTYGKQGLYFALNDAAVTKTITTANATNPRIDVAYIAVKDTQYSGVLD-NIDFGIATGTPAASPVAPSVPANALALANIAVAANATSITNANITTLAGPIGGANLLTGAVPAVSNFTPSGYWYAIPFGARKLVIGQFQLVRT-NSTLSVPGGGVSYTS</Hsp_qseq>
+      <Hsp_hseq>VPAGGNFVAGYRVQRHRGETFRGAGSLAAL------KTLVAANGNTPELDVFYNTVGNQSNSQQLAFGPDFMVAKGDWDGRPVMLVTP-DSIGEARQEIAHSADD--RGNLGVLRRFLDAPGSIFGRVPHMFIAGPGAA------ASRELTTGAFQRWRVLDQIIAMNGGKWPFTC</Hsp_hseq>
+      <Hsp_midline>+ AG  +V G       G+T+   G   AL      KT+  AN   P +DV Y  V +   S  L    DF +A G     PV    P +++  A   +A +A      N+  L   +     + G VP +    P          +R+L  G FQ  R  +  +++ GG   +T </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>23232</Hit_id>
+  <Hit_def>23232 pelagibacter</Hit_def>
+  <Hit_accession>Subject_13314</Hit_accession>
+  <Hit_len>793</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>28.8758</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>3.44313</Hsp_evalue>
+      <Hsp_query-from>124</Hsp_query-from>
+      <Hsp_query-to>185</Hsp_query-to>
+      <Hsp_hit-from>310</Hsp_hit-from>
+      <Hsp_hit-to>377</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>GIATGTPAASPVAPSVPANALALANIA-VAANATSIT-----NANITTLAGPIGGANLLTGAVPAVSN</Hsp_qseq>
+      <Hsp_hseq>GIASDVTAVANISSDVAAVENIAANVTTVAGNNANITTVAGANSNITTVAGAITNVNNVGGAITNVNN</Hsp_hseq>
+      <Hsp_midline>GIA+   A + ++  V A     AN+  VA N  +IT     N+NITT+AG I   N + GA+  V+N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>18662</Hit_id>
+  <Hit_def>18662 erwinia</Hit_def>
+  <Hit_accession>Subject_7790</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>28.1054</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>4.23814</Hsp_evalue>
+      <Hsp_query-from>210</Hsp_query-from>
+      <Hsp_query-to>244</Hsp_query-to>
+      <Hsp_hit-from>125</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>35</Hsp_align-len>
+      <Hsp_qseq>VRTNSTLSVPGGGVSYTSIGTVAPSSMFAPVGTPS</Hsp_qseq>
+      <Hsp_hseq>IRTDLNLKVTQGDVAKVSKGTVASSQVVSPLATDA</Hsp_hseq>
+      <Hsp_midline>+RT+  L V  G V+  S GTVA S + +P+ T +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>15768</Hit_id>
+  <Hit_def>15768 synechococcus</Hit_def>
+  <Hit_accession>Subject_1346</Hit_accession>
+  <Hit_len>753</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>28.4906</Hsp_bit-score>
+      <Hsp_score>62</Hsp_score>
+      <Hsp_evalue>4.60068</Hsp_evalue>
+      <Hsp_query-from>164</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>602</Hsp_hit-from>
+      <Hsp_hit-to>650</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>26</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>51</Hsp_align-len>
+      <Hsp_qseq>TTLAGPIGGANLLTGAVPAVSNFTPSGYWYAIPFGARKLVIGQFQLVRTNS</Hsp_qseq>
+      <Hsp_hseq>TRFSGPIGPVFCNVGLGNSVDITSYAGSWFAIPFGSE--ISDSFNMHSTNN</Hsp_hseq>
+      <Hsp_midline>T  +GPIG      G   +V   + +G W+AIPFG+   +   F +  TN+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>18664</Hit_id>
+  <Hit_def>18664 erwinia</Hit_def>
+  <Hit_accession>Subject_10584</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>27.7202</Hsp_bit-score>
+      <Hsp_score>60</Hsp_score>
+      <Hsp_evalue>5.71003</Hsp_evalue>
+      <Hsp_query-from>210</Hsp_query-from>
+      <Hsp_query-to>242</Hsp_query-to>
+      <Hsp_hit-from>125</Hsp_hit-from>
+      <Hsp_hit-to>157</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>VRTNSTLSVPGGGVSYTSIGTVAPSSMFAPVGT</Hsp_qseq>
+      <Hsp_hseq>IRTDLNLKVTQGDVAKVSKGTVASSQVVSPLAT</Hsp_hseq>
+      <Hsp_midline>+RT+  L V  G V+  S GTVA S + +P+ T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>4568</Hit_id>
+  <Hit_def>4568 enterobacter</Hit_def>
+  <Hit_accession>Subject_2235</Hit_accession>
+  <Hit_len>232</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>27.335</Hsp_bit-score>
+      <Hsp_score>59</Hsp_score>
+      <Hsp_evalue>7.28019</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>56</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>19</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQNQAHNADLFRQALSSLIPNTGGV</Hsp_qseq>
+      <Hsp_hseq>MYLWGSPFVVPNSYHNQTRFFQQVSNVNPSGGGV</Hsp_hseq>
+      <Hsp_midline>M L   PF + N  HN   F Q +S++ P+ GGV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>4735</Hit_id>
+  <Hit_def>4735 enterobacter</Hit_def>
+  <Hit_accession>Subject_15798</Hit_accession>
+  <Hit_len>232</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>27.335</Hsp_bit-score>
+      <Hsp_score>59</Hsp_score>
+      <Hsp_evalue>7.34567</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>56</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>19</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MALSSIPFAMQNQAHNADLFRQALSSLIPNTGGV</Hsp_qseq>
+      <Hsp_hseq>MYLWGSPFVVPNSYHNQTRFFQQVSNVNPSGGGV</Hsp_hseq>
+      <Hsp_midline>M L   PF + N  HN   F Q +S++ P+ GGV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>97</Statistics_hsp-len>
+      <Statistics_eff-space>1399463321</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

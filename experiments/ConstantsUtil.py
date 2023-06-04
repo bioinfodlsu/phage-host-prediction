@@ -138,6 +138,12 @@ class ConstantsUtil(object):
     # ==============
     XGB_RBP_PREDICTION = 'rbp_prediction/RBPdetect_xgb_model.json'
     
+    # =====
+    # BLAST
+    # =====
+    TEMP_FASTA_BLAST = f'{TEMP}/blast'
+    TEMP_RESULTS_BLAST = f'{TEMP_RESULTS}/blast'
+    
     def __init__(self, date = ''):
         """
         Constructor

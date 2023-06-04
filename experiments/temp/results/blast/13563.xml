@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.14.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db></BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>13563 edwardsiella</BlastOutput_query-def>
+  <BlastOutput_query-len>636</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>13563 edwardsiella</Iteration_query-def>
+  <Iteration_query-len>636</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>9524</Hit_id>
+  <Hit_def>9524 pseudomonas</Hit_def>
+  <Hit_accession>Subject_15571</Hit_accession>
+  <Hit_len>635</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>899.042</Hsp_bit-score>
+      <Hsp_score>2322</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>636</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>635</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>445</Hsp_identity>
+      <Hsp_positive>528</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>636</Hsp_align-len>
+      <Hsp_qseq>MSLDNAFDTNKENASSNNNGANVKMSNNPLFELLGSANLISSTHSVTEVTEIVKSLEETVKYLDKNTASQAQKLSLPRTIQNITSDISPQLPGITLSTVVGNTCYVMPVLFFKSGVTEVTESIFLANETMPRGVAKAATSFMTTELMERVKTSYAYRDSKQMDRVIIVSPKVVNLEANLKNALKVEDVIVDVRNELLKEWTTGLFNLVSLEAVKSGVELPSMFKDGKLFGKEDSAVARVEAVNKLVIDGKPTSYNLAVRLSTTNKNNTQNLNSNNTKTIATNYLTVSLEAMSQQQFLQARQKHPGQPVGPLVPVISTGITIPGETLNQNNSMMTALLGLYASIGANQLQFFSEAFRGKEVGNRGNIGNFNNYLTQMLGQAYGTQQAITDKNITNAAVMNQWLQNYVAPNAVYVLDLPTFSDDVSNGDFWWNIIGKQSGSTYHRTLISLLDSLSGQTFSKVIAENATKGQGRNPAKEWVPGDAILKATQMMIPTGIAQGKDGKWFNLAEVDGMFLRQENYYGSNEAAVNEYLSLLSGQSGGDWKVRQFNIYNRLNQLFSSNVIIDGWARRLLWSDAFFNTLAQAMAGAGMLSMSGSVGQAMWTMQYSNDYLTNTISAGINQSMPVGSMQFNGGYSHY</Hsp_qseq>
+      <Hsp_hseq>MSLDTINNGNNNSSSNNAGNSQMKSSENALFALLGQSNLISSTHNITEVSDVVKSLEEMVKHLDKNTASQAQKLSLPRNIRNVTSDISPQLPGIILSTVVNATAYVQPVLFFKVGVTEVTETIVLANEAMPRGIAKVPTSFMTQEVMEKVKSAYAFVDSKQMDKVVILSPMVLNLEKFIKNSLKYEDMIADVRNVLLKEWNTGLYNTVVLDVAKAGAEFPNPFKDGKLFGKDDAAVARIEPINKQSIDGVPVPYNLAVKLATTNKNNTQNMNSNNTKSVATSYLTVSLEAMSQQQFMAAKMARPGANVGPLVPVISTGVTVPGETLNNNNSMLTAALGLYASIGANQMQFFSEAFRGKEVGHRGNLSNFNYYLSQILQGAYSTPQFITDKNITNANAVNDWLQRYVAPNAVYVLDLGSFGEDVSNSDFWWNVIVKPSGSTYHRALVNLLDVLSGGAFSKIAAENASK-PNRDPRKDWAPGDAILKPTNIIMPSGIAQGKDGKWFDLAEVDGMFLRQDNYYGQNEIAVNEYLGLVCGSMGGDAKVRQFNIYNRLNQLFGTNVIVDGWKRRFVWEDSFFNTFAKAMASAGMLSMSASNLGAMWTHQFSNDYLTSTMTAMLSQNFGSGAMAFNGGYSHY</Hsp_hseq>
+      <Hsp_midline>MSLD   + N  ++S+N   + +K S N LF LLG +NLISSTH++TEV+++VKSLEE VK+LDKNTASQAQKLSLPR I+N+TSDISPQLPGI LSTVV  T YV PVLFFK GVTEVTE+I LANE MPRG+AK  TSFMT E+ME+VK++YA+ DSKQMD+V+I+SP V+NLE  +KN+LK ED+I DVRN LLKEW TGL+N V L+  K+G E P+ FKDGKLFGK+D+AVAR+E +NK  IDG P  YNLAV+L+TTNKNNTQN+NSNNTK++AT+YLTVSLEAMSQQQF+ A+   PG  VGPLVPVISTG+T+PGETLN NNSM+TA LGLYASIGANQ+QFFSEAFRGKEVG+RGN+ NFN YL+Q+L  AY T Q ITDKNITNA  +N WLQ YVAPNAVYVLDL +F +DVSN DFWWN+I K SGSTYHR L++LLD LSG  FSK+ AENA+K   R+P K+W PGDAILK T +++P+GIAQGKDGKWF+LAEVDGMFLRQ+NYYG NE AVNEYL L+ G  GGD KVRQFNIYNRLNQLF +NVI+DGW RR +W D+FFNT A+AMA AGMLSMS S   AMWT Q+SNDYLT+T++A ++Q+   G+M FNGGYSHY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>5550</Hit_id>
+  <Hit_def>5550 salmonella</Hit_def>
+  <Hit_accession>Subject_2038</Hit_accession>
+  <Hit_len>1376</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.187</Hsp_bit-score>
+      <Hsp_score>69</Hsp_score>
+      <Hsp_evalue>1.5601</Hsp_evalue>
+      <Hsp_query-from>238</Hsp_query-from>
+      <Hsp_query-to>408</Hsp_query-to>
+      <Hsp_hit-from>857</Hsp_hit-from>
+      <Hsp_hit-to>1038</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>187</Hsp_align-len>
+      <Hsp_qseq>RVEAVNKLVIDGKPTSYNLAVRLSTTNKNNTQNLNSNNTKTIATNYLTVSLEAMSQQQFLQARQKHPGQPVGPLVPVISTGITIPG---------ETLNQNNSMMT--ALLGLYASIGANQLQFFSEAFRGKEVG-----NRGNIGNFNNYLTQMLGQAYGTQQAITDKNITNAAVMNQWLQNYVAP</Hsp_qseq>
+      <Hsp_hseq>RMLPLNKL--DPLPTQWVFAKTRSNTSGSHLSRLDRG---LFSYHFVSDTQATLDVQLFVANKYKTPYCWFTPYNPKEGNQATFEGSIVVDVESTEQLTDNNRQITFMALAKANSNTAAHRVLGWQSADNALTYGVIDNLATGSVGHNSKRLTTTTSPIAITPTVIKDTTVTNAAALDYYLDNYALP</Hsp_hseq>
+      <Hsp_midline>R+  +NKL  D  PT +  A   S T+ ++   L+       + ++++ +   +  Q F+  + K P     P  P      T  G         E L  NN  +T  AL    ++  A+++  +  A      G       G++G+ +  LT        T   I D  +TNAA ++ +L NY  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>104</Statistics_hsp-len>
+      <Statistics_eff-space>3679326364</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

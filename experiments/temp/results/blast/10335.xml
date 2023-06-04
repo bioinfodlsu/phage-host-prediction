@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.14.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db></BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>10335 pseudomonas</BlastOutput_query-def>
+  <BlastOutput_query-len>522</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>10335 pseudomonas</Iteration_query-def>
+  <Iteration_query-len>522</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>10327</Hit_id>
+  <Hit_def>10327 pseudomonas</Hit_def>
+  <Hit_accession>Subject_12846</Hit_accession>
+  <Hit_len>422</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.7962</Hsp_bit-score>
+      <Hsp_score>190</Hsp_score>
+      <Hsp_evalue>1.93302e-15</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>216</Hsp_query-to>
+      <Hsp_hit-from>215</Hsp_hit-from>
+      <Hsp_hit-to>419</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>211</Hsp_align-len>
+      <Hsp_qseq>VTENKLPGPSTFEYGDSTLGLYGELASDKFITYPQLRTLVELDSIGSINTDAGWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGSKVIVIDGNMFKVRLMNAGENPYSDITTQGNEGSE----LWDIFGNVTTKGSWAKYTDSQL-IGAEG-GSYSWAANRNTNGNYLQFSPSSTHPQAKNGVYVYDGHPPTEATNYRGWRPVLEYI</Hsp_qseq>
+      <Hsp_hseq>IIPSKGPGTESLIAGNDDIGYFGRVPSSELITASALATLVGLSEGTVLNEAPDWFKFSHRSTILYIPQKPLKNNMTWNSLANAGLNGRGKRITIGDNVYQCRLMYIGATD-TGITNNAAPGREWRDLMYNVHGTVTGTKAWENLTNADLGVGGQGAGSYSWGQETGLVDGKTAYAGIGYSNMSQLNINV-----PTNTGAHMGWRPVLELI</Hsp_hseq>
+      <Hsp_midline>+  +K PG  +   G+  +G +G + S + IT   L TLV L     +N    W K S  + ++Y  +  +  +++ N L  AGL    K I I  N+++ RLM  G    + IT     G E    ++++ G VT   +W   T++ L +G +G GSYSW            ++       ++  + V     PT    + GWRPVLE I</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>7.85583e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>228</Hsp_align-len>
+      <Hsp_qseq>MFESLLSVLIKVTENKLPGPSTFEYGDSTLGLYGELASDKFITYPQLRTLVELDSI--GSINT-DAGWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGSKVIVIDGNMFKVRLMNAGENPYSDITTQGNEGSELWD-IFGNVTTKGSWAKYTDSQLIGAEGGSYSWAANRNTNGN------YLQFSPSSTHPQAKNGVYVYDGHPPTEATNYRGWRPVLEYIPP</Hsp_qseq>
+      <Hsp_hseq>MFESLLAVLNKYDDTFPPGSQIPIAGSDYFSYFGGFKAG----LPQPEAFSNLVGFTEGTLHTSETTWFKYKENNRLIYLPKTPFRRGAARSIIENHGLIDG-KEIQIGRHKFLCRVMTGIDNPGASATGGGEYNRLVYSMVIPRQSGAAAFESFSTSDFGLASTGGANWVREVQTTGTDVGKGFYRGFNSIS---------YVGREVAGSNMNNY-GWRPILIWIDP</Hsp_hseq>
+      <Hsp_midline>MFESLL+VL K  +   PG      G      +G   +      PQ      L     G+++T +  W K   NN ++Y  KT   R  + + ++  GLIDG K I I  + F  R+M   +NP +  T  G     ++  +    +   ++  ++ S    A  G  +W     T G       Y  F+  S         YV      +   NY GWRP+L +I P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>18789</Hit_id>
+  <Hit_def>18789 erwinia</Hit_def>
+  <Hit_accession>Subject_12095</Hit_accession>
+  <Hit_len>299</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.0106</Hsp_bit-score>
+      <Hsp_score>162</Hsp_score>
+      <Hsp_evalue>2.27227e-12</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>IKVTENKLPGPSTFEYGDSTLGLYGELASDKFITYPQLRTLVELDSIGSINTDAGWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGSKVIVIDGNMFKVRLM</Hsp_qseq>
+      <Hsp_hseq>IQAAETRGPGSNVFIYGDRELGLYDILSVDSFITAANLNTLVG-SAVANVYANTSWYKYARRGKVYMVPEHALGNSTGYNALQLKGLIDGT-VVQIAGYNWKVRLM</Hsp_hseq>
+      <Hsp_midline>I+  E + PG + F YGD  LGLY  L+ D FIT   L TLV   ++ ++  +  W K +R   V    + A+  S   N L   GLIDG+ V+ I G  +KVRLM</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>18800</Hit_id>
+  <Hit_def>18800 erwinia</Hit_def>
+  <Hit_accession>Subject_6262</Hit_accession>
+  <Hit_len>299</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>67.0106</Hsp_bit-score>
+      <Hsp_score>162</Hsp_score>
+      <Hsp_evalue>2.27227e-12</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>106</Hsp_align-len>
+      <Hsp_qseq>IKVTENKLPGPSTFEYGDSTLGLYGELASDKFITYPQLRTLVELDSIGSINTDAGWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGSKVIVIDGNMFKVRLM</Hsp_qseq>
+      <Hsp_hseq>IQAAETRGPGSNVFIYGDRELGLYDILSVDSFITAANLNTLVG-SAVANVYANTSWYKYARRGKVYMVPEHALGNSTGYNALQLKGLIDGT-VVQIAGYNWKVRLM</Hsp_hseq>
+      <Hsp_midline>I+  E + PG + F YGD  LGLY  L+ D FIT   L TLV   ++ ++  +  W K +R   V    + A+  S   N L   GLIDG+ V+ I G  +KVRLM</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>22447</Hit_id>
+  <Hit_def>22447 pectobacterium</Hit_def>
+  <Hit_accession>Subject_13407</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>2.09399e-08</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>104</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GLYGELASDKFITYPQLRTLVELDSIGSINTDAGWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGSKVIVIDGNMFKVRLMNAGEN-PYS</Hsp_qseq>
+      <Hsp_hseq>GYIGQVDSADFISYADLSQLVGY-SEGNLNTDVGWLSFMVDGKLVRVAKGAVRYYVTHAAMSALGLVDG-KDVVIDGQLWTVRLINGTDGTPFS</Hsp_hseq>
+      <Hsp_midline>G  G++ S  FI+Y  L  LV   S G++NTD GW+    +  ++  +K A+   ++   +   GL+DG K +VIDG ++ VRL+N  +  P+S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>22456</Hit_id>
+  <Hit_def>22456 pectobacterium</Hit_def>
+  <Hit_accession>Subject_760</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.9138</Hsp_bit-score>
+      <Hsp_score>128</Hsp_score>
+      <Hsp_evalue>2.09399e-08</Hsp_evalue>
+      <Hsp_query-from>31</Hsp_query-from>
+      <Hsp_query-to>123</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>104</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>GLYGELASDKFITYPQLRTLVELDSIGSINTDAGWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGSKVIVIDGNMFKVRLMNAGEN-PYS</Hsp_qseq>
+      <Hsp_hseq>GYIGQVDSADFISYADLSQLVGY-SEGNLNTDVGWLSFMVDGKLVRVAKGAVRYYVTHAAMSALGLVDG-KDVVIDGQLWTVRLINGTDGTPFS</Hsp_hseq>
+      <Hsp_midline>G  G++ S  FI+Y  L  LV   S G++NTD GW+    +  ++  +K A+   ++   +   GL+DG K +VIDG ++ VRL+N  +  P+S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>19519</Hit_id>
+  <Hit_def>19519 proteus</Hit_def>
+  <Hit_accession>Subject_8227</Hit_accession>
+  <Hit_len>470</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1358</Hsp_bit-score>
+      <Hsp_score>113</Hsp_score>
+      <Hsp_evalue>6.36805e-06</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>161</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>PGPSTFEYGDSTLGLYGELASDKFITYPQL-RTLVELDSIGSINTDA-GWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGS---------------KVIVIDGN-----MFKVRLMNAGENPYSDITTQGNE--GSELWDIFGNVTTKGSWAKYTDS</Hsp_qseq>
+      <Hsp_hseq>PGPKTLLQGNTIAGYFGTTRTAELFTHSQLLNATISAGALPPVHSGAEGWYKFFYQGRVIYLPISPVAGSISWNTLYTNGLVYGTDDNGKYPAATPVNQGRIISFTGADNKRFYFRVRLPSAGKDPYVSGTPTAAELAGSE-FEMF-NFLYNGTWDKPINS</Hsp_hseq>
+      <Hsp_midline>PGP T   G++  G +G   + +  T+ QL    +   ++  +++ A GW K      V+Y   + +  SIS N L T GL+ G+               ++I   G       F+VRL +AG++PY   T    E  GSE +++F N    G+W K  +S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>5361</Hit_id>
+  <Hit_def>5361 salmonella</Hit_def>
+  <Hit_accession>Subject_8005</Hit_accession>
+  <Hit_len>470</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>9.75342e-06</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>154</Hsp_query-to>
+      <Hsp_hit-from>161</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>PGPSTFEYGDSTLGLYGELASDKFITYPQL-RTLVELDSIGSINTDA-GWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGS---------------KVIVIDGN-----MFKVRLMNAGENPYSDITTQGNE--GSELWDIFGNVTTKGSWAKYTDS</Hsp_qseq>
+      <Hsp_hseq>PGPKTLLQGNTIAGYFGTTTIAELFTHSQLLNATISAGALPPVHSGAEGWYKFFYQGRVIYLPISPVASSISWNTLYTNGLVYGTDDNGKYPAATPVNQGRIISFTGADNKRFYFRVRLPSAGKDPYVSGTPTAAELAGSE-FEMF-NFLYNGTWDKPINS</Hsp_hseq>
+      <Hsp_midline>PGP T   G++  G +G     +  T+ QL    +   ++  +++ A GW K      V+Y   + +  SIS N L T GL+ G+               ++I   G       F+VRL +AG++PY   T    E  GSE +++F N    G+W K  +S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>18712</Hit_id>
+  <Hit_def>18712 erwinia</Hit_def>
+  <Hit_accession>Subject_3752</Hit_accession>
+  <Hit_len>459</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>40.817</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00103213</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>99</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>243</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>86</Hsp_align-len>
+      <Hsp_qseq>NKLPGPSTFEYGDSTLGLYGELASDKFITYPQLRTLVELDSIGSINTDA-GWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDG</Hsp_qseq>
+      <Hsp_hseq>NSGPGPKQLLHGDSLMGYFGRVSEKDLYTHSELFTLLLNGTAASAASGTEGWYKFFCQGAVIYLPVTPMASGVSWSMLYNAGIVYG</Hsp_hseq>
+      <Hsp_midline>N  PGP    +GDS +G +G ++     T+ +L TL+   +  S  +   GW K      V+Y   T +   +S + L  AG++ G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>18751</Hit_id>
+  <Hit_def>18751 erwinia</Hit_def>
+  <Hit_accession>Subject_11922</Hit_accession>
+  <Hit_len>466</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.032959</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>99</Hsp_query-to>
+      <Hsp_hit-from>163</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>PGPSTFEYGDSTLGLYGELASDKFITYPQL-----RTLVELDSIGSINTDAGWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDG</Hsp_qseq>
+      <Hsp_hseq>PGSKTMLIGDMTAGYFGTVSQAEFISAGDLYDSDRTTLGNFTPV--VNANLFWVKFALDGEIYYFPSSTLMTGVSWNALNAIGAVKG</Hsp_hseq>
+      <Hsp_midline>PG  T   GD T G +G ++  +FI+   L      TL     +  +N +  W+K + +  + Y+  + ++  +S N L+  G + G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>18752</Hit_id>
+  <Hit_def>18752 erwinia</Hit_def>
+  <Hit_accession>Subject_16354</Hit_accession>
+  <Hit_len>350</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.0486747</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>126</Hsp_align-len>
+      <Hsp_qseq>IKVTENKLPGPSTFEYGDSTLGLYGELASDKFITYPQLRTLVELDS-IGSINTDAGWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDG-------------------SKVIVIDGNMFKVRLM</Hsp_qseq>
+      <Hsp_hseq>ILVADNRGVGSSTLLFGDDSLGYYGQVLSSDFVNSTHILAAAATTSGLPGATITPTWHKFIRKGKIIYVPDRN-FGSCAWTQLYQAGLVYGVDANGPADATLTGLTPVNQNRVIDFKGSKYKVRCL</Hsp_hseq>
+      <Hsp_midline>I V +N+  G ST  +GD +LG YG++ S  F+    +       S +        W K  R   ++Y        S +  QL  AGL+ G                   ++VI   G+ +KVR +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>18758</Hit_id>
+  <Hit_def>18758 erwinia</Hit_def>
+  <Hit_accession>Subject_9166</Hit_accession>
+  <Hit_len>350</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>0.146166</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>125</Hsp_align-len>
+      <Hsp_qseq>IKVTENKLPGPSTFEYGDSTLGLYGELASDKFITYPQ-LRTLVELDSIGSINTDAGWIKVSRNNVVMY--------YSKTAI--------LRSISPNQLDTAGLIDGSKVIVID--GNMFKVRLM</Hsp_qseq>
+      <Hsp_hseq>ILVADNRGVGPSTLVLGDDSLGFFGQVLSSDFVNSTHILAASANPTGLPSGTYTPTWNKFIRKGKIIYVPDRTFGVCAWTAIYNSGLVYGVDSTGPADANLTGLTPTNQKSIIDFKGFKYKVRLL</Hsp_hseq>
+      <Hsp_midline>I V +N+  GPST   GD +LG +G++ S  F+     L        + S      W K  R   ++Y         + TAI        + S  P   +  GL   ++  +ID  G  +KVRL+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>18733</Hit_id>
+  <Hit_def>18733 erwinia</Hit_def>
+  <Hit_accession>Subject_9973</Hit_accession>
+  <Hit_len>350</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.4982</Hsp_bit-score>
+      <Hsp_score>75</Hsp_score>
+      <Hsp_evalue>0.184976</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>108</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>IKVTENKLPGPSTFEYGDSTLGLYGELASDKFI</Hsp_qseq>
+      <Hsp_hseq>ILVADNRGIGPSTLMLGDDSLGFFGQVLSSDFV</Hsp_hseq>
+      <Hsp_midline>I V +N+  GPST   GD +LG +G++ S  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>18722</Hit_id>
+  <Hit_def>18722 erwinia</Hit_def>
+  <Hit_accession>Subject_12491</Hit_accession>
+  <Hit_len>474</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.4982</Hsp_bit-score>
+      <Hsp_score>75</Hsp_score>
+      <Hsp_evalue>0.244316</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>100</Hsp_query-to>
+      <Hsp_hit-from>159</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>NKLPGPSTFEYGDSTLGLYGELASDKFITYPQLRTLVELDSIGS-INTDAGWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGS</Hsp_qseq>
+      <Hsp_hseq>NSGPGPKYLLAGDTLMGYFGRVTAAEFIARQAFVTATGLTGYTQYVGGNEGWYKFYYQGSVVYIPVSPVASNISWQMIYQAGMAYGT</Hsp_hseq>
+      <Hsp_midline>N  PGP     GD+ +G +G + + +FI      T   L      +  + GW K      V+Y   + +  +IS   +  AG+  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>18756</Hit_id>
+  <Hit_def>18756 erwinia</Hit_def>
+  <Hit_accession>Subject_1371</Hit_accession>
+  <Hit_len>474</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.9574</Hsp_bit-score>
+      <Hsp_score>71</Hsp_score>
+      <Hsp_evalue>0.610448</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>155</Hsp_query-to>
+      <Hsp_hit-from>162</Hsp_hit-from>
+      <Hsp_hit-to>325</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>40</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>PGPSTFEYGDSTLGLYGELASDKFITYPQLRTLVELDSIGSINTDA----GWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGSKVIVIDG-----------NMFKVRLMNAGENPYSDITT-----------------QGN-EGSELWDIFGNVTTKGSWAKYTDSQ</Hsp_qseq>
+      <Hsp_hseq>PGPKYLLLGDENFGYFGKVDATEMYTNLELWNLT-FAGKGTTATRQLFLEGWFKFFYKGSVIFMPQGPVASSMSWNDLYNLGFMYG-----IDGVGKYPTATPVSQYKQLTLKKAGKTTYFKIRTPRASLTEPDAYFVGRPGQGNYAGSEL-DLLVHLYSGGQWGSENGSQ</Hsp_hseq>
+      <Hsp_midline>PGP     GD   G +G++ + +  T  +L  L      G+  T      GW K      V++  +  +  S+S N L   G + G     IDG              ++ L  AG+  Y  I T                 QGN  GSEL D+  ++ + G W     SQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>18746</Hit_id>
+  <Hit_def>18746 erwinia</Hit_def>
+  <Hit_accession>Subject_12784</Hit_accession>
+  <Hit_len>472</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.5722</Hsp_bit-score>
+      <Hsp_score>70</Hsp_score>
+      <Hsp_evalue>0.839304</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>100</Hsp_query-to>
+      <Hsp_hit-from>159</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>NKLPGPSTFEYGDSTLGLYGELASDKFITYPQLRTLVELDSIGSINTDA-GWIKVSRNNVVMYYSKTAILRSISPNQLDTAGLIDGS</Hsp_qseq>
+      <Hsp_hseq>NSGPGPKYLLAGNTTMGYFGRVTTAELYTRAEFVAASQLTGHTTYSGGTEGWYKFFYQGTVFYFPVSPTGSNVSWQMLYQAGLVYGT</Hsp_hseq>
+      <Hsp_midline>N  PGP     G++T+G +G + + +  T  +     +L    + +    GW K      V Y+  +    ++S   L  AGL+ G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>18720</Hit_id>
+  <Hit_def>18720 erwinia</Hit_def>
+  <Hit_accession>Subject_8210</Hit_accession>
+  <Hit_len>491</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.5722</Hsp_bit-score>
+      <Hsp_score>70</Hsp_score>
+      <Hsp_evalue>0.848214</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>82</Hsp_query-to>
+      <Hsp_hit-from>161</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>PGPSTFEYGDSTLGLYGELASDKFITYPQLRTLVELDSIGSINTDAGWIKVSRNNVVMYYSKTAI</Hsp_qseq>
+      <Hsp_hseq>PGPKQLLAGDNVFGYFGKVSQQEFFTGYEMWNGLSPNGAPGFDTSFTWLKFFMNGKVTYLPSRGI</Hsp_hseq>
+      <Hsp_midline>PGP     GD+  G +G+++  +F T  ++   +  +     +T   W+K   N  V Y     I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>123</Hit_id>
+  <Hit_def>123 escherichia</Hit_def>
+  <Hit_accession>Subject_4377</Hit_accession>
+  <Hit_len>382</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>30.8018</Hsp_bit-score>
+      <Hsp_score>68</Hsp_score>
+      <Hsp_evalue>1.6138</Hsp_evalue>
+      <Hsp_query-from>32</Hsp_query-from>
+      <Hsp_query-to>91</Hsp_query-to>
+      <Hsp_hit-from>64</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>61</Hsp_align-len>
+      <Hsp_qseq>LYGELAS-DKFITYPQLRTLVELDSIGSINTDAGWIKVSRNNVVMYYSKTAILRSISPNQL</Hsp_qseq>
+      <Hsp_hseq>LFGGIAEFDSSVTY-QVGAVSSLNGVVRINTSTGWEEIMDLKQVDYLNDVSNLRSIYDNHL</Hsp_hseq>
+      <Hsp_midline>L+G +A  D  +TY Q+  +  L+ +  INT  GW ++     V Y +  + LRSI  N L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>19417</Hit_id>
+  <Hit_def>19417 erwinia</Hit_def>
+  <Hit_accession>Subject_13018</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>29.261</Hsp_bit-score>
+      <Hsp_score>64</Hsp_score>
+      <Hsp_evalue>3.89593</Hsp_evalue>
+      <Hsp_query-from>179</Hsp_query-from>
+      <Hsp_query-to>218</Hsp_query-to>
+      <Hsp_hit-from>196</Hsp_hit-from>
+      <Hsp_hit-to>261</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>66</Hsp_align-len>
+      <Hsp_qseq>FSPSSTHPQAKNGVYVYDGHPPTEATNYR--------------------------GWRPVLEYIPP</Hsp_qseq>
+      <Hsp_hseq>FTPADIGITGTNGIWHYSKSPYYNSSNYTASKGVRGSSSVTNKSAYAYTVTNVATGWRPVLELIPP</Hsp_hseq>
+      <Hsp_midline>F+P+       NG++ Y   P   ++NY                           GWRPVLE IPP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>20595</Hit_id>
+  <Hit_def>20595 shigella</Hit_def>
+  <Hit_accession>Subject_13739</Hit_accession>
+  <Hit_len>777</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>28.4906</Hsp_bit-score>
+      <Hsp_score>62</Hsp_score>
+      <Hsp_evalue>8.18857</Hsp_evalue>
+      <Hsp_query-from>407</Hsp_query-from>
+      <Hsp_query-to>442</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>VIVASQGRLSIGGTNITPTDYIKISPDFSAAETIPL</Hsp_qseq>
+      <Hsp_hseq>VLVHSQGSVDLGAVAVLRKEYVTIPGDFTSGATIQV</Hsp_hseq>
+      <Hsp_midline>V+V SQG + +G   +   +Y+ I  DF++  TI +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>102</Statistics_hsp-len>
+      <Statistics_eff-space>2918705580</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

@@ -1,0 +1,2563 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.14.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db></BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>23346 alteromonas</BlastOutput_query-def>
+  <BlastOutput_query-len>497</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>23346 alteromonas</Iteration_query-def>
+  <Iteration_query-len>497</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>14901</Hit_id>
+  <Hit_def>14901 synechococcus</Hit_def>
+  <Hit_accession>Subject_3244</Hit_accession>
+  <Hit_len>1375</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000259864</Hsp_evalue>
+      <Hsp_query-from>220</Hsp_query-from>
+      <Hsp_query-to>420</Hsp_query-to>
+      <Hsp_hit-from>724</Hsp_hit-from>
+      <Hsp_hit-to>916</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>214</Hsp_align-len>
+      <Hsp_qseq>LTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVS-------SHVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQ-PTVTGSVPVDGLS----VIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSIDGLSVAGSVSVS-PLGPTVTGSVSIDG</Hsp_qseq>
+      <Hsp_hseq>LTGPQGATGLGATGATGET----GIQGATGLQGNSVTGATGATGPQGDSITGATGIQGATGIQGNSITGA-TGLTGATGITGPDGATGIGETGAT-------GLTGSTGPQGESVTGSTGATGPQGDSVTGSTGATGLTGATGIQGNPGDSVTGS--TGATGPQGESVTG-------ATGIQGATGIQGDSVTGSTGATGPQGDSVTGSTGATG</Hsp_hseq>
+      <Hsp_midline>LTG     GL  TGA         + G+  + G SVTGA         S   A  + G+  + G S+TGA +    A  +TG     G+  TGA         LTGS    G SVTGS  A   Q  +VTGS    GL+    + G+    V     TG+    G SVTG       A  + G+  I G SV GS   + P G +VTGS    G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>0.00732028</Hsp_evalue>
+      <Hsp_query-from>189</Hsp_query-from>
+      <Hsp_query-to>449</Hsp_query-to>
+      <Hsp_hit-from>513</Hsp_hit-from>
+      <Hsp_hit-to>788</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>284</Hsp_align-len>
+      <Hsp_qseq>GEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGA--VSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSVDGLS-VTGA--VSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSIDGLS----VAGSVSVSPLGPT-------VTGSVSIDGLSVMGSLS-------SDVDAPALTGSVSIDGLSVTG</Hsp_qseq>
+      <Hsp_hseq>GFEGPRGSTGSTGL-----TGATGPQSVIPGATGPVGATGLGATGATGVFGSTGATGLTGSTGVFGSTGATGIDGPVGSTGIQGPTGATGLTGSTGVFGSTGATGLEGSTGLTGATGLTGSTGVFGSTGATGITGSTGVDG--PVGSTGL-TGATGITGSTGATGLTGATGLFGSTGATGLTGATGIIGLTGATGIQGPTGATGLIGSTGATGIQGSTGLTGPQGATGLGATGATGETGIQGATGLQGNSVTGATGATGPQGDSITGATGIQGATGIQGNSITG</Hsp_hseq>
+      <Hsp_midline>G E P   TGS  +     TG        P  TG V   GL  TGA  V     A  LTGS  + G +    +   V +  + G     GL+ +  V     A  L GS  + G + +TG+  V     A  +TGS  +DG    GS    TG   +TGS    GL+    L     A  LTG+  + GL+    +     A  L GS    G+     + G    + LG T       + G+  + G SV G+         S   A  + G+  I G S+TG</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>28.8758</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>6.52049</Hsp_evalue>
+      <Hsp_query-from>189</Hsp_query-from>
+      <Hsp_query-to>333</Hsp_query-to>
+      <Hsp_hit-from>808</Hsp_hit-from>
+      <Hsp_hit-to>914</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>44</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>GEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGL---SVTGAVSSHVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAA</Hsp_qseq>
+      <Hsp_hseq>GETGATGLTGSTGPQGESVTGS----------TGATGPQGDSVTGSTG----ATGLTGATGIQGNPGDSVTGS----------TGATGPQGESVTGAT-------GIQGATGIQGDSVTGS----------TGATGPQGDSVTGSTGA</Hsp_hseq>
+      <Hsp_midline>GE     +TGS    G SVTG           TG+    G SVTG+      A  LTG+  I G    SVTG+          TG+    G SVTGA         + G+  + G SVTG+          TG+    G SVTGS  A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>24425</Hit_id>
+  <Hit_def>24425 rheinheimera</Hit_def>
+  <Hit_accession>Subject_15947</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>24280</Hit_id>
+  <Hit_def>24280 rheinheimera</Hit_def>
+  <Hit_accession>Subject_15921</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>24504</Hit_id>
+  <Hit_def>24504 rheinheimera</Hit_def>
+  <Hit_accession>Subject_15684</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>24330</Hit_id>
+  <Hit_def>24330 rheinheimera</Hit_def>
+  <Hit_accession>Subject_14512</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>24490</Hit_id>
+  <Hit_def>24490 rheinheimera</Hit_def>
+  <Hit_accession>Subject_11270</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>24358</Hit_id>
+  <Hit_def>24358 rheinheimera</Hit_def>
+  <Hit_accession>Subject_11205</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>24091</Hit_id>
+  <Hit_def>24091 rheinheimera</Hit_def>
+  <Hit_accession>Subject_10972</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>24296</Hit_id>
+  <Hit_def>24296 rheinheimera</Hit_def>
+  <Hit_accession>Subject_10436</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>24445</Hit_id>
+  <Hit_def>24445 rheinheimera</Hit_def>
+  <Hit_accession>Subject_10141</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>24396</Hit_id>
+  <Hit_def>24396 rheinheimera</Hit_def>
+  <Hit_accession>Subject_9534</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>24456</Hit_id>
+  <Hit_def>24456 rheinheimera</Hit_def>
+  <Hit_accession>Subject_9518</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>24326</Hit_id>
+  <Hit_def>24326 rheinheimera</Hit_def>
+  <Hit_accession>Subject_8251</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>24303</Hit_id>
+  <Hit_def>24303 rheinheimera</Hit_def>
+  <Hit_accession>Subject_7140</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>24261</Hit_id>
+  <Hit_def>24261 rheinheimera</Hit_def>
+  <Hit_accession>Subject_7003</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>24273</Hit_id>
+  <Hit_def>24273 rheinheimera</Hit_def>
+  <Hit_accession>Subject_6107</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>24269</Hit_id>
+  <Hit_def>24269 rheinheimera</Hit_def>
+  <Hit_accession>Subject_5720</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>24389</Hit_id>
+  <Hit_def>24389 rheinheimera</Hit_def>
+  <Hit_accession>Subject_4921</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>24527</Hit_id>
+  <Hit_def>24527 rheinheimera</Hit_def>
+  <Hit_accession>Subject_4279</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>24374</Hit_id>
+  <Hit_def>24374 rheinheimera</Hit_def>
+  <Hit_accession>Subject_3703</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>24257</Hit_id>
+  <Hit_def>24257 rheinheimera</Hit_def>
+  <Hit_accession>Subject_3182</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>24112</Hit_id>
+  <Hit_def>24112 rheinheimera</Hit_def>
+  <Hit_accession>Subject_2863</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>24346</Hit_id>
+  <Hit_def>24346 rheinheimera</Hit_def>
+  <Hit_accession>Subject_2026</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.022263</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKPNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>24128</Hit_id>
+  <Hit_def>24128 rheinheimera</Hit_def>
+  <Hit_accession>Subject_16464</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>23957</Hit_id>
+  <Hit_def>23957 rheinheimera</Hit_def>
+  <Hit_accession>Subject_16452</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>24436</Hit_id>
+  <Hit_def>24436 rheinheimera</Hit_def>
+  <Hit_accession>Subject_16366</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>24185</Hit_id>
+  <Hit_def>24185 rheinheimera</Hit_def>
+  <Hit_accession>Subject_16073</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>24368</Hit_id>
+  <Hit_def>24368 rheinheimera</Hit_def>
+  <Hit_accession>Subject_15753</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>24096</Hit_id>
+  <Hit_def>24096 rheinheimera</Hit_def>
+  <Hit_accession>Subject_15536</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>24363</Hit_id>
+  <Hit_def>24363 rheinheimera</Hit_def>
+  <Hit_accession>Subject_15306</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>24469</Hit_id>
+  <Hit_def>24469 rheinheimera</Hit_def>
+  <Hit_accession>Subject_15300</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>24106</Hit_id>
+  <Hit_def>24106 rheinheimera</Hit_def>
+  <Hit_accession>Subject_14491</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>24486</Hit_id>
+  <Hit_def>24486 rheinheimera</Hit_def>
+  <Hit_accession>Subject_14165</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>24175</Hit_id>
+  <Hit_def>24175 rheinheimera</Hit_def>
+  <Hit_accession>Subject_13989</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>24286</Hit_id>
+  <Hit_def>24286 rheinheimera</Hit_def>
+  <Hit_accession>Subject_13472</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>24464</Hit_id>
+  <Hit_def>24464 rheinheimera</Hit_def>
+  <Hit_accession>Subject_13463</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>24379</Hit_id>
+  <Hit_def>24379 rheinheimera</Hit_def>
+  <Hit_accession>Subject_12933</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>23987</Hit_id>
+  <Hit_def>23987 rheinheimera</Hit_def>
+  <Hit_accession>Subject_12809</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>24075</Hit_id>
+  <Hit_def>24075 rheinheimera</Hit_def>
+  <Hit_accession>Subject_12711</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>24220</Hit_id>
+  <Hit_def>24220 rheinheimera</Hit_def>
+  <Hit_accession>Subject_11372</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>24024</Hit_id>
+  <Hit_def>24024 rheinheimera</Hit_def>
+  <Hit_accession>Subject_11365</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>23972</Hit_id>
+  <Hit_def>23972 rheinheimera</Hit_def>
+  <Hit_accession>Subject_11104</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>24401</Hit_id>
+  <Hit_def>24401 rheinheimera</Hit_def>
+  <Hit_accession>Subject_11007</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>24154</Hit_id>
+  <Hit_def>24154 rheinheimera</Hit_def>
+  <Hit_accession>Subject_10623</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>24230</Hit_id>
+  <Hit_def>24230 rheinheimera</Hit_def>
+  <Hit_accession>Subject_10310</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>24309</Hit_id>
+  <Hit_def>24309 rheinheimera</Hit_def>
+  <Hit_accession>Subject_10172</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>24034</Hit_id>
+  <Hit_def>24034 rheinheimera</Hit_def>
+  <Hit_accession>Subject_9887</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>24049</Hit_id>
+  <Hit_def>24049 rheinheimera</Hit_def>
+  <Hit_accession>Subject_9789</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>24190</Hit_id>
+  <Hit_def>24190 rheinheimera</Hit_def>
+  <Hit_accession>Subject_9423</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>24352</Hit_id>
+  <Hit_def>24352 rheinheimera</Hit_def>
+  <Hit_accession>Subject_8385</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>51</Hit_num>
+  <Hit_id>24215</Hit_id>
+  <Hit_def>24215 rheinheimera</Hit_def>
+  <Hit_accession>Subject_8351</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>52</Hit_num>
+  <Hit_id>24320</Hit_id>
+  <Hit_def>24320 rheinheimera</Hit_def>
+  <Hit_accession>Subject_8264</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>53</Hit_num>
+  <Hit_id>23952</Hit_id>
+  <Hit_def>23952 rheinheimera</Hit_def>
+  <Hit_accession>Subject_7891</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>54</Hit_num>
+  <Hit_id>24170</Hit_id>
+  <Hit_def>24170 rheinheimera</Hit_def>
+  <Hit_accession>Subject_7407</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>55</Hit_num>
+  <Hit_id>24341</Hit_id>
+  <Hit_def>24341 rheinheimera</Hit_def>
+  <Hit_accession>Subject_6169</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>56</Hit_num>
+  <Hit_id>24336</Hit_id>
+  <Hit_def>24336 rheinheimera</Hit_def>
+  <Hit_accession>Subject_5947</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>57</Hit_num>
+  <Hit_id>24201</Hit_id>
+  <Hit_def>24201 rheinheimera</Hit_def>
+  <Hit_accession>Subject_5751</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>58</Hit_num>
+  <Hit_id>24054</Hit_id>
+  <Hit_def>24054 rheinheimera</Hit_def>
+  <Hit_accession>Subject_5730</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>59</Hit_num>
+  <Hit_id>24419</Hit_id>
+  <Hit_def>24419 rheinheimera</Hit_def>
+  <Hit_accession>Subject_5646</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>60</Hit_num>
+  <Hit_id>23962</Hit_id>
+  <Hit_def>23962 rheinheimera</Hit_def>
+  <Hit_accession>Subject_5566</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>61</Hit_num>
+  <Hit_id>24244</Hit_id>
+  <Hit_def>24244 rheinheimera</Hit_def>
+  <Hit_accession>Subject_5340</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>62</Hit_num>
+  <Hit_id>24240</Hit_id>
+  <Hit_def>24240 rheinheimera</Hit_def>
+  <Hit_accession>Subject_4456</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>63</Hit_num>
+  <Hit_id>24225</Hit_id>
+  <Hit_def>24225 rheinheimera</Hit_def>
+  <Hit_accession>Subject_3787</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>64</Hit_num>
+  <Hit_id>24070</Hit_id>
+  <Hit_def>24070 rheinheimera</Hit_def>
+  <Hit_accession>Subject_3214</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>65</Hit_num>
+  <Hit_id>24384</Hit_id>
+  <Hit_def>24384 rheinheimera</Hit_def>
+  <Hit_accession>Subject_3170</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>66</Hit_num>
+  <Hit_id>24521</Hit_id>
+  <Hit_def>24521 rheinheimera</Hit_def>
+  <Hit_accession>Subject_2696</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>67</Hit_num>
+  <Hit_id>24159</Hit_id>
+  <Hit_def>24159 rheinheimera</Hit_def>
+  <Hit_accession>Subject_2602</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>68</Hit_num>
+  <Hit_id>24080</Hit_id>
+  <Hit_def>24080 rheinheimera</Hit_def>
+  <Hit_accession>Subject_2240</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>69</Hit_num>
+  <Hit_id>24019</Hit_id>
+  <Hit_def>24019 rheinheimera</Hit_def>
+  <Hit_accession>Subject_2090</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>70</Hit_num>
+  <Hit_id>24292</Hit_id>
+  <Hit_def>24292 rheinheimera</Hit_def>
+  <Hit_accession>Subject_1822</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>71</Hit_num>
+  <Hit_id>23977</Hit_id>
+  <Hit_def>23977 rheinheimera</Hit_def>
+  <Hit_accession>Subject_1368</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>72</Hit_num>
+  <Hit_id>24234</Hit_id>
+  <Hit_def>24234 rheinheimera</Hit_def>
+  <Hit_accession>Subject_1210</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>73</Hit_num>
+  <Hit_id>24165</Hit_id>
+  <Hit_def>24165 rheinheimera</Hit_def>
+  <Hit_accession>Subject_795</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>74</Hit_num>
+  <Hit_id>24196</Hit_id>
+  <Hit_def>24196 rheinheimera</Hit_def>
+  <Hit_accession>Subject_697</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>75</Hit_num>
+  <Hit_id>23982</Hit_id>
+  <Hit_def>23982 rheinheimera</Hit_def>
+  <Hit_accession>Subject_400</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>76</Hit_num>
+  <Hit_id>24144</Hit_id>
+  <Hit_def>24144 rheinheimera</Hit_def>
+  <Hit_accession>Subject_297</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>77</Hit_num>
+  <Hit_id>24064</Hit_id>
+  <Hit_def>24064 rheinheimera</Hit_def>
+  <Hit_accession>Subject_204</Hit_accession>
+  <Hit_len>533</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.1946</Hsp_bit-score>
+      <Hsp_score>82</Hsp_score>
+      <Hsp_evalue>0.0334126</Hsp_evalue>
+      <Hsp_query-from>29</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>506</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>386</Hsp_align-len>
+      <Hsp_qseq>AEIDFVYVGASNDVICG----GTSFSDFWRINNDNQ--FRISISGTAKNVSVTGSLVPGTRYTLRLVR-----EGSLVTVE--------DAEGTALTAATSFNADPFIIKKIGSFHNGSSNLAMDLYGFKANNGVNNYNKQTLSGSNDKIYPDTVGGNEGALFGFPDNNSQWVFFEDGGGEETPPAVTGSVSIDGLSVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVS-SDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSI</Hsp_qseq>
+      <Hsp_hseq>SRIDFRIKFKLNSTVGGTLYQGTSDTSFLKIQSATTLVYRMS-NGGYEAITLSTPITLNTLHELHFRRYKSGTEGTVVEVELDGVIVGRQINRSAVAAGLENTPD-----KLGPFQTGTVVYECTLQGFRYINNVDDL--QTTWG-------------DGTLVNYPADSSKWILYDNTYPPE--PA-ESNVTI----------SDVLPSLLSSISLNYLSNTNLSIAENFGA--LQSSVTLTYQSEDSNLTISDVLPALSSSVTITNVVPEYNISISDSFSPLQSSMSLVNGIP-ESSLSIATTLPSLSSSVSIENVVPTYSLAITTSLPSLQSAVGLSYEDAIYDITISDNLPSLQSTITLENIVPVYTLEITDSFAALQSSVNI</Hsp_hseq>
+      <Hsp_midline>+ IDF      N  + G    GTS + F +I +     +R+S +G  + ++++  +   T + L   R     EG++V VE            +A+ A      D     K+G F  G+      L GF+  N V++   QT  G             +G L  +P ++S+W+ +++    E  PA   +V+I          SDV    L+        +   +++ +  A  L  SV++   S    ++     PAL+ SV++  +     +S SD  +P  +    V+G+    ++S     P+L+ SVSI+ +  T S A  T  P++  +V +     I  ++   + P+L  +++++ +    ++       AL  SV+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>78</Hit_num>
+  <Hit_id>2751</Hit_id>
+  <Hit_def>2751 escherichia</Hit_def>
+  <Hit_accession>Subject_16344</Hit_accession>
+  <Hit_len>1077</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.113</Hsp_bit-score>
+      <Hsp_score>74</Hsp_score>
+      <Hsp_evalue>0.367771</Hsp_evalue>
+      <Hsp_query-from>335</Hsp_query-from>
+      <Hsp_query-to>449</Hsp_query-to>
+      <Hsp_hit-from>406</Hsp_hit-from>
+      <Hsp_hit-to>524</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>127</Hsp_align-len>
+      <Hsp_qseq>TGQPTVTGSVPVDGLSVIGSLSSDVDAPALTGSVSVDGLSVTGSVS-SDVDAPA-LTG-SVSIDGLSVAGSVSVSPLGPTVTGSVSI-DGLSVMG--SLSSDVDAPAL-TGSVS---IDG--LSVTG</Hsp_qseq>
+      <Hsp_hseq>TGPTTASGDVTVNNLTVNGTLRADIDFG--TAAVEFQDLTVTNKATIKDLEITGNLTGVTVSVDGE------AISPSSVTTTGNIDVGNNMRVRGDITLDGELSIPSLDTGDITAAAIDGASLSVSG</Hsp_hseq>
+      <Hsp_midline>TG  T +G V V+ L+V G+L +D+D    T +V    L+VT   +  D++    LTG +VS+DG       ++SP   T TG++ + + + V G  +L  ++  P+L TG ++   IDG  LSV+G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>31.187</Hsp_bit-score>
+      <Hsp_score>69</Hsp_score>
+      <Hsp_evalue>1.38462</Hsp_evalue>
+      <Hsp_query-from>244</Hsp_query-from>
+      <Hsp_query-to>447</Hsp_query-to>
+      <Hsp_hit-from>688</Hsp_hit-from>
+      <Hsp_hit-to>864</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>53</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>35</Hsp_gaps>
+      <Hsp_align-len>208</Hsp_align-len>
+      <Hsp_qseq>LTGSVSI-DGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSV--IGSLSSDVDAPALTGSVSVDGLSVTGSVSSDVDAPALTGSVSIDG-LSVAGSVSVSPLGPTVTGSVSIDGLSVMGSLSSDVDAPALTGSVSIDGLSV</Hsp_qseq>
+      <Hsp_hseq>LEGAVTLNDGLTITGG-----NITSVQGQASFNDVQVFGSLL-DANGNALGTAESING--------KDISPRSVTAQVEIQTTAIVATGQAEVGSLISTGQVMAGSLEVSGIGNIGQVITDDVRAGKVTSGNTVITRTVGSSDPALEVRGPGEIQGDLNVTG---------TVTGNIDLS--------SQDVNVASMTSTGTVNALSI</Hsp_hseq>
+      <Hsp_midline>L G+V++ DGL++TG      +  ++ G  S + + V G++  D +  AL  + S++G         D+   ++T  V I   ++  +  AE G    TG V    L V  IG++   +      G V+     +T +V S   A  + G   I G L+V G         TVTG++ +         S DV+  ++T + +++ LS+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>79</Hit_num>
+  <Hit_id>424</Hit_id>
+  <Hit_def>424 escherichia</Hit_def>
+  <Hit_accession>Subject_1247</Hit_accession>
+  <Hit_len>584</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>32.3426</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>0.458643</Hsp_evalue>
+      <Hsp_query-from>198</Hsp_query-from>
+      <Hsp_query-to>461</Hsp_query-to>
+      <Hsp_hit-from>268</Hsp_hit-from>
+      <Hsp_hit-to>520</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>275</Hsp_align-len>
+      <Hsp_qseq>GSVSIDGLSVTGEVSSDVDAPAL--TGSVSIDGLSVTGAVSSDVDAPALTG-SVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSVDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDGLSVIGSLSSDVDAP--ALTGSVSVDGLSVTGSVSS-DVDAPALTGS-VSIDGLSVAGSVSVSPLGPTVTGSVSIDGLSVMGSLSSDVDAPALT----GSVSIDGLSVTGILLTGLFNYPAA</Hsp_qseq>
+      <Hsp_hseq>GNNTFDYVYITGNSKKDPSEARLKVSGMTELENLKITGTV---------TGLSFSVNGEDISPNSVTTAQGVTVGGDLQVNG--NTNLNSTTCESLEVTNNLVVNGQT------SLKDFSSTTGNVT--GLLTLGEGFTATGDGSVGGDLTVNGTSTLGKIISDGDVTLNRSSGTTTVNNLVVKGTVSGITFD---LTGQNVNVASLSAQSSVTTNQLFVNGQAQLSSTNVSFLTLQSEEVDDPTATWTPSGTSNIYNITVNKNLTIGAWPDPQQ</Hsp_hseq>
+      <Hsp_midline>G+ + D + +TG    D     L  +G   ++ L +TG V         TG S S++G  ++    +      + G + V+G   T   S+  ++  +T ++ V+G +      S  D  + TG+V+  GL   G     TG  +V G + V+G S +G + SD D      +G+ +V+ L V G+VS    D   LTG  V++  LS   SV+ + L       +S   +S +   S +VD P  T    G+ +I  ++V   L  G +  P  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>80</Hit_num>
+  <Hit_id>22460</Hit_id>
+  <Hit_def>22460 pectobacterium</Hit_def>
+  <Hit_accession>Subject_4032</Hit_accession>
+  <Hit_len>1089</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>32.3426</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>0.625778</Hsp_evalue>
+      <Hsp_query-from>193</Hsp_query-from>
+      <Hsp_query-to>449</Hsp_query-to>
+      <Hsp_hit-from>255</Hsp_hit-from>
+      <Hsp_hit-to>529</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>138</Hsp_positive>
+      <Hsp_gaps>74</Hsp_gaps>
+      <Hsp_align-len>303</Hsp_align-len>
+      <Hsp_qseq>PPAV-TGSVSIDGL----SVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALT--GSVSIDGLSVTGA---VSSHVDAPALT-GSVSVD-GLSVTGAVSSDVDAPALTGSVSVDG------LSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDG------------LSVIGSLSSDVDAPALTGS-VSVDGLSVTGS--------------VSSDVDAPALTGSVSIDGLSVAGSVSVSPLGPTVTGSVSIDG-LSVMGSLSSDVDAPALTGSVSIDGLSVTG</Hsp_qseq>
+      <Hsp_hseq>PFAVSTGILTVDQINGKAAQVGDVAVATDSLNVEGYMRGDYLHLEGNNRNTADRPQLIVDGIAEIETLRVTGTIEGVKADVDGLDIHPRSVTVDEGL----AVAKDT---TMTGKLTVGGTTKVGNLEVTGTLSG--------VAISVDGKDIK-PRSVNTGNLVATGDVQISGTTTATGKITTQDLEVLGTLTANLD---LSGSDLSVDNINVTQTATITDLVVTGTTTGVKGDVEGEAIAPA------SVAATGTVSAASMSTTGNMAVGGNLTVTGDFRP---ASVDTGDIEADTITVNG</Hsp_hseq>
+      <Hsp_midline>P AV TG +++D +    +  G+V+   D+  + G +  D L + G   +  D P L   G   I+ L VTG    V + VD   +   SV+VD GL    AV+ D     +TG ++V G      L VTG +S          ++S+DG  +    +  TG    TG V + G            L V+G+L++++D   L+GS +SVD ++VT +              V  DV+  A+  +      SVA + +VS    + TG++++ G L+V G       A   TG +  D ++V G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>81</Hit_num>
+  <Hit_id>22302</Hit_id>
+  <Hit_def>22302 pectobacterium</Hit_def>
+  <Hit_accession>Subject_15111</Hit_accession>
+  <Hit_len>722</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>30.8018</Hsp_bit-score>
+      <Hsp_score>68</Hsp_score>
+      <Hsp_evalue>1.50975</Hsp_evalue>
+      <Hsp_query-from>197</Hsp_query-from>
+      <Hsp_query-to>405</Hsp_query-to>
+      <Hsp_hit-from>260</Hsp_hit-from>
+      <Hsp_hit-to>500</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>70</Hsp_gaps>
+      <Hsp_align-len>260</Hsp_align-len>
+      <Hsp_qseq>TGSVSIDGL----SVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALT--GSVSIDGLSVTGA---VSSHVDAPALT-GSVSVD-GLSVTGAVSSDVDAPALTGSVSVDG------LSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDG------------LSVIGSLSSDVDAPALTGS-VSVDGLSV--------------TGSVSSDVDAPAL-------TGSVSIDGLSVAGSVSV</Hsp_qseq>
+      <Hsp_hseq>TGILTVDQINGKAAQVGDVAVSTDSLNVDGYMRGDYLHLEGNNRNTADRPQLIVDGIAEIETLRVTGTIEGVKADVDGLDIHPRSVTVDEGLTVAKDTT-------MTGKLTVGGTTKVGNLEVTGTLSGVV--------ISVDGKDIK-PRSVNTGNLVATGDVQISGTTTATGKITTQDLEVLGTLTANLD---LSGSDLSVDNINVAQTATITDLVVTGTTTGVKGDVEGEAIAPASVAATGTVSAASMSTTGNMAV</Hsp_hseq>
+      <Hsp_midline>TG +++D +    +  G+V+   D+  + G +  D L + G   +  D P L   G   I+ L VTG    V + VD   +   SV+VD GL+V    +       +TG ++V G      L VTG +S  V        +S+DG  +    +  TG    TG V + G            L V+G+L++++D   L+GS +SVD ++V              T  V  DV+  A+       TG+VS   +S  G+++V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>82</Hit_num>
+  <Hit_id>22305</Hit_id>
+  <Hit_def>22305 pectobacterium</Hit_def>
+  <Hit_accession>Subject_13179</Hit_accession>
+  <Hit_len>722</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>30.8018</Hsp_bit-score>
+      <Hsp_score>68</Hsp_score>
+      <Hsp_evalue>1.50975</Hsp_evalue>
+      <Hsp_query-from>197</Hsp_query-from>
+      <Hsp_query-to>405</Hsp_query-to>
+      <Hsp_hit-from>260</Hsp_hit-from>
+      <Hsp_hit-to>500</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>70</Hsp_gaps>
+      <Hsp_align-len>260</Hsp_align-len>
+      <Hsp_qseq>TGSVSIDGL----SVTGEVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALT--GSVSIDGLSVTGA---VSSHVDAPALT-GSVSVD-GLSVTGAVSSDVDAPALTGSVSVDG------LSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQPTVTGSVPVDG------------LSVIGSLSSDVDAPALTGS-VSVDGLSV--------------TGSVSSDVDAPAL-------TGSVSIDGLSVAGSVSV</Hsp_qseq>
+      <Hsp_hseq>TGILTVDQINGKAAQVGDVAVSTDSLNVDGYMRGDYLHLEGNNRNTADRPQLIVDGIAEIETLRVTGTIEGVKADVDGLDIHPRSVTVDEGLTVAKDTT-------MTGKLTVGGTTKVGNLEVTGTLSGVV--------ISVDGKDIK-PRSVNTGNLVATGDVQISGTTTATGKITTQDLEVLGTLTANLD---LSGSDLSVDNINVAQTATITDLVVTGTTTGVKGDVEGEAIAPASVAATGTVSAASMSTTGNMAV</Hsp_hseq>
+      <Hsp_midline>TG +++D +    +  G+V+   D+  + G +  D L + G   +  D P L   G   I+ L VTG    V + VD   +   SV+VD GL+V    +       +TG ++V G      L VTG +S  V        +S+DG  +    +  TG    TG V + G            L V+G+L++++D   L+GS +SVD ++V              T  V  DV+  A+       TG+VS   +S  G+++V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>83</Hit_num>
+  <Hit_id>21610</Hit_id>
+  <Hit_def>21610 cronobacter</Hit_def>
+  <Hit_accession>Subject_11016</Hit_accession>
+  <Hit_len>602</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>30.4166</Hsp_bit-score>
+      <Hsp_score>67</Hsp_score>
+      <Hsp_evalue>2.17273</Hsp_evalue>
+      <Hsp_query-from>275</Hsp_query-from>
+      <Hsp_query-to>455</Hsp_query-to>
+      <Hsp_hit-from>273</Hsp_hit-from>
+      <Hsp_hit-to>458</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>49</Hsp_gaps>
+      <Hsp_align-len>208</Hsp_align-len>
+      <Hsp_qseq>DGLSVTGAVSSDVDAPAL--TGSVSVDGLSVTGAVSSDVDAPALTG-SVSIDGLSVTGSAAAETGQPTVTGSVPVDG-----------LSVIGSLSSD-----VDAPA----LTGSVSVDGLSVTGSVSSDVDAPALTGSV--SIDG-LSVAGSVSVSPLGPTVTGSVSIDG-LSVMGSLSSDVDAPALTGSVSIDGLSVTGILLTGL</Hsp_qseq>
+      <Hsp_hseq>DYVYIRGNNAKDVSAPRLKVSGMTEVENLHITGSV---------TGLSFSVNGLDISPNSVTTTAGITVGSDLQVNGSATLGNTTVSSLEVINTLKVDGSTTLVDFTASSGTITGPFTVGGL-------SNLNGGFTTGSANGSIGGNLSVTGSTELLS-GLNVTGDVAINGNLSATG----DVNLNNGSGTTTVNNLVIQGT-VTGL</Hsp_hseq>
+      <Hsp_midline>D + + G  + DV AP L  +G   V+ L +TG+V         TG S S++GL ++ ++   T   TV   + V+G           L VI +L  D     VD  A    +TG  +V GL       S+++    TGS   SI G LSV GS  +   G  VTG V+I+G LS  G    DV+    +G+ +++ L + G  +TGL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>84</Hit_num>
+  <Hit_id>38</Hit_id>
+  <Hit_def>38 escherichia</Hit_def>
+  <Hit_accession>Subject_7986</Hit_accession>
+  <Hit_len>960</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>29.6462</Hsp_bit-score>
+      <Hsp_score>65</Hsp_score>
+      <Hsp_evalue>3.65889</Hsp_evalue>
+      <Hsp_query-from>366</Hsp_query-from>
+      <Hsp_query-to>430</Hsp_query-to>
+      <Hsp_hit-from>601</Hsp_hit-from>
+      <Hsp_hit-to>663</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>68</Hsp_align-len>
+      <Hsp_qseq>GSVSVDGLSVTGSVSSDVDAPALTGSVSIDGLSVAGS--VSVSPLGPTVTGSVSIDGLSVM-GSLSSD</Hsp_qseq>
+      <Hsp_hseq>GNLYMDNITFTGTRST-----GLTGTGLINGISYEGNGPVAGSPIKSTLFNSVRIKGLNFKSGSYSSH</Hsp_hseq>
+      <Hsp_midline>G++ +D ++ TG+ S+      LTG+  I+G+S  G+  V+ SP+  T+  SV I GL+   GS SS </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>85</Hit_num>
+  <Hit_id>726</Hit_id>
+  <Hit_def>726 escherichia</Hit_def>
+  <Hit_accession>Subject_12315</Hit_accession>
+  <Hit_len>967</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>29.261</Hsp_bit-score>
+      <Hsp_score>64</Hsp_score>
+      <Hsp_evalue>5.20011</Hsp_evalue>
+      <Hsp_query-from>366</Hsp_query-from>
+      <Hsp_query-to>422</Hsp_query-to>
+      <Hsp_hit-from>608</Hsp_hit-from>
+      <Hsp_hit-to>661</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>59</Hsp_align-len>
+      <Hsp_qseq>GSVSVDGLSVTGSVSSDVDAPALTGSVSIDGLSVAGS--VSVSPLGPTVTGSVSIDGLS</Hsp_qseq>
+      <Hsp_hseq>GNLYMDNITFTGTRST-----SLTGTGLINGISYEGNGPVAGSPIKSTLFNSVRIKGLN</Hsp_hseq>
+      <Hsp_midline>G++ +D ++ TG+ S+     +LTG+  I+G+S  G+  V+ SP+  T+  SV I GL+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>86</Hit_num>
+  <Hit_id>1910</Hit_id>
+  <Hit_def>1910 escherichia</Hit_def>
+  <Hit_accession>Subject_13621</Hit_accession>
+  <Hit_len>956</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>28.8758</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>5.75551</Hsp_evalue>
+      <Hsp_query-from>299</Hsp_query-from>
+      <Hsp_query-to>407</Hsp_query-to>
+      <Hsp_hit-from>417</Hsp_hit-from>
+      <Hsp_hit-to>532</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>DGLSVTGAVSSDVDAPALTGSVSIDGLSVTGSAAAETGQ--PTVTGSVPVDGLSVI-GSLSSDVDAPALTGSV----SVDGLSVTGSVSSDVDAPALTGSVSIDGLSVAGSVSVSP</Hsp_qseq>
+      <Hsp_hseq>NGLIITGNTMTDTKAPYLTNQAWVGTIFSNNSCKFTPGFGGLAIGGQYPIVKDNIIDGDLFSIGGGVAIQGYQEGIQAKNGLIITGNTMTDTKAPYLTNQAWVGTIFSNNSCKFTP</Hsp_hseq>
+      <Hsp_midline>+GL +TG   +D  AP LT    +  +    S     G     + G  P+   ++I G L S     A+ G      + +GL +TG+  +D  AP LT    +  +    S   +P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>87</Hit_num>
+  <Hit_id>1999</Hit_id>
+  <Hit_def>1999 escherichia</Hit_def>
+  <Hit_accession>Subject_13880</Hit_accession>
+  <Hit_len>320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>28.8758</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>5.89529</Hsp_evalue>
+      <Hsp_query-from>210</Hsp_query-from>
+      <Hsp_query-to>265</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>67</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>56</Hsp_align-len>
+      <Hsp_qseq>EVSSDVDAPALTGSVSIDGLSVTGAVSSDVDAPALTGSVSIDGLSVTGAVSSHVDA</Hsp_qseq>
+      <Hsp_hseq>EITAGLRAPAVTGSINTNGLS-TPAISWDFGLTMSPGSTAF--CLPTKAV--HVDA</Hsp_hseq>
+      <Hsp_midline>E+++ + APA+TGS++ +GLS T A+S D       GS +      T AV  HVDA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>88</Hit_num>
+  <Hit_id>12885</Hit_id>
+  <Hit_def>12885 klebsiella</Hit_def>
+  <Hit_accession>Subject_8869</Hit_accession>
+  <Hit_len>586</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>28.1054</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>9.57516</Hsp_evalue>
+      <Hsp_query-from>207</Hsp_query-from>
+      <Hsp_query-to>356</Hsp_query-to>
+      <Hsp_hit-from>249</Hsp_hit-from>
+      <Hsp_hit-to>426</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>44</Hsp_gaps>
+      <Hsp_align-len>186</Hsp_align-len>
+      <Hsp_qseq>VTGEVSSDVDAPALTG--SVSIDGLSVTGAVSSDVDAPAL--TGSVSIDGLSVTGAVSSHVDAPALTGSVSVDGLSV---------TGAVSSDVDAPALT--GSVSVDGLSVTGAVSSDVD-----------APALTGSVSIDG-LSVTGSAAAETGQPTV---------TGSVPVDGLSVIGSLS</Hsp_qseq>
+      <Hsp_hseq>VNGTASADNTTMSLTGVGNNTFDYVYIRGNSSKASTEPRLKVTGTTELENVRVTGSLSGI--------NVGVDGLDILPNSIITTTTAEIGSDLTVNGITTLGSTTIQDLGVVSSLTVDGNSTLTGGFTAGSASSVAGNLSITGLLAVTGEAAVSTNLTVTGNANLNNGGTGTTTVNNLNVLGTLT</Hsp_hseq>
+      <Hsp_midline>V G  S+D    +LTG  + + D + + G  S     P L  TG+  ++ + VTG++S          +V VDGL +         T  + SD+    +T  GS ++  L V  +++ D +           A ++ G++SI G L+VTG AA  T              TG+  V+ L+V+G+L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>101</Statistics_hsp-len>
+      <Statistics_eff-space>2758510260</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
