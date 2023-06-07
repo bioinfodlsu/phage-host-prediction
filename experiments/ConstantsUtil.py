@@ -27,7 +27,6 @@ class ConstantsUtil(object):
     PREPROCESSING = 'preprocessing'
     GENUS_TYPO = f'{PREPROCESSING}/genus_typo.txt'
     
-    ARCHAEA = f'{PREPROCESSING}/genus_typo.txt'
     BACTERIA_NOT_GENUS = f'{PREPROCESSING}/bacteria_not_genus.txt'
     EXCLUDED_HOSTS = f'{PREPROCESSING}/excluded_hosts.txt'
     
