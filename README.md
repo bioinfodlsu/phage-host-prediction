@@ -130,13 +130,13 @@ Once you have cloned this repository and finished downloading (or generating) al
 
 ## Dependencies
 
-⚠️ **UPDATE (06/12/2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, a library used in this project, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3), seems to be incompatible with Python 3.10. 
+⚠️ **UPDATE (06/12/2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, one of our project's dependencies, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3), seems to be incompatible with Python 3.10. 
 
-We recommend running this project using Python 3.7, although any version from 3.7 to 3.9 should not cause dependency issues. The [`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml) file has been updated accordingly.
+We recommend running this project using Python 3.7, although any Python version from 3.7 to 3.9 should not cause dependency issues. The [`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml) file has been updated accordingly.
 
 -----------------
 
-**Note on Operating System**: A library used in this project, [`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/), is intended for Unix and Unix-like operating systems. If you are running this project on Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine.
+**Note on Operating System**: One of our project's dependencies, [`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/), was developed for Unix and Unix-like operating systems. If you are running this project on Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine.
 
 -----------------
 
