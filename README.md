@@ -132,7 +132,7 @@ Once you have cloned this repository and finished downloading (or generating) al
 
 ⚠️ **UPDATE (06/12/2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, one of our project's dependencies, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3), seems to be incompatible with Python 3.10. 
 
-We recommend running this project using Python 3.7, although any Python version from 3.7 to 3.9 should not cause dependency issues. The [`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml) file has been updated accordingly.
+We recommend running this project using Python 3.9, although any Python version from 3.7 to 3.9 should not cause dependency issues. The [`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml) file has been updated accordingly.
 
 -----------------
 
