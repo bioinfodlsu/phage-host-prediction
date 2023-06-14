@@ -1,9 +1,8 @@
 name: phage-host-prediction
 channels:
-    - anaconda
     - conda-forge
-    - defaults
 dependencies:
+    - python=3.9
     - regex
     - nltk
     - biopython=1.78
@@ -11,9 +10,15 @@ dependencies:
     - pandas
     - numpy
     - scipy
-    - scikit-learn=1.0.2
+    - scikit-learn=0.24
+    - pyyaml=5.4.1
     - xgboost
     - joblib
     - numba
     - matplotlib
     - umap-learn=0.5.3
+    - jsonnet
+    - pip
+    - cudatoolkit=11.8
+    - pip:
+        - bio-embeddings[all]

@@ -129,12 +129,18 @@ Once you have cloned this repository and finished downloading (or generating) al
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
 ## Dependencies
-The dependencies can be installed via Python's package installer `pip` by running the following command on the terminal:
-```
-pip install -r requirements.txt
-```
 
-Alternatively, the dependencies can also be installed via [Conda](https://docs.conda.io/en/latest/), an open-source package and environment management system. Run the following command to create a virtual environment with the dependencies installed:
+⚠️ **UPDATE (06/12/2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, one of our project's dependencies, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3), seems to be incompatible with Python 3.10. 
+
+We recommend running this project using Python 3.9. The [`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml) file has also been updated accordingly (thanks to Dr. Paul K. Yu [@yupaulk](https://github.com/yupaulk) for sharing his environment configuration).
+
+-----------------
+
+**Note on Operating System**: One of our project's dependencies, [`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/), was developed for Unix and Unix-like operating systems. If you are running this project on Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine.
+
+-----------------
+
+The dependencies can be installed via [Conda](https://docs.conda.io/en/latest/), an open-source package and environment management system. Run the following command to create a virtual environment with the dependencies installed:
 ```
 conda env create -f environment.yaml
 ```
@@ -143,8 +149,6 @@ To activate this environment, run the following command:
 ```
 conda activate phage-host-prediction
 ```
-
-Note that [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has dependencies that are not defined in [`requirements.txt`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/requirements.txt) and [`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml), as we recommend running this notebook on [Google Colab](https://colab.research.google.com/) (or any cloud-based service with GPU) in view of the heavy memory requirement of loading pretrained protein embeddings. The commands for installing the dependencies are already included in this notebook as shell commands.
 
 The complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library) are as follows: 
 
