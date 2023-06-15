@@ -167,11 +167,17 @@ class RBPPredictionUtil(object):
         """
         util = SequenceParsingUtil()
         
+        if not os.path.exists(dest_dir):
+            os.makedirs(dest_dir)
+        
         with open(f'{prottransbert_complete_dir}/{phage}-rbp-embeddings.csv', 'r') as embeddings:
             rbp_prottransbert, _ = util.get_proteins_embeddings(embeddings)
             
         for protein in rbp_prottransbert:
-            entry = f'>{protein}\n{self.get_sequence(protein, phage, True, *fasta_folders)}\n'
+            sequence = self.get_sequence(protein, phage, True, *fasta_folders)
+            assert sequence != None
+            
+            entry = f'>{protein}\n{sequence}\n'
             
             with open(f'{dest_dir}/{phage}-rbp.fasta', 'a') as fasta:
                 fasta.write(entry)
