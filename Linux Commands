@@ -8,13 +8,13 @@ sudo apt install build-essential
 # install anaconda3 then mamba
 conda install -c conda-forge mamba
 
-# install dependencies and create phi environment (modified yaml file)
+# install dependencies and create phage-host-prediction environment (modified yaml file)
 mamba env create -f environment.yaml
 
 # remove env
 conda env list
 conda deactivate
-conda env remove -n phi
+conda env remove -n phage-host-prediction
 
 # switch to phi env
 conda activate phi

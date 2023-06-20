@@ -8,7 +8,7 @@ dependencies:
     - biopython=1.78
     - ete3=3.1.2
     - pandas
-    - numpy
+    - numpy=1.23
     - scipy
     - scikit-learn=0.24
     - pyyaml=5.4.1
@@ -16,9 +16,9 @@ dependencies:
     - joblib
     - numba
     - matplotlib
-    - umap-learn=0.5.3
     - jsonnet
     - pip
     - cudatoolkit=11.8
     - pip:
-        - bio-embeddings[all]
+        - bio-embeddings[all]==0.2.1
+        - umap-learn[plot]
