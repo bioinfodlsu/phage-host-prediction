@@ -6,8 +6,6 @@ This script contains the utility functions for the computational prediction of r
 """
 
 import os
-import shutil
-from collections import defaultdict
 
 from SequenceParsingUtil import SequenceParsingUtil
 

@@ -14,22 +14,13 @@ import pandas as pd
 import numpy as np
 
 from ete3 import NCBITaxa
-from Bio import SeqIO, Align
-from Bio.Blast import NCBIXML
-from Bio.Blast.Applications import NcbiblastpCommandline
-from Bio.Align import substitution_matrices
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, precision_recall_fscore_support
-from sklearn.model_selection import RandomizedSearchCV, StratifiedKFold
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.utils.fixes import loguniform
-from scipy.stats import randint
 from joblib import dump
-from collections import defaultdict
 
 from RBPPredictionUtil import RBPPredictionUtil
 from ConstantsUtil import ConstantsUtil
-from SequenceParsingUtil import SequenceParsingUtil
 
 class ClassificationUtil(object):
     def __init__(self, complete_embeddings_dir = None, RANDOM_NUM = 42):

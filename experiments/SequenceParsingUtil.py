@@ -393,7 +393,7 @@ class SequenceParsingUtil(object):
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
         
-        accession_np = self.inphared['Accession'].to_numpy()
+        self.inphared['Accession'].to_numpy()
 
         ctr = 0
         iter_flag = True
@@ -468,7 +468,7 @@ class SequenceParsingUtil(object):
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
-        accession_np = self.inphared['Accession'].to_numpy()
+        self.inphared['Accession'].to_numpy()
 
         ctr = 0
         iter_flag = True
@@ -481,7 +481,6 @@ class SequenceParsingUtil(object):
                 try:
                     idx = np.where(self.inphared == record.name)[0][0]
 
-                    has_cds_annot = False
                     for feature in record.features:
                         if feature.type == 'CDS':
                             try:
@@ -662,7 +661,7 @@ class SequenceParsingUtil(object):
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
-        accession_np = self.inphared['Accession'].to_numpy()
+        self.inphared['Accession'].to_numpy()
 
         ctr = 0
         iter_flag = True
@@ -674,10 +673,8 @@ class SequenceParsingUtil(object):
 
                 try:
                     idx = np.where(self.inphared == record.name)[0][0]
-                    name = record.name
+                    record.name
 
-                    rbp_fasta_str = ''
-                    hypothetical_fasta_str = ''
 
                     for feature in record.features:
                         if feature.type == 'CDS':
@@ -761,7 +758,7 @@ class SequenceParsingUtil(object):
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
-        accession_np = self.inphared['Accession'].to_numpy()
+        self.inphared['Accession'].to_numpy()
 
         ctr = 0
         iter_flag = True
@@ -1072,7 +1069,7 @@ class SequenceParsingUtil(object):
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
-        accession_np = self.inphared['Accession'].to_numpy()
+        self.inphared['Accession'].to_numpy()
 
         ctr = 0
         iter_flag = True
