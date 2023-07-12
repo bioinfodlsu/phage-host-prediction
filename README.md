@@ -188,7 +188,9 @@ Library/Module | Description | License
 - **Dr. Anish M.S. Shrestha** <br>
   anish.shrestha@dlsu.edu.ph
 
-This is a research project under the [Bioinformatics Laboratory](https://bioinfodlsu.com/), [Advanced Research Institute for Informatics, Computing and Networking](https://www.dlsu.edu.ph/research/research-centers/adric/), De La Salle University, Philippines.
+This is a research project by the [Bioinformatics Laboratory](https://bioinfodlsu.com/), [Advanced Research Institute for Informatics, Computing and Networking](https://www.dlsu.edu.ph/research/research-centers/adric/), De La Salle University, Philippines.
+
+This research was partly funded by the Department of Science and Technology Philippine Council for Health Research and Development (DOST-PCHRD) under the [e-Asia JRP 2021 Alternative therapeutics to tackle AMR pathogens (ATTACK-AMR) program](https://www.the-easia.org/jrp/projects/project_76.html). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
 
 [badge-jupyter]: https://img.shields.io/badge/Jupyter-F37626.svg?&style=flat&logo=Jupyter&logoColor=white
 [badge-python]: https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=white
