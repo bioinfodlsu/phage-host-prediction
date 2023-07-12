@@ -393,8 +393,6 @@ class SequenceParsingUtil(object):
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
         
-        self.inphared['Accession'].to_numpy()
-
         ctr = 0
         iter_flag = True
 
@@ -467,8 +465,6 @@ class SequenceParsingUtil(object):
         - Set of annotations for the gene products in GenBank
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
-
-        self.inphared['Accession'].to_numpy()
 
         ctr = 0
         iter_flag = True
@@ -661,8 +657,6 @@ class SequenceParsingUtil(object):
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
 
-        self.inphared['Accession'].to_numpy()
-
         ctr = 0
         iter_flag = True
 
@@ -673,7 +667,6 @@ class SequenceParsingUtil(object):
 
                 try:
                     idx = np.where(self.inphared == record.name)[0][0]
-                    record.name
 
 
                     for feature in record.features:
@@ -757,8 +750,6 @@ class SequenceParsingUtil(object):
         - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
-
-        self.inphared['Accession'].to_numpy()
 
         ctr = 0
         iter_flag = True
@@ -1068,8 +1059,6 @@ class SequenceParsingUtil(object):
         - upper_bound: Upper bound of the lengths of RBPs (excluding outliers)
         """
         records = SeqIO.parse(self.inphared_gb, 'gb')
-
-        self.inphared['Accession'].to_numpy()
 
         ctr = 0
         iter_flag = True
