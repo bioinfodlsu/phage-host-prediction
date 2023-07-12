@@ -159,20 +159,22 @@ Library/Module | Description | License
 -- | -- | --
 [`regex`](https://github.com/mrabarnett/mrab-regex) | Provides additional functionality over the standard [`re`](https://docs.python.org/3/library/re.html) module while maintaining backwards-compatibility	| Apache License 2.0 
 [`nltk`](https://www.nltk.org/) | Provides interfaces to corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning	| Apache License 2.0
-[`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) | Provides an interface for the use of language model-based biological sequence representations for transfer-learning | MIT License
 [`biopython`](https://biopython.org/) | Provides tools for computational molecular biology | Biopython License Agreement, BSD 3-Clause License
 [`ete3`](http://etetoolkit.org/) | Provides functions for automated manipulation, analysis, and visualization of phylogenetic trees | GNU General Public License v3.0
 [`pandas`](https://pandas.pydata.org/) | Provides functions for data analysis and manipulation	| BSD 3-Clause "New" or "Revised" License
 [`numpy`](https://numpy.org/) | Provides a multidimensional array object, various derived objects, and an assortment of routines for fast operations on arrays | BSD 3-Clause "New" or "Revised" License 
 [`scipy`](https://scipy.org/) | Provides efficient numerical routines, such as those for numerical integration, interpolation, optimization, linear algebra, and statistics | BSD 3-Clause "New" or "Revised" License
 [`scikit-learn`](https://scikit-learn.org/) | Provides efficient tools for predictive data analysis | BSD 3-Clause "New" or "Revised" License
+[`imbalanced-learn`]() | | 
+[`pyyaml`](https://pyyaml.org/) | Supports standard YAML tags and provides Python-specific tags that allow to represent an arbitrary Python object | MIT License
 [`xgboost`](https://xgboost.readthedocs.io/en/stable/) | Implements machine learning algorithms under the gradient boosting framework | Apache License 2.0 
 [`joblib`](https://joblib.readthedocs.io/en/latest/) | Provides tools for lightweight pipelining in Python | BSD 3-Clause "New" or "Revised" License
 [`numba`](https://numba.pydata.org/) | Translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library | BSD 2-Clause "Simplified" License
 [`matplotlib`](https://matplotlib.org/) | Provides functions for creating static, animated, and interactive visualizations | Matplotlib License (BSD-Compatible)
+[`jsonnet`]() | | 
+[`cudatoolkit`]() | | 
+[`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) | Provides an interface for the use of language model-based biological sequence representations for transfer-learning | MIT License
 [`umap-learn`](https://umap-learn.readthedocs.io/en/latest/) | Implements uniform manifold approximation and projection, a dimension reduction technique that can be used for visualisation similarly and general non-linear dimension reduction | BSD 3-Clause "New" or "Revised" License
-[`pyyaml`](https://pyyaml.org/) | Supports standard YAML tags and provides Python-specific tags that allow to represent an arbitrary Python object | MIT License
-[`tqdm`](https://tqdm.github.io/) | Allows the creation of progress bars by wrapping around any iterable | Mozilla Public Licence (MPL) v. 2.0, MIT License
 
 *The descriptions are taken from their respective websites.*
 
