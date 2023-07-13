@@ -34,7 +34,7 @@ If you find our work useful, please consider citing:
   - [Jupyter Notebooks](https://github.com/bioinfodlsu/phage-host-prediction#jupyter-notebooks)
   - [Python Scripts](https://github.com/bioinfodlsu/phage-host-prediction#python-scripts)
   - [Folder Structure](https://github.com/bioinfodlsu/phage-host-prediction#folder-structure)
-- [Dependencies](https://github.com/bioinfodlsu/phage-host-prediction#dependencies)
+- [Environment & Dependencies](https://github.com/bioinfodlsu/phage-host-prediction#dependencies)
 - [Authors](https://github.com/bioinfodlsu/phage-host-prediction#authors)
 
 ## Description
@@ -131,17 +131,19 @@ Once you have cloned this repository and finished downloading (or generating) al
 
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
-## Dependencies
+## Environment & Dependencies
 
 ⚠️ **UPDATE (06/12/2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, one of our project's dependencies, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3), seems to be incompatible with Python 3.10. 
 
-We recommend running this project using Python 3.9. The [`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml) file has also been updated accordingly (thanks to Dr. Paul K. Yu [@yupaulk](https://github.com/yupaulk) for sharing his environment configuration).
 
------------------
 
-**Note on Operating System**: One of our project's dependencies, [`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/), was developed for Unix and Unix-like operating systems. If you are running this project on Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine.
+### Operating System
 
------------------
+One of our project's dependencies, [`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/), was developed for Unix and Unix-like operating systems. If you are running this project on Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine.
+
+### Dependencies
+
+We recommend running this project using Python 3.9. Thanks to Dr. Paul K. Yu (paul_yu_a@dlsu.edu.ph) for sharing his environment configuration ([`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml)).
 
 The dependencies can be installed via [Conda](https://docs.conda.io/en/latest/), an open-source package and environment management system. Run the following command to create a virtual environment with the dependencies installed:
 ```
@@ -165,14 +167,14 @@ Library/Module | Description | License
 [`numpy`](https://numpy.org/) | Provides a multidimensional array object, various derived objects, and an assortment of routines for fast operations on arrays | BSD 3-Clause "New" or "Revised" License 
 [`scipy`](https://scipy.org/) | Provides efficient numerical routines, such as those for numerical integration, interpolation, optimization, linear algebra, and statistics | BSD 3-Clause "New" or "Revised" License
 [`scikit-learn`](https://scikit-learn.org/) | Provides efficient tools for predictive data analysis | BSD 3-Clause "New" or "Revised" License
-[`imbalanced-learn`]() | | 
+[`imbalanced-learn`](https://imbalanced-learn.org/stable/) | Provides tools when dealing with classification with imbalanced classes | MIT License
 [`pyyaml`](https://pyyaml.org/) | Supports standard YAML tags and provides Python-specific tags that allow to represent an arbitrary Python object | MIT License
 [`xgboost`](https://xgboost.readthedocs.io/en/stable/) | Implements machine learning algorithms under the gradient boosting framework | Apache License 2.0 
 [`joblib`](https://joblib.readthedocs.io/en/latest/) | Provides tools for lightweight pipelining in Python | BSD 3-Clause "New" or "Revised" License
 [`numba`](https://numba.pydata.org/) | Translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library | BSD 2-Clause "Simplified" License
 [`matplotlib`](https://matplotlib.org/) | Provides functions for creating static, animated, and interactive visualizations | Matplotlib License (BSD-Compatible)
-[`jsonnet`]() | | 
-[`cudatoolkit`]() | | 
+[`jsonnet`](https://jsonnet.org/) | Domain-specific language for JSON | Apache License 2.0 
+[`cudatoolkit`](https://developer.nvidia.com/cuda-toolkit) | Parallel computing platform and programming model for general computing on graphical processing units (GPUs) | NVIDIA Software License
 [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) | Provides an interface for the use of language model-based biological sequence representations for transfer-learning | MIT License
 [`umap-learn`](https://umap-learn.readthedocs.io/en/latest/) | Implements uniform manifold approximation and projection, a dimension reduction technique that can be used for visualisation similarly and general non-linear dimension reduction | BSD 3-Clause "New" or "Revised" License
 
@@ -190,7 +192,7 @@ Library/Module | Description | License
 - **Dr. Anish M.S. Shrestha** <br>
   anish.shrestha@dlsu.edu.ph
 
-This is a research project under the [Bioinformatics Lab](https://bioinfodlsu.com/), [Advanced Research Institute for Informatics, Computing and Networking](https://www.dlsu.edu.ph/research/research-centers/adric/), De La Salle University, Philippines.
+This is a research project under the [Bioinformatics Laboratory](https://bioinfodlsu.com/), [Advanced Research Institute for Informatics, Computing and Networking](https://www.dlsu.edu.ph/research/research-centers/adric/), De La Salle University, Philippines.
 
 This research was partly funded by the [Department of Science and Technology &ndash; Philippine Council for Health Research and Development](https://www.pchrd.dost.gov.ph/) (DOST-PCHRD) under the [e-Asia JRP 2021 Alternative therapeutics to tackle AMR pathogens (ATTACK-AMR) program](https://www.the-easia.org/jrp/projects/project_76.html). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
 
