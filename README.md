@@ -135,7 +135,7 @@ Once you have cloned this repository and finished downloading (or generating) al
 
 ⚠️ **UPDATE (06/12/2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, one of our project's dependencies, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3), seems to be incompatible with Python 3.10. 
 
-
+If the memory requirement of loading pretrained protein language models ([`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb)) is too heavy for your local machine, an alternative cloud-based service with GPU is Paperspace; you may try using its [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) (which, as of writing, uses Python 3.9) or the [Python 3.9 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#previous-runtime-versions).
 
 ### Operating System
 
@@ -143,7 +143,7 @@ One of our project's dependencies, [`bio_embeddings`](https://docs.bioembeddings
 
 ### Dependencies
 
-We recommend running this project using Python 3.9. Thanks to Dr. Paul K. Yu (paul_yu_a@dlsu.edu.ph) for sharing his environment configuration ([`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml)).
+We recommend using Python 3.9 to run this project. Thanks to Dr. Paul K. Yu (paul_yu_a@dlsu.edu.ph) for sharing his environment configuration ([`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml)).
 
 The dependencies can be installed via [Conda](https://docs.conda.io/en/latest/), an open-source package and environment management system. Run the following command to create a virtual environment with the dependencies installed:
 ```
@@ -174,7 +174,7 @@ Library/Module | Description | License
 [`numba`](https://numba.pydata.org/) | Translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library | BSD 2-Clause "Simplified" License
 [`matplotlib`](https://matplotlib.org/) | Provides functions for creating static, animated, and interactive visualizations | Matplotlib License (BSD-Compatible)
 [`jsonnet`](https://jsonnet.org/) | Domain-specific language for JSON | Apache License 2.0 
-[`cudatoolkit`](https://developer.nvidia.com/cuda-toolkit) | Parallel computing platform and programming model for general computing on graphical processing units (GPUs) | NVIDIA Software License
+[`cudatoolkit`](https://developer.nvidia.com/cuda-toolkit) | Parallel computing platform and programming model for general computing on GPUs | NVIDIA Software License
 [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) | Provides an interface for the use of language model-based biological sequence representations for transfer-learning | MIT License
 [`umap-learn`](https://umap-learn.readthedocs.io/en/latest/) | Implements uniform manifold approximation and projection, a dimension reduction technique that can be used for visualisation similarly and general non-linear dimension reduction | BSD 3-Clause "New" or "Revised" License
 
