@@ -135,7 +135,7 @@ Once you have cloned this repository and finished downloading (or generating) al
 
 ⚠️ **UPDATE (06/12/2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, one of our project's dependencies, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3), seems to be incompatible with Python 3.10. 
 
-If the memory requirement of loading pretrained protein language models ([`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb)) is too heavy for your local machine, an alternative cloud-based service with GPU is Paperspace; you may try using its [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) (which, as of writing, uses Python 3.9) or the [Python 3.9 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#previous-runtime-versions).
+If the memory requirement of loading pretrained protein language models ([`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb)) is too heavy for your local machine, an alternative cloud-based service with GPU is Paperspace; you may try using either its [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) (which, as of writing, uses Python 3.9) or [Python 3.9 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#previous-runtime-versions).
 
 ### Operating System
 
