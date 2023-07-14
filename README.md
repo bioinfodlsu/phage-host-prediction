@@ -155,7 +155,7 @@ To activate this environment, run the following command:
 conda activate phage-host-prediction
 ```
 
-The complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library) are as follows: 
+The complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library) is as follows: 
 
 Library/Module | Description | License
 -- | -- | --
