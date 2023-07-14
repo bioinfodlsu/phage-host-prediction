@@ -34,7 +34,7 @@ If you find our work useful, please consider citing:
   - [Jupyter Notebooks](https://github.com/bioinfodlsu/phage-host-prediction#jupyter-notebooks)
   - [Python Scripts](https://github.com/bioinfodlsu/phage-host-prediction#python-scripts)
   - [Folder Structure](https://github.com/bioinfodlsu/phage-host-prediction#folder-structure)
-- [Environment & Dependencies](https://github.com/bioinfodlsu/phage-host-prediction#dependencies)
+- [Environment & Dependencies](https://github.com/bioinfodlsu/phage-host-prediction#environment--dependencies)
 - [Authors](https://github.com/bioinfodlsu/phage-host-prediction#authors)
 
 ## Description
