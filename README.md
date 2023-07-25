@@ -9,21 +9,24 @@
 [![Actions Status](https://github.com/bioinfodlsu/phage-host-prediction/workflows/Check%20for%20syntax%20errors/badge.svg)](https://github.com/bioinfodlsu/phage-host-prediction/actions)
 ![badge][badge-github-actions]
 
-Our preprint can be accessed via this [link](https://biorxiv.org/cgi/content/short/2023.02.26.530154v1).
+**This work was accepted for publication in *PLOS ONE.***
+- The final version of our paper (as published in *PLOS ONE*) can be accessed via this [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030).
 
 If you find our work useful, please consider citing:
 
 ```
-@article {Gonzales2023.02.26.530154,
-  author = {Mark Edward M. Gonzales and Jennifer C. Ureta and Anish M.S. Shrestha},
-  title = {Protein embeddings improve phage-host interaction prediction},
-  elocation-id = {2023.02.26.530154},
-  year = {2023},
-  doi = {10.1101/2023.02.26.530154},
-  publisher = {Cold Spring Harbor Laboratory},
-  URL = {https://www.biorxiv.org/content/early/2023/02/27/2023.02.26.530154},
-  eprint = {https://www.biorxiv.org/content/early/2023/02/27/2023.02.26.530154.full.pdf},
-  journal = {bioRxiv}
+@article{10.1371/journal.pone.0289030,
+    doi = {10.1371/journal.pone.0289030},
+    author = {Gonzales, Mark Edward M. AND Ureta, Jennifer C. AND Shrestha, Anish M. S.},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {Protein embeddings improve phage-host interaction prediction},
+    year = {2023},
+    month = {07},
+    volume = {18},
+    url = {https://doi.org/10.1371/journal.pone.0289030},
+    pages = {1-22},
+    number = {7}
 }
 ```
 
