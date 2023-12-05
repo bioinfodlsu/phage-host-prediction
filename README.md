@@ -11,7 +11,7 @@
 
 **This work was accepted for publication in *PLOS ONE.***
 - The final version of our paper (as published in *PLOS ONE*) can be accessed via this [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030).
-- Presenting this paper, the lead author (Mark Edward M. Gonzales) won 2nd Prize at the [2023 Magsaysay Future Engineers/Technologists Award](https://fb.watch/oKx7G6gwLi/). This award is conferred by the National Academy of Science and Technology, the highest recognition and scientific advisory body of the Philippines, to recognize outstanding research outputs on engineering and technology at the collegiate level.
+- Presenting this paper, the lead author (Mark Edward M. Gonzales) won **2nd Prize at the [2023 Magsaysay Future Engineers/Technologists Award](https://fb.watch/oKx7G6gwLi/)**. This award is conferred by the National Academy of Science and Technology, the highest recognition and scientific advisory body of the Philippines, to recognize outstanding research outputs on engineering and technology at the collegiate level.
 
 If you find our work useful, please consider citing:
 
