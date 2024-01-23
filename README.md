@@ -164,6 +164,8 @@ conda activate phage-host-prediction
 <details>
   <summary>Click here to show/hide the complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library)</summary>
 
+<br>
+
 Library/Module | Description | License
 -- | -- | --
 [`regex`](https://github.com/mrabarnett/mrab-regex) | Provides additional functionality over the standard [`re`](https://docs.python.org/3/library/re.html) module while maintaining backwards-compatibility	| Apache License 2.0 
