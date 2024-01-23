@@ -161,7 +161,8 @@ To activate this environment, run the following command:
 conda activate phage-host-prediction
 ```
 
-The complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library) is as follows: 
+<details>
+  <summary>Click here to show/hide the complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library)</summary>
 
 Library/Module | Description | License
 -- | -- | --
@@ -185,6 +186,8 @@ Library/Module | Description | License
 [`umap-learn`](https://umap-learn.readthedocs.io/en/latest/) | Implements uniform manifold approximation and projection, a dimension reduction technique that can be used for visualisation similarly and general non-linear dimension reduction | BSD 3-Clause "New" or "Revised" License
 
 *The descriptions are taken from their respective websites.*
+
+</details>
 
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
