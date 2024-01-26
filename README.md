@@ -55,6 +55,9 @@ If you find PHIEmbed useful, please consider citing:
 ## Project Structure
 The [`experiments`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments) folder contains the files and scripts for running our model and reproducing our results. Note that additional (large) files have to be downloaded (or generated) following the instructions in the Jupyter notebooks.
 
+<details>
+  <summary>Click here to show/hide the list of directories, Jupyter notebooks, and Python scripts, as well as the folder structure.</summary>
+
 ### Directories
 
 Directory | Description
@@ -134,14 +137,12 @@ Once you have cloned this repository and finished downloading (or generating) al
     - ...
     - `ClassificationUtil.py`
     - ...
+   
+</details>
 
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
 ## Environment & Dependencies
-
-⚠️ **UPDATE (06/12/2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, one of our project's dependencies, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3), seems to be incompatible with Python 3.10. 
-
-If the memory requirement of loading pretrained protein language models ([`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb)) is too heavy for your local machine, an alternative cloud-based service with GPU is Paperspace; you may try using either its [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) (which, as of writing, uses Python 3.9) or [Python 3.9 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#previous-runtime-versions).
 
 ### Operating System
 
@@ -161,8 +162,13 @@ To activate this environment, run the following command:
 conda activate phage-host-prediction
 ```
 
+We recommend running the protein language models ([`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb)) on a machine with a GPU. If the memory requirement of loading these protein language models is too heavy for your local machine, an alternative cloud-based service is Paperspace; you may try using either its [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) (which, as of writing, uses Python 3.9) or [Python 3.9 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#previous-runtime-versions).
+
+⚠️ **UPDATE (06/12/2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, one of our project's dependencies, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3), seems to be incompatible with Python 3.10. 
+
+
 <details>
-  <summary>Click here to show/hide the complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library)</summary>
+  <summary>Click here to show/hide the complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library).</summary>
 
 <br>
 
