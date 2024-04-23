@@ -67,13 +67,13 @@ python3 -m pip install -r requirements.txt
 ### Running PHIEmbed
 
 ```
-python3 phiembed.py --input <input_filename> --output <output_filename>
+python3 phiembed.py --input <input_fasta> --output <results_file>
 ```
 
--   `input_filename` is the filename of the FASTA file containing the receptor-binding protein sequences
--   `output_filename` is the filename of the file to which the results of running PHIEmbed will be written
+-   `input_fasta` is the filename of the FASTA file containing the receptor-binding protein sequences
+-   `results_file` is the filename of the file to which the results of running PHIEmbed will be written
 
-Each row in the results file contains two comma-separated values: a host genus and the predicted class probability. The rows are sorted in order of decreasing class probability. Hence, the first row in the results file corresponds to the top-ranked prediction.
+Each row in the results file contains two comma-separated values: a host genus and the corresponding prediction score (class probability). The rows are sorted in order of decreasing prediction score. Hence, the first row pertains to the top-ranked prediction.
 
 Under the hood, this script first converts each sequence into a protein embedding using ProtT5 (the top-performing protein language model based on our experiments) and then passes the embedding to a random forest classifier trained on our _entire_ dataset.
 
