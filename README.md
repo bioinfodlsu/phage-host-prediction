@@ -9,14 +9,9 @@
 [![Actions Status](https://github.com/bioinfodlsu/phage-host-prediction/workflows/Check%20for%20syntax%20errors/badge.svg)](https://github.com/bioinfodlsu/phage-host-prediction/actions)
 ![badge][badge-github-actions]
 
-**This work was accepted for publication in *PLOS ONE.***
-- The final version of our paper (as published in *PLOS ONE*) can be accessed via this [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030).
-- Presenting this paper, the lead author (Mark Edward M. Gonzales) won **2nd Prize at the 2023 Magsaysay Future Engineers/Technologists Award**.
-  - This award is conferred by the National Academy of Science and Technology, the highest recognition and scientific advisory body of the Philippines, to recognize outstanding research outputs on engineering and technology at the collegiate level.
-  - The presentation can be viewed [here](https://fb.watch/oKx7G6gwLi/) (29:35&ndash;39:51), and the slides can be accessed via this [link](https://docs.google.com/presentation/d/1Rdjy6l3gnIzcRnAccq2sddltEdJV4g-V1frYc4ge4tQ/edit?usp=sharing).
+**PHIEmbed** is a phage-host interaction prediction tool that uses protein language models to represent the receptor-binding proteins of phages. This approach eliminates the need to manually extract and select sequence properties.
 
-If you find PHIEmbed useful, please consider citing:
-
+If you find our work useful, please consider citing:
 ```
 @article{10.1371/journal.pone.0289030,
     doi = {10.1371/journal.pone.0289030},
@@ -33,32 +28,36 @@ If you find PHIEmbed useful, please consider citing:
 }
 ```
 
-## Table of Contents
-- [Description](https://github.com/bioinfodlsu/phage-host-prediction#description)
-- [Project Structure](https://github.com/bioinfodlsu/phage-host-prediction#project-structure)
-  - [Directories](https://github.com/bioinfodlsu/phage-host-prediction#directories)
-  - [Jupyter Notebooks](https://github.com/bioinfodlsu/phage-host-prediction#jupyter-notebooks)
-  - [Python Scripts](https://github.com/bioinfodlsu/phage-host-prediction#python-scripts)
-  - [Folder Structure](https://github.com/bioinfodlsu/phage-host-prediction#folder-structure)
-- [Environment & Dependencies](https://github.com/bioinfodlsu/phage-host-prediction#environment--dependencies)
-- [Authors](https://github.com/bioinfodlsu/phage-host-prediction#authors)
+## News
+- **01 Dec 2023** - Presenting this work, the lead author (Mark Edward M. Gonzales) won **2nd Prize at the 2023 Magsaysay Future Engineers/Technologists Award**.
+
+   - This award is conferred by the National Academy of Science and Technology, the highest recognition and scientific advisory body of the Philippines, to recognize outstanding research outputs on engineering and technology at the collegiate level.
+   - The presentation can be viewed [here](https://fb.watch/oKx7G6gwLi/) (29:35&ndash;39:51), and the slides can be accessed via this [link](https://docs.google.com/presentation/d/1Rdjy6l3gnIzcRnAccq2sddltEdJV4g-V1frYc4ge4tQ/edit?usp=sharing).
+
+- **7 Jul 2023** - Our paper was accepted for publication in _**PLOS ONE**_.
+
+   - The final version of our paper (as published in *PLOS ONE*) can be accessed via this [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030).
 
 ## Description
-**ABSTRACT**: With the growing interest in using phages to combat antimicrobial resistance, computational methods for predicting phage-host interactions have been explored to help shortlist candidate phages. Most existing models consider entire proteomes and rely on manual feature engineering, which poses difficulty in selecting the most informative sequence properties to serve as input to the model. In this paper, we framed phage-host interaction prediction as a multiclass classification problem that takes as input the embeddings of a phage's receptor-binding proteins, which are known to be the key machinery for host recognition, and predicts the host genus. We explored different protein language models to automatically encode these protein sequences into dense embeddings without the need for additional alignment or structural information. We show that the use of embeddings of receptor-binding proteins presents improvements over handcrafted genomic and protein sequence features. The highest performance was obtained using the transformer-based protein language model ProtT5, resulting in a 3% to 4% increase in weighted F1 and recall scores across different prediction confidence thresholds, compared to using selected handcrafted sequence features.
+**Motivation**: With the growing interest in using phages to combat antimicrobial resistance, computational methods for predicting phage-host interactions have been explored to help shortlist candidate phages. Most existing models consider entire proteomes and rely on manual feature engineering, which poses difficulty in selecting the most informative sequence properties to serve as input to the model. 
+
+**Method**: In this paper, we framed phage-host interaction prediction as a multiclass classification problem that takes as input the embeddings of a phage's receptor-binding proteins, which are known to be the key machinery for host recognition, and predicts the host genus. We explored different protein language models to automatically encode these protein sequences into dense embeddings without the need for additional alignment or structural information. 
+
+**Results**: We show that the use of embeddings of receptor-binding proteins presents improvements over handcrafted genomic and protein sequence features. The highest performance was obtained using the transformer-based protein language model ProtT5, resulting in a 3% to 4% increase in weighted F1 and recall scores across different prediction confidence thresholds, compared to using selected handcrafted sequence features.
 
 <img src="https://github.com/bioinfodlsu/phage-host-prediction/blob/main/figure.png?raw=True" alt="Teaser Figure" width = 800> 
 
-**AUTHOR SUMMARY**: Antimicrobial resistance is among the major global health issues at present. As alternatives to the usual antibiotics, drug formulations based on phages (bacteria-infecting viruses) have received increased interest, as phages are known to attack only a narrow range of bacterial hosts and antagonize the target pathogen with minimal side effects. The screening of candidate phages has recently been facilitated through the use of machine learning models for inferring phage-host pairs. The performance of these models relies heavily on the transformation of raw biological sequences into a collection of numerical features. However, since a wide array of potentially informative features can be extracted from sequences, selecting the most relevant ones is challenging. Our approach eliminates the need for this manual feature engineering by employing protein language models to automatically generate numerical representations for specific subsets of tail proteins known as receptor-binding proteins. These proteins are responsible for a phage's initial contact with the host bacterium and are thus regarded as important determinants of host specificity. Our results show that this approach presents improvements over using handcrafted genomic and protein sequence features in predicting phage-host interaction.
-
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
-## Project Structure
-The [`experiments`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments) folder contains the files and scripts for running our model and reproducing our results. Note that additional (large) files have to be downloaded (or generated) following the instructions in the Jupyter notebooks.
+## Reproducing our Results
+
+### Project Structure
+The [`experiments`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments) folder contains the files and scripts for reproducing our results. Note that additional (large) files have to be downloaded (or generated) following the instructions in the Jupyter notebooks.
 
 <details>
   <summary>Click here to show/hide the list of directories, Jupyter notebooks, and Python scripts, as well as the folder structure.</summary>
 
-### Directories
+#### Directories
 
 Directory | Description
 -- | --
@@ -69,7 +68,7 @@ Directory | Description
 
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
-### Jupyter Notebooks
+#### Jupyter Notebooks
 Each notebook provides detailed instructions related to the required and output files, including the download links and where to save them.
 
 Notebook | Description | Required Files | Output Files
@@ -86,7 +85,7 @@ Notebook | Description | Required Files | Output Files
 
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
-### Python Scripts
+#### Python Scripts
 
 Script | Description |
 -- | --
@@ -99,7 +98,7 @@ Script | Description |
 
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
-### Folder Structure
+#### Folder Structure
 Once you have cloned this repository and finished downloading (or generating) all the additional required files following the instructions in the Jupyter notebooks, your folder structure should be similar to the one below:
 
 - `phage-host-prediction` (root)
@@ -142,17 +141,12 @@ Once you have cloned this repository and finished downloading (or generating) al
 
 ↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
 
-## Environment & Dependencies
-
-### Operating System
-
-One of our project's dependencies, [`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/), was developed for Unix and Unix-like operating systems. If you are running this project on Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine.
-
 ### Dependencies
 
-We recommend using Python 3.9 to run this project. Thanks to Dr. Paul K. Yu (paul_yu_a@dlsu.edu.ph) for sharing his environment configuration ([`environment.yaml`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/environment.yaml)).
+**Operating System**: Windows, Linux, or macOS
 
 The dependencies can be installed via [Conda](https://docs.conda.io/en/latest/), an open-source package and environment management system. Run the following command to create a virtual environment with the dependencies installed:
+
 ```
 conda env create -f environment.yaml
 ```
@@ -162,10 +156,11 @@ To activate this environment, run the following command:
 conda activate phage-host-prediction
 ```
 
-We recommend running the protein language models ([`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb)) on a machine with a GPU. If the memory requirement of loading these protein language models is too heavy for your local machine, an alternative cloud-based service is Paperspace; you may try using either its [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) (which, as of writing, uses Python 3.9) or [Python 3.9 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#previous-runtime-versions).
+_Thanks to Dr. Paul K. Yu for sharing his environment configuration._ 
 
-⚠️ **UPDATE (06/12/2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, one of our project's dependencies, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3), seems to be incompatible with Python 3.10. 
+Note that [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has a dependency ([`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/)) that requires the notebook to be run on Unix or Unix-like operating systems. If you are using on Windows, consider running this notebook using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or on a virtual machine. If the memory requirement of loading the protein language models is too heavy for your machine's GPU, consider using cloud-based services. 
 
+⚠️ **UPDATE (12 June 2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3) seems to be incompatible with Python 3.10. An alternative cloud-based service is Paperspace; you may try using either its [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) (which, as of writing, uses Python 3.9) or [Python 3.9 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#previous-runtime-versions).
 
 <details>
   <summary>Click here to show/hide the complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library).</summary>
