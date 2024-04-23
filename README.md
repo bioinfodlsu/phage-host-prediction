@@ -44,7 +44,7 @@ If you find our work useful, please consider citing:
    - This award is conferred by the National Academy of Science and Technology, the highest recognition and scientific advisory body of the Philippines, to recognize outstanding research outputs on engineering and technology at the collegiate level.
    - The presentation can be viewed [here](https://fb.watch/oKx7G6gwLi/) (29:35&ndash;39:51), and the slides can be accessed via this [link](https://docs.google.com/presentation/d/1Rdjy6l3gnIzcRnAccq2sddltEdJV4g-V1frYc4ge4tQ/edit?usp=sharing).
 
-- **7 Jul 2023** - Our paper was accepted for publication in _**PLOS ONE**_.
+- **07 Jul 2023** - Our paper was accepted for publication in _**PLOS ONE**_.
 
    - The final version of our paper (as published in *PLOS ONE*) can be accessed via this [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030).
  
