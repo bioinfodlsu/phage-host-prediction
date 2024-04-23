@@ -85,7 +85,7 @@ python3 train.py --input <training_dataset>
 
 -   `training_dataset` is the filename of the training dataset
 
-The training dataset should be formatted as a CSV file (without a header row). Each row corresponds to a training sample. The first column is for the protein IDs, the second column is for the host genera, and the next 1,024 columns are for the components of the ProtT5 embeddings.
+The training dataset should be formatted as a CSV file (without a header row) where each row corresponds to a training sample. The first column is for the protein IDs, the second column is for the host genera, and the next 1,024 columns are for the components of the ProtT5 embeddings.
 
 This script will output a serialized version of the trained model with filename `phiembed_trained.joblib`.
 
