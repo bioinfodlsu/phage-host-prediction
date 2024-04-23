@@ -85,6 +85,7 @@ python3 train.py --input <training_dataset>
 ```
 
 -   `training_dataset` is the path to the training dataset. A sample can be downloaded [here](https://drive.google.com/file/d/1icEenU5Sv-7i9pUycaQfNC1Imhrg3sEN/view?usp=sharing).
+-   The number of threads to be used for training can be specified using `--thread`. By default, it is set to -1 (that is, all threads are used). 
 
 The training dataset should be formatted as a CSV file (without a header row) where each row corresponds to a training sample. The first column is for the protein IDs, the second column is for the host genera, and the next 1,024 columns are for the components of the ProtT5 embeddings.
 
