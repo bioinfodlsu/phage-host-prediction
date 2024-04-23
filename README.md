@@ -28,6 +28,12 @@ If you find our work useful, please consider citing:
 }
 ```
 
+## Table of Contents
+- [News](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#news)
+- [Description](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#description)
+- [Reproducing Our Results](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#reproducing-our-results)
+- [Authors](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#authors)
+
 ## News
 - **01 Dec 2023** - Presenting this work, the lead author (Mark Edward M. Gonzales) won **2nd Prize at the 2023 Magsaysay Future Engineers/Technologists Award**.
 
@@ -37,6 +43,8 @@ If you find our work useful, please consider citing:
 - **7 Jul 2023** - Our paper was accepted for publication in _**PLOS ONE**_.
 
    - The final version of our paper (as published in *PLOS ONE*) can be accessed via this [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030).
+ 
+↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents).*
 
 ## Description
 **Motivation**: With the growing interest in using phages to combat antimicrobial resistance, computational methods for predicting phage-host interactions have been explored to help shortlist candidate phages. Most existing models consider entire proteomes and rely on manual feature engineering, which poses difficulty in selecting the most informative sequence properties to serve as input to the model. 
@@ -47,9 +55,9 @@ If you find our work useful, please consider citing:
 
 <img src="https://github.com/bioinfodlsu/phage-host-prediction/blob/main/figure.png?raw=True" alt="Teaser Figure" width = 800> 
 
-↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
+↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents).*
 
-## Reproducing our Results
+## Reproducing Our Results
 
 ### Project Structure
 The [`experiments`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments) folder contains the files and scripts for reproducing our results. Note that additional (large) files have to be downloaded (or generated) following the instructions in the Jupyter notebooks.
@@ -66,7 +74,7 @@ Directory | Description
 [`rbp_prediction`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments/rbp_prediction) | Contains the JSON file of the trained XGBoost model proposed by [Boeckaerts <i>et al.</i> (2022)](https://www.mdpi.com/1999-4915/14/6/1329) for the computational prediction of receptor-binding proteins. Downloaded from this [repository](https://github.com/dimiboeckaerts/PhageRBPdetection/blob/main/data/RBPdetect_xgb_model.json) (under the MIT License)
 [`temp`](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/experiments/temp) | Contains intermediate output files during preprocessng and performance evaluation
 
-↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
+↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents).*
 
 #### Jupyter Notebooks
 Each notebook provides detailed instructions related to the required and output files, including the download links and where to save them.
@@ -83,7 +91,7 @@ Notebook | Description | Required Files | Output Files
 [`6.1. Additional Model Evaluation (Specificity + PR Curve).ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/6.1.%20Additional%20Model%20Evaluation%20(Specificity%20%2B%20PR%20Curve).ipynb) | Addition of metrics for model evaluation | [Phage-host-features CSV files](https://drive.google.com/drive/folders/1xNoA6dxkN4jzVNCg_7YNjdPZzl51Jo9M?usp=sharing)| &ndash;
 [`7. Visualization.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/7.%20Visualization.ipynb) | Plotting of <i>t</i>-SNE and UMAP projections | [Phage-host-features CSV files](https://drive.google.com/drive/folders/1xNoA6dxkN4jzVNCg_7YNjdPZzl51Jo9M?usp=sharing) | &ndash;
 
-↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
+↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents).*
 
 #### Python Scripts
 
@@ -96,7 +104,7 @@ Script | Description |
 [`SequenceParsing.py`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/SequenceParsingUtil.py) | Contains the utility functions for preprocessing host information and selecting annotated receptor-binding proteins
 [`boeckaerts.py`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/boeckaerts.py) | Contains the utility functions written by [Boeckaerts <i>et al.</i> (2021)](https://www.nature.com/articles/s41598-021-81063-4) for running their phage-host interaction prediction tool (with which we benchmarked our model). Downloaded from this [repository](https://github.com/dimiboeckaerts/BacteriophageHostPrediction/blob/master/RBP_functions.py) (under the MIT License)
 
-↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
+↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents).*
 
 #### Folder Structure
 Once you have cloned this repository and finished downloading (or generating) all the additional required files following the instructions in the Jupyter notebooks, your folder structure should be similar to the one below:
@@ -139,7 +147,7 @@ Once you have cloned this repository and finished downloading (or generating) al
    
 </details>
 
-↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
+↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents).*
 
 ### Dependencies
 
@@ -158,7 +166,7 @@ conda activate phage-host-prediction
 
 _Thanks to Dr. Paul K. Yu for sharing his environment configuration._ 
 
-Note that [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has a dependency ([`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/)) that requires the notebook to be run on Unix or Unix-like operating systems. If you are using on Windows, consider running this notebook using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or on a virtual machine. If the memory requirement of loading the protein language models is too heavy for your machine's GPU, consider using cloud-based services. 
+Note that [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has a dependency ([`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/)) that requires the notebook to be run on Unix or a Unix-like operating system. If you are using on Windows, consider running this notebook using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or on a virtual machine. If the memory requirement of loading the protein language models is too heavy for your machine's GPU, consider using cloud-based services. 
 
 ⚠️ **UPDATE (12 June 2023):** In May 2023, Google Colab switched its default runtime to Python 3.10. However, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3) seems to be incompatible with Python 3.10. An alternative cloud-based service is Paperspace; you may try using either its [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) (which, as of writing, uses Python 3.9) or [Python 3.9 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#previous-runtime-versions).
 
@@ -192,7 +200,7 @@ Library/Module | Description | License
 
 </details>
 
-↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction#table-of-contents).*
+↑ *Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents).*
 
 ## Authors
 - **Mark Edward M. Gonzales** <br>
