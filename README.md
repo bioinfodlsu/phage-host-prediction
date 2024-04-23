@@ -67,13 +67,14 @@ python3 -m pip install -r requirements.txt
 ### Running PHIEmbed
 
 ```
-python3 phiembed.py --input <input_fasta> --output <results_file>
+python3 phiembed.py --input <input_fasta> --model <model_joblib> --output <results_dir>
 ```
 
--   `input_fasta` is the filename of the FASTA file containing the receptor-binding protein sequences
--   `results_file` is the filename of the file to which the results of running PHIEmbed will be written
+-   `input_fasta` is the path to the FASTA file containing the receptor-binding protein sequences. A sample FASTA file is provided [here]().
+-   `model_joblib` is the path to the trained model (recognized format: joblib, framework: scikit-learn). Download the trained model from this [link]().
+-   `results_dir` is the path to the directory to which the results of running PHIEmbed will be written. The results of running PHIEmbed on the sample FASTA file are provided [here]().
 
-Each row in the results file contains two comma-separated values: a host genus and the corresponding prediction score (class probability). The rows are sorted in order of decreasing prediction score. Hence, the first row pertains to the top-ranked prediction.
+Each row in a results file contains two comma-separated values: a host genus and the corresponding prediction score (class probability). The rows are sorted in order of decreasing prediction score. Hence, the first row pertains to the top-ranked prediction.
 
 Under the hood, this script first converts each sequence into a protein embedding using ProtT5 (the top-performing protein language model based on our experiments) and then passes the embedding to a random forest classifier trained on our _entire_ dataset.
 
@@ -83,7 +84,7 @@ Under the hood, this script first converts each sequence into a protein embeddin
 python3 train.py --input <training_dataset>
 ```
 
--   `training_dataset` is the filename of the training dataset
+-   `training_dataset` is the path to the training dataset
 
 The training dataset should be formatted as a CSV file (without a header row) where each row corresponds to a training sample. The first column is for the protein IDs, the second column is for the host genera, and the next 1,024 columns are for the components of the ProtT5 embeddings.
 
