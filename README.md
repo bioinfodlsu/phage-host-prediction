@@ -54,7 +54,7 @@ If you find our work useful, please consider citing:
 
 ↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
 
-## Installation and Usage
+## Installation & Usage
 
 **Operating System**: Windows, Linux, or macOS
 
@@ -75,9 +75,7 @@ Arguments:
 -   `input_filename` is the filename of the FASTA file containing the receptor-binding protein sequences.
 -   `output_filename` is the filename of the file to which the results of running PHIEmbed will be written
 
-The first row of the results file is the header. Each succeeding row contains two comma-separated values: the host genus and the predicted class probability. The rows are sorted in order of decreasing class probability. Hence, the topmost genus in the results file corresponds to the top-ranked predicted host genus.
-
-This script will output a serialized version of the trained model with filename `phiembed_trained.joblib`.
+The first row of the results file is the header. Each succeeding row contains two comma-separated values: a host genus and the predicted class probability. The rows are sorted in order of decreasing class probability. Hence, the topmost genus in the results file corresponds to the top-ranked predicted host genus.
 
 ### Training PHIEmbed
 
@@ -85,11 +83,13 @@ This script will output a serialized version of the trained model with filename 
 python3 train.py --input <training_dataset>
 ```
 
-The training dataset should be formatted as a CSV file where the first row is the header. Each succeeding row should have the protein ID in the first column, the host genus in the second column, and the components of the ProtT5 embeddings in the succeeding columns. Hence, the CSV file should have a total of 1,026 columns.
-
 Argument:
 
 -   `training_dataset` is the filename of the training dataset
+
+The training dataset should be formatted as a CSV file where the first row is the header. Each succeeding row should have the protein ID in the first column, the host genus in the second column, and the components of the ProtT5 embeddings in the succeeding columns. Hence, the CSV file should have a total of 1,026 columns.
+
+This script will output a serialized version of the trained model with filename `phiembed_trained.joblib`.
 
 ## Description
 
