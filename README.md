@@ -39,19 +39,15 @@ If you find our work useful, please consider citing:
 
 ## News
 
--   **23 Feb 2024** - We presented our work at the **eAsia AMR Workshop 2024** held virtually and in person in Tokyo, Japan.
+-   **23 Feb 2024** - We presented our work at the **eAsia AMR Workshop 2024** held virtually and in person in Tokyo, Japan. Slides [here](https://docs.google.com/presentation/d/1rnMAg5fIVFuK5JxIQQOAh5311GYgiOOeVVvdttcRY6I/edit?usp=sharing).
 
     -   This workshop was attended by researchers from Thailand, USA, Australia, Japan, and the Philippines who are working on antimicrobial resistance (AMR).
-    -   The slides can be accessed via this [link](https://docs.google.com/presentation/d/1rnMAg5fIVFuK5JxIQQOAh5311GYgiOOeVVvdttcRY6I/edit?usp=sharing).
 
--   **01 Dec 2023** - Presenting this work, the lead author (Mark Edward M. Gonzales) won **2nd Prize at the 2023 Magsaysay Future Engineers/Technologists Award**.
+-   **01 Dec 2023** - Presenting this work, the lead author (Mark Edward M. Gonzales) won **2nd Prize at the 2023 Magsaysay Future Engineers/Technologists Award**. Presentation [here](https://fb.watch/oKx7G6gwLi/) (29:35&ndash;39:51) and slides [here](https://docs.google.com/presentation/d/1Rdjy6l3gnIzcRnAccq2sddltEdJV4g-V1frYc4ge4tQ/edit?usp=sharing).
 
     -   This award is conferred by the National Academy of Science and Technology, the highest recognition and scientific advisory body of the Philippines, to recognize outstanding research outputs on engineering and technology at the collegiate level.
-    -   The presentation can be viewed [here](https://fb.watch/oKx7G6gwLi/) (29:35&ndash;39:51), and the slides can be accessed via this [link](https://docs.google.com/presentation/d/1Rdjy6l3gnIzcRnAccq2sddltEdJV4g-V1frYc4ge4tQ/edit?usp=sharing).
 
--   **07 Jul 2023** - Our paper was accepted for publication in _**PLOS ONE**_.
-
-    -   The final version of our paper (as published in _PLOS ONE_) can be accessed via this [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030).
+-   **07 Jul 2023** - Our [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030) was accepted for publication in _**PLOS ONE**_.
 
 ↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
 
@@ -166,7 +162,7 @@ Once you have cloned this repository and finished downloading (or generating) al
 
 **Operating System**: Windows, Linux, or macOS
 
-The dependencies can be installed via [Conda](https://docs.conda.io/en/latest/), an open-source package and environment management system. Run the following command to create a virtual environment with the dependencies installed:
+The dependencies can be installed via Conda, a package and environment management system; we recommend using [Miniconda](https://docs.anaconda.com/free/miniconda/index.html). Run the following command to create a virtual environment with the dependencies installed:
 
 ```
 conda env create -f environment.yaml
@@ -180,9 +176,12 @@ conda activate phage-host-prediction
 
 _Thanks to Dr. Paul K. Yu for sharing his environment configuration._
 
-Note that [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has a dependency ([`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/)) that requires the notebook to be run on Unix or a Unix-like operating system. If you are using on Windows, consider running this notebook using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or on a virtual machine. If the memory requirement of loading the protein language models is too heavy for your machine's GPU, consider using cloud-based services.
+#### Note on Protein Embedding Generation
+The notebook [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has a dependency ([`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/)) that requires it to be run on Unix or a Unix-like operating system. If you are using Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine. 
 
-⚠️ **UPDATE (12 June 2023)**: In May 2023, Google Colab switched its default runtime to Python 3.10. However, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3) seems to be incompatible with Python 3.10. An alternative cloud-based service is Paperspace; you may try using either its [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) (which, as of writing, uses Python 3.9) or [Python 3.9 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#previous-runtime-versions).
+Moreover, generating protein embeddings should ideally be done on a machine with a GPU. The largest (and best-performing) protein language model that we used, ProtT5, consumes 5.9 GB of GPU memory. If your local machine does not have a GPU or if its GPU has insufficient memory, we recommend using a cloud GPU platform.
+
+**UPDATE (12 June 2023)**: In May 2023, Google Colab switched its default runtime to Python 3.10. However, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3) seems to be incompatible with Python 3.10. An alternative cloud GPU platform is Paperspace, which provides a [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) that uses Python 3.9.
 
 <details>
   <summary>Click here to show/hide the complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library).</summary>
