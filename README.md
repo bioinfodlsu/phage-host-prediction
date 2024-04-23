@@ -89,6 +89,8 @@ The training dataset should be formatted as a CSV file (without a header row). E
 
 This script will output a serialized version of the trained model with filename `phiembed_trained.joblib`.
 
+↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
+
 ## 📚 Description
 
 **Motivation**: With the growing interest in using phages to combat antimicrobial resistance, computational methods for predicting phage-host interactions have been explored to help shortlist candidate phages. Most existing models consider entire proteomes and rely on manual feature engineering, which poses difficulty in selecting the most informative sequence properties to serve as input to the model.
