@@ -42,5 +42,5 @@ if __name__ == "__main__":
         verbose=True,
     )
 
-    clf.fit(X_train, y_train.values.ravel())
+    clf.fit(X_train.values, y_train.values.ravel())
     joblib.dump(clf, "phiembed_trained.joblib")
