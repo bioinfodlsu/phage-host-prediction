@@ -70,7 +70,7 @@ python3 -m pip install -r requirements.txt
 python3 phiembed.py --input <input_filename> --output <output_filename>
 ```
 
--   `input_filename` is the filename of the FASTA file containing the receptor-binding protein sequences.
+-   `input_filename` is the filename of the FASTA file containing the receptor-binding protein sequences
 -   `output_filename` is the filename of the file to which the results of running PHIEmbed will be written
 
 Each row in the results file contains two comma-separated values: a host genus and the predicted class probability. The rows are sorted in order of decreasing class probability. Hence, the first row in the results file corresponds to the top-ranked prediction.
