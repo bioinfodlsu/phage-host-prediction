@@ -222,7 +222,7 @@ The notebook [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinf
 
 Moreover, generating protein embeddings should ideally be done on a machine with a GPU. The largest (and best-performing) protein language model that we used, ProtT5, consumes 5.9 GB of GPU memory. If your local machine does not have a GPU or if its GPU has insufficient memory, we recommend using a cloud GPU platform.
 
-**UPDATE (12 June 2023)**: In May 2023, Google Colab switched its default runtime to Python 3.10. However, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3) seems to be incompatible with Python 3.10. An alternative cloud GPU platform is Paperspace, which provides a [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) that uses Python 3.9.
+**UPDATE (12 Jun 2023)**: In May 2023, Google Colab switched its default runtime to Python 3.10. However, [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/) (v0.2.3) seems to be incompatible with Python 3.10. An alternative cloud GPU platform is Paperspace, which provides a [PyTorch 1.12 runtime](https://docs.paperspace.com/gradient/notebooks/runtimes/#recommended-runtimes) that uses Python 3.9.
 
 <details>
   <summary>Click here to show/hide the complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library).</summary>
