@@ -22,12 +22,16 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    train = pd.read_csv(args.input, header=None, names=['Protein ID', 'Host'] + [str(i) for i in range(1, 1025)])
+    train = pd.read_csv(
+        args.input,
+        header=None,
+        names=["Protein ID", "Host"] + [str(i) for i in range(1, 1025)],
+    )
     X_train = train.loc[:, train.columns.isin([str(i) for i in range(1, 1025)])]
-    y_train = train.loc[:, train.columns.isin(['Host'])]
+    y_train = train.loc[:, train.columns.isin(["Host"])]
 
     assert X_train.shape[1] == 1024 and y_train.shape[1] == 1
-    
+
     clf = RandomForestClassifier(
         class_weight="balanced",
         max_features="sqrt",
@@ -35,7 +39,7 @@ if __name__ == "__main__":
         min_samples_split=2,
         n_estimators=150,
         n_jobs=-1,
-        verbose=True
+        verbose=True,
     )
 
     clf.fit(X_train, y_train.values.ravel())
