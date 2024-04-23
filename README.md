@@ -32,13 +32,13 @@ If you find our work useful, please consider citing:
 
 ## Table of Contents
 
--   [News](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#news)
--   [Installation & Usage](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#installation--usage)
--   [Description](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#description)
--   [Reproducing Our Results](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#reproducing-our-results)
--   [Authors](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#authors)
+-   [📰 News](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#news)
+-   [🚀 Installation & Usage](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#installation--usage)
+-   [📚 Description](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#description)
+-   [🧪 Reproducing Our Results](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#reproducing-our-results)
+-   [🤵 Authors](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#authors)
 
-## News
+## 📰 News
 
 -   **23 Apr 2024** - We added scripts to simplify running and training our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#installation--usage).
 
@@ -54,7 +54,7 @@ If you find our work useful, please consider citing:
 
 ↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
 
-## Installation & Usage
+## 🚀 Installation & Usage
 
 **Operating System**: Windows, Linux, or macOS
 
@@ -91,7 +91,7 @@ The training dataset should be formatted as a CSV file (without a header row). E
 
 This script will output a serialized version of the trained model with filename `phiembed_trained.joblib`.
 
-## Description
+## 📚 Description
 
 **Motivation**: With the growing interest in using phages to combat antimicrobial resistance, computational methods for predicting phage-host interactions have been explored to help shortlist candidate phages. Most existing models consider entire proteomes and rely on manual feature engineering, which poses difficulty in selecting the most informative sequence properties to serve as input to the model.
 
@@ -103,7 +103,7 @@ This script will output a serialized version of the trained model with filename 
 
 ↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
 
-## Reproducing Our Results
+## 🧪 Reproducing Our Results
 
 ### Project Structure
 
@@ -256,7 +256,7 @@ _The descriptions are taken from their respective websites._
 
 ↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
 
-## Authors
+## 🤵 Authors
 
 -   **Mark Edward M. Gonzales** <br>
     mark_gonzales@dlsu.edu.ph
