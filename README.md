@@ -36,7 +36,7 @@ If you find our work useful, please consider citing:
 
 ## News
 - **23 Feb 2024** - We presented our work at the **eAsia AMR Workshop 2024** held virtually and in person in Tokyo, Japan.
-   - This workshop was attended by researchers from Thailand, USA, Australia, Japan, and the Philippines who are working on antimicrobial resistance.
+   - This workshop was attended by researchers from Thailand, USA, Australia, Japan, and the Philippines who are working on antimicrobial resistance (AMR).
    - The slides can be accessed via this [link](https://docs.google.com/presentation/d/1rnMAg5fIVFuK5JxIQQOAh5311GYgiOOeVVvdttcRY6I/edit?usp=sharing).
 
 - **01 Dec 2023** - Presenting this work, the lead author (Mark Edward M. Gonzales) won **2nd Prize at the 2023 Magsaysay Future Engineers/Technologists Award**.
