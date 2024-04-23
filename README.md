@@ -33,11 +33,14 @@ If you find our work useful, please consider citing:
 ## Table of Contents
 
 -   [News](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#news)
+-   [Installation & Usage](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#installation--usage)
 -   [Description](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#description)
 -   [Reproducing Our Results](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#reproducing-our-results)
 -   [Authors](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#authors)
 
 ## News
+
+-   **23 Apr 2024** - We added scripts to simplify running and training our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#installation--usage).
 
 -   **23 Feb 2024** - We presented our work at the **eAsia AMR Workshop 2024** held virtually and in person in Tokyo, Japan. Slides [here](https://docs.google.com/presentation/d/1rnMAg5fIVFuK5JxIQQOAh5311GYgiOOeVVvdttcRY6I/edit?usp=sharing).
 
@@ -50,6 +53,43 @@ If you find our work useful, please consider citing:
 -   **07 Jul 2023** - Our [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030) was accepted for publication in _**PLOS ONE**_.
 
 ↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
+
+## Installation and Usage
+
+**Operating System**: Windows, Linux, or macOS
+
+Install the necessary dependencies by running:
+
+```
+python3 -m pip install -r requirements.txt
+```
+
+### Running PHIEmbed
+
+```
+python3 phiembed.py --input <input_filename> --output <output_filename>
+```
+
+Arguments:
+
+-   `input_filename` is the filename of the FASTA file containing the receptor-binding protein sequences.
+-   `output_filename` is the filename of the file to which the results of running PHIEmbed will be written
+
+The first row of the results file is the header. Each succeeding row contains two comma-separated values: the host genus and the predicted class probability. The rows are sorted in order of decreasing class probability. Hence, the topmost genus in the results file corresponds to the top-ranked predicted host genus.
+
+This script will output a serialized version of the trained model with filename `phiembed_trained.joblib`.
+
+### Training PHIEmbed
+
+```
+python3 train.py --input <training_dataset>
+```
+
+The training dataset should be formatted as a CSV file where the first row is the header. Each succeeding row should have the protein ID in the first column, the host genus in the second column, and the components of the ProtT5 embeddings in the succeeding columns. Hence, the CSV file should have a total of 1,026 columns.
+
+Argument:
+
+-   `training_dataset` is the filename of the training dataset
 
 ## Description
 
@@ -177,7 +217,8 @@ conda activate phage-host-prediction
 _Thanks to Dr. Paul K. Yu for sharing his environment configuration._
 
 #### Note on Protein Embedding Generation
-The notebook [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has a dependency ([`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/)) that requires it to be run on Unix or a Unix-like operating system. If you are using Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine. 
+
+The notebook [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has a dependency ([`bio_embeddings`](https://docs.bioembeddings.com/v0.2.3/)) that requires it to be run on Unix or a Unix-like operating system. If you are using Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine.
 
 Moreover, generating protein embeddings should ideally be done on a machine with a GPU. The largest (and best-performing) protein language model that we used, ProtT5, consumes 5.9 GB of GPU memory. If your local machine does not have a GPU or if its GPU has insufficient memory, we recommend using a cloud GPU platform.
 
