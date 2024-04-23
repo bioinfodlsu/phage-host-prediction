@@ -32,11 +32,11 @@ If you find our work useful, please consider citing:
 
 ## Table of Contents
 
--   [📰 News](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#news)
--   [🚀 Installation & Usage](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#installation--usage)
--   [📚 Description](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#description)
--   [🧪 Reproducing Our Results](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#reproducing-our-results)
--   [🤵 Authors](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#authors)
+-   [📰 News](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-news)
+-   [🚀 Installation & Usage](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage)
+-   [📚 Description](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-description)
+-   [🧪 Reproducing Our Results](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-reproducing-our-results)
+-   [🤵 Authors](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-authors)
 
 ## 📰 News
 
