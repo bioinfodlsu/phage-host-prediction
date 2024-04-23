@@ -36,11 +36,11 @@ If you find our work useful, please consider citing:
 -   [🚀 Installation & Usage](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage)
 -   [📚 Description](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-description)
 -   [🧪 Reproducing Our Results](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-reproducing-our-results)
--   [🤵 Authors](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-authors)
+-   [💻 Authors](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-authors)
 
 ## 📰 News
 
--   **23 Apr 2024** - We added scripts to simplify running and training our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#installation--usage).
+-   **23 Apr 2024** - We added scripts to simplify running and training our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage).
 
 -   **23 Feb 2024** - We presented our work at the **eAsia AMR Workshop 2024** held virtually and in person in Tokyo, Japan. Slides [here](https://docs.google.com/presentation/d/1rnMAg5fIVFuK5JxIQQOAh5311GYgiOOeVVvdttcRY6I/edit?usp=sharing).
 
@@ -256,7 +256,7 @@ _The descriptions are taken from their respective websites._
 
 ↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
 
-## 🤵 Authors
+## 💻 Authors
 
 -   **Mark Edward M. Gonzales** <br>
     mark_gonzales@dlsu.edu.ph
