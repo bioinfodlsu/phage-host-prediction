@@ -16,10 +16,20 @@ from sklearn.ensemble import RandomForestClassifier
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+
     parser.add_argument(
         "--input",
+        required=True,
         help="Path to the training dataset",
     )
+
+    parser.add_argument(
+        "--threads",
+        help="Number of threads used for training (set to -1 to use all threads)",
+        type=int,
+        default=-1,
+    )
+
     args = parser.parse_args()
 
     train = pd.read_csv(
@@ -38,7 +48,7 @@ if __name__ == "__main__":
         min_samples_leaf=1,
         min_samples_split=2,
         n_estimators=150,
-        n_jobs=-1,
+        n_jobs=args.threads,
         verbose=True,
     )
 
