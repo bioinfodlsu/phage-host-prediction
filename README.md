@@ -71,10 +71,10 @@ python3 phiembed.py --input <input_fasta> --model <model_joblib> --output <resul
 ```
 
 -   `input_fasta` is the path to the FASTA file containing the receptor-binding protein sequences. A sample FASTA file is provided [here](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/sample.fasta).
--   `model_joblib` is the path to the trained model (recognized format: joblib, framework: scikit-learn). Download the trained model from this [link]().
--   `results_dir` is the path to the directory to which the results of running PHIEmbed will be written. The results of running PHIEmbed on the sample FASTA file are provided [here]().
+-   `model_joblib` is the path to the trained model (recognized format: joblib, framework: scikit-learn). Download the trained model from this [link](https://drive.google.com/file/d/1bRloKMtPnp8QTOHx5IvSx_-8BspdVKNQ/view?usp=sharing).
+-   `results_dir` is the path to the directory to which the results of running PHIEmbed will be written. The results of running PHIEmbed on the sample FASTA file are provided [here](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/sample_results).
 
-Each row in a results file contains two comma-separated values: a host genus and the corresponding prediction score (class probability). The rows are sorted in order of decreasing prediction score. Hence, the first row pertains to the top-ranked prediction.
+The results for each protein is saved as a CSV file (without a header row). Each row contains two comma-separated values: a host genus and the corresponding prediction score (class probability). The rows are sorted in order of decreasing prediction score. Hence, the first row pertains to the top-ranked prediction.
 
 Under the hood, this script first converts each sequence into a protein embedding using ProtT5 (the top-performing protein language model based on our experiments) and then passes the embedding to a random forest classifier trained on our [_entire_ dataset](https://drive.google.com/file/d/1icEenU5Sv-7i9pUycaQfNC1Imhrg3sEN/view?usp=sharing).
 
@@ -85,7 +85,7 @@ python3 train.py --input <training_dataset>
 ```
 
 -   `training_dataset` is the path to the training dataset. A sample can be downloaded [here](https://drive.google.com/file/d/1icEenU5Sv-7i9pUycaQfNC1Imhrg3sEN/view?usp=sharing).
--   The number of threads to be used for training can be specified using `--threads`. By default, it is set to -1 (that is, all threads are used). 
+-   The number of threads to be used for training can be specified using `--threads`. By default, it is set to -1 (that is, all threads are used).
 
 The training dataset should be formatted as a CSV file (without a header row) where each row corresponds to a training sample. The first column is for the protein IDs, the second column is for the host genera, and the next 1,024 columns are for the components of the ProtT5 embeddings.
 
