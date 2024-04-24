@@ -58,22 +58,16 @@ If you find our work useful, please consider citing:
 
 **Operating System**: Windows, Linux, or macOS <br>
 
-Create a virtual environment via Conda (we recommend using [Miniconda](https://docs.anaconda.com/free/miniconda/index.html)) by running:
+Create a virtual environment with all the necessary dependencies installed via Conda (we recommend using [Miniconda](https://docs.anaconda.com/free/miniconda/index.html)):
 
 ```
-conda create --name PHIEmbed python=3.10
+conda env create -f environment.yaml
 ```
 
 Activate this environment by running:
 
 ```
 conda activate PHIEmbed
-```
-
-Install the necessary dependencies by running:
-
-```
-python3 -m pip install -r requirements.txt
 ```
 
 ### Running PHIEmbed
@@ -216,16 +210,16 @@ Once you have cloned this repository and finished downloading (or generating) al
 
 **Operating System**: Windows, Linux, or macOS
 
-The dependencies can be installed via Conda, a package and environment management system; we recommend using [Miniconda](https://docs.anaconda.com/free/miniconda/index.html). Run the following command to create a virtual environment with the dependencies installed:
+Create a virtual environment with all the necessary dependencies installed via Conda (we recommend using [Miniconda](https://docs.anaconda.com/free/miniconda/index.html)):
 
 ```
-conda env create -f environment.yaml
+conda env create -f environment_experiments.yaml
 ```
 
-To activate this environment, run the following command:
+Activate this environment by running:
 
 ```
-conda activate phage-host-prediction
+conda activate PHIEmbed-experiments
 ```
 
 _Thanks to Dr. Paul K. Yu for sharing his environment configuration._
