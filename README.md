@@ -56,10 +56,19 @@ If you find our work useful, please consider citing:
 
 ## 🚀 Installation & Usage
 
-**Operating System**: Windows, Linux, or macOS
+**Operating System**: Windows, Linux, or macOS <br>
+
+Create a virtual environment via Conda (we recommend using [Miniconda](https://docs.anaconda.com/free/miniconda/index.html)) by running:
+```
+conda create --name PHIEmbed python=3.10
+```
+
+Activate this environment by running:
+```
+conda activate PHIEmbed
+```
 
 Install the necessary dependencies by running:
-
 ```
 python3 -m pip install -r requirements.txt
 ```
