@@ -82,7 +82,7 @@ python3 phiembed.py --input <input_fasta> --model <model_joblib> --output <resul
 
 The results for each protein are written to a CSV file (without a header row). Each row contains two comma-separated values: a host genus and the corresponding prediction score (class probability). The rows are sorted in order of decreasing prediction score. Hence, the first row pertains to the top-ranked prediction.
 
-Under the hood, this script first converts each sequence into a protein embedding using ProtT5 (the top-performing protein language model based on our experiments) and then passes the embedding to a random forest classifier trained on our [_entire_ dataset](https://drive.google.com/file/d/1icEenU5Sv-7i9pUycaQfNC1Imhrg3sEN/view?usp=sharing). If your machine has a GPU, it will automatically be used to accelerate the protein embedding generation.
+Under the hood, this script first converts each sequence into a protein embedding using ProtT5 (the top-performing protein language model based on our experiments) and then passes the embedding to a random forest classifier trained on our [_entire_ dataset](https://drive.google.com/file/d/1icEenU5Sv-7i9pUycaQfNC1Imhrg3sEN/view?usp=sharing). If your machine has a GPU, it will automatically be used to accelerate the protein embedding generation step.
 
 ### Training PHIEmbed
 
