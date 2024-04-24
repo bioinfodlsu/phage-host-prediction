@@ -59,16 +59,19 @@ If you find our work useful, please consider citing:
 **Operating System**: Windows, Linux, or macOS <br>
 
 Create a virtual environment via Conda (we recommend using [Miniconda](https://docs.anaconda.com/free/miniconda/index.html)) by running:
+
 ```
 conda create --name PHIEmbed python=3.10
 ```
 
 Activate this environment by running:
+
 ```
 conda activate PHIEmbed
 ```
 
 Install the necessary dependencies by running:
+
 ```
 python3 -m pip install -r requirements.txt
 ```
@@ -227,7 +230,11 @@ conda activate phage-host-prediction
 
 _Thanks to Dr. Paul K. Yu for sharing his environment configuration._
 
-#### Note on Protein Embedding Generation
+<details>
+    <summary>Click here to show/hide note on protein embedding generation.
+    </summary>
+
+<br>
 
 The notebook [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has a dependency (`bio_embeddings`) that requires it to be run on Unix or a Unix-like operating system. If you are using Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine.
 
@@ -235,31 +242,35 @@ Moreover, generating protein embeddings should ideally be done on a machine with
 
 **UPDATE (12 Jun 2023)**: In May 2023, Google Colab upgraded its Python runtime, resulting in compatibility issues with `bio_embeddings`. An alternative cloud GPU platform is Paperspace, which provides a [PyTorch 1.12 runtime](https://docs.digitalocean.com/products/paperspace/notebooks/concepts/notebook-templates/) that remains compatible with `bio_embeddings`.
 
+</details>
+
 <details>
   <summary>Click here to show/hide the complete list of Python libraries and modules used in this project (excluding those that are part of the Python Standard Library).</summary>
 
 <br>
 
-| Library/Module                                               | Description                                                                                                                                                                                | License                                           |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
-| [`regex`](https://github.com/mrabarnett/mrab-regex)          | Provides additional functionality over the standard [`re`](https://docs.python.org/3/library/re.html) module while maintaining backwards-compatibility                                     | Apache License 2.0                                |
-| [`nltk`](https://www.nltk.org/)                              | Provides interfaces to corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning | Apache License 2.0                                |
-| [`biopython`](https://biopython.org/)                        | Provides tools for computational molecular biology                                                                                                                                         | Biopython License Agreement, BSD 3-Clause License |
-| [`ete3`](http://etetoolkit.org/)                             | Provides functions for automated manipulation, analysis, and visualization of phylogenetic trees                                                                                           | GNU General Public License v3.0                   |
-| [`pandas`](https://pandas.pydata.org/)                       | Provides functions for data analysis and manipulation                                                                                                                                      | BSD 3-Clause "New" or "Revised" License           |
-| [`numpy`](https://numpy.org/)                                | Provides a multidimensional array object, various derived objects, and an assortment of routines for fast operations on arrays                                                             | BSD 3-Clause "New" or "Revised" License           |
-| [`scipy`](https://scipy.org/)                                | Provides efficient numerical routines, such as those for numerical integration, interpolation, optimization, linear algebra, and statistics                                                | BSD 3-Clause "New" or "Revised" License           |
-| [`scikit-learn`](https://scikit-learn.org/)                  | Provides efficient tools for predictive data analysis                                                                                                                                      | BSD 3-Clause "New" or "Revised" License           |
-| [`imbalanced-learn`](https://imbalanced-learn.org/stable/)   | Provides tools when dealing with classification with imbalanced classes                                                                                                                    | MIT License                                       |
-| [`pyyaml`](https://pyyaml.org/)                              | Supports standard YAML tags and provides Python-specific tags that allow to represent an arbitrary Python object                                                                           | MIT License                                       |
-| [`xgboost`](https://xgboost.readthedocs.io/en/stable/)       | Implements machine learning algorithms under the gradient boosting framework                                                                                                               | Apache License 2.0                                |
-| [`joblib`](https://joblib.readthedocs.io/en/latest/)         | Provides tools for lightweight pipelining in Python                                                                                                                                        | BSD 3-Clause "New" or "Revised" License           |
-| [`numba`](https://numba.pydata.org/)                         | Translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library                                                                         | BSD 2-Clause "Simplified" License                 |
-| [`matplotlib`](https://matplotlib.org/)                      | Provides functions for creating static, animated, and interactive visualizations                                                                                                           | Matplotlib License (BSD-Compatible)               |
-| [`jsonnet`](https://jsonnet.org/)                            | Domain-specific language for JSON                                                                                                                                                          | Apache License 2.0                                |
-| [`cudatoolkit`](https://developer.nvidia.com/cuda-toolkit)   | Parallel computing platform and programming model for general computing on GPUs                                                                                                            | NVIDIA Software License                           |
-| [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/)   | Provides an interface for the use of language model-based biological sequence representations for transfer-learning                                                                        | MIT License                                       |
-| [`umap-learn`](https://umap-learn.readthedocs.io/en/latest/) | Implements uniform manifold approximation and projection, a dimension reduction technique that can be used for visualisation similarly and general non-linear dimension reduction          | BSD 3-Clause "New" or "Revised" License           |
+| Library/Module                                                   | Description                                                                                                                                                                                | License                                           |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
+| [`pyyaml`](https://pyyaml.org/)                                  | Supports standard YAML tags and provides Python-specific tags that allow to represent an arbitrary Python object                                                                           | MIT License                                       |
+| [`jsonnet`](https://jsonnet.org/)                                | Domain-specific language for JSON                                                                                                                                                          | Apache License 2.0                                |
+| [`regex`](https://github.com/mrabarnett/mrab-regex)              | Provides additional functionality over the standard [`re`](https://docs.python.org/3/library/re.html) module while maintaining backwards-compatibility                                     | Apache License 2.0                                |
+| [`nltk`](https://www.nltk.org/)                                  | Provides interfaces to corpora and lexical resources, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning | Apache License 2.0                                |
+| [`biopython`](https://biopython.org/)                            | Provides tools for computational molecular biology                                                                                                                                         | Biopython License Agreement, BSD 3-Clause License |
+| [`ete3`](http://etetoolkit.org/)                                 | Provides functions for automated manipulation, analysis, and visualization of phylogenetic trees                                                                                           | GNU General Public License v3.0                   |
+| [`pandas`](https://pandas.pydata.org/)                           | Provides functions for data analysis and manipulation                                                                                                                                      | BSD 3-Clause "New" or "Revised" License           |
+| [`numpy`](https://numpy.org/)                                    | Provides a multidimensional array object, various derived objects, and an assortment of routines for fast operations on arrays                                                             | BSD 3-Clause "New" or "Revised" License           |
+| [`scipy`](https://scipy.org/)                                    | Provides efficient numerical routines, such as those for numerical integration, interpolation, optimization, linear algebra, and statistics                                                | BSD 3-Clause "New" or "Revised" License           |
+| [`scikit-learn`](https://scikit-learn.org/)                      | Provides efficient tools for predictive data analysis                                                                                                                                      | BSD 3-Clause "New" or "Revised" License           |
+| [`xgboost`](https://xgboost.readthedocs.io/en/stable/)           | Implements machine learning algorithms under the gradient boosting framework                                                                                                               | Apache License 2.0                                |
+| [`imbalanced-learn`](https://imbalanced-learn.org/stable/)       | Provides tools when dealing with classification with imbalanced classes                                                                                                                    | MIT License                                       |
+| [`joblib`](https://joblib.readthedocs.io/en/latest/)             | Provides tools for lightweight pipelining in Python                                                                                                                                        | BSD 3-Clause "New" or "Revised" License           |
+| [`numba`](https://numba.pydata.org/)                             | Translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library                                                                         | BSD 2-Clause "Simplified" License                 |
+| [`cudatoolkit`](https://developer.nvidia.com/cuda-toolkit)       | Parallel computing platform and programming model for general computing on GPUs                                                                                                            | NVIDIA Software License                           |
+| [`bio-embeddings`](https://docs.bioembeddings.com/v0.2.3/)       | Provides an interface for the use of language model-based biological sequence representations for transfer-learning                                                                        | MIT License                                       |
+| [`torch`](https://pytorch.org/)                                  | Optimized tensor library for deep learning using GPUs and CPUs                                                                                                                             | BSD 3-Clause "New" or "Revised" License           |
+| [`transformers`](https://huggingface.co/docs/transformers/index) | Provides pretrained models to perform tasks on different modalities such as text, vision, and audio                                                                                        | Apache License 2.0                                |
+| [`matplotlib`](https://matplotlib.org/)                          | Provides functions for creating static, animated, and interactive visualizations                                                                                                           | Matplotlib License (BSD-Compatible)               |
+| [`umap-learn`](https://umap-learn.readthedocs.io/en/latest/)     | Implements uniform manifold approximation and projection, a dimension reduction technique that can be used for visualisation similarly and general non-linear dimension reduction          | BSD 3-Clause "New" or "Revised" License           |
 
 _The descriptions are taken from their respective websites._
 
