@@ -1,11 +1,11 @@
 """
-========================================================================
+===========================================================================
 This script is for running PHIEmbed. It takes a FASTA file as input
-and outputs the predicted host genus, along with a list of probabilities 
-for each host genus in our dataset.
+and outputs the predicted host genus. It also displays the prediction score 
+(class probability) for each host genus recognized by PHIEmbed.
 
 @author    Mark Edward M. Gonzales
-========================================================================
+===========================================================================
 """
 
 import argparse
@@ -45,12 +45,10 @@ def embed(sequence):
 
 
 def predict(embedding, clf):
-    top_prediction = clf.predict([embedding])
-    classes = clf.classes_
     proba = clf.predict_proba([embedding])
 
     scores = []
-    for idx, class_name in enumerate(classes):
+    for idx, class_name in enumerate(clf.classes_):
         scores.append((class_name, proba[0][idx]))
 
     return sorted(scores, key=lambda x: x[1], reverse=True)
