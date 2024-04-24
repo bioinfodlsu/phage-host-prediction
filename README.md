@@ -225,12 +225,12 @@ conda activate PHIEmbed-experiments
 _Thanks to Dr. Paul K. Yu for sharing his environment configuration._
 
 <details>
-    <summary>Click here to show/hide note on protein embedding generation.
+    <summary>Click here to show/hide note on running the notebook for protein embedding generation.
     </summary>
 
 <br>
 
-The notebook [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has a dependency (`bio_embeddings`) that requires it to be run on Unix or a Unix-like operating system. If you are using Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine.
+The notebook [`4. Protein Embedding Generation.ipynb`](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/experiments/4.%20Protein%20Embedding%20Generation.ipynb) has a dependency (`bio_embeddings`) that requires it to be run on Unix or a Unix-like operating system. We did not include this dependency in `environment_experiments.yml` to maintain cross-platform compatibility; you have to install it following the instructions [here](https://docs.bioembeddings.com/v0.2.3/). If you are using Windows, consider using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL) or a virtual machine.
 
 Moreover, generating protein embeddings should ideally be done on a machine with a GPU. The largest (and best-performing) protein language model that we used, ProtT5, consumes 5.9 GB of GPU memory. If your local machine does not have a GPU or if its GPU has insufficient memory, we recommend using a cloud GPU platform.
 
