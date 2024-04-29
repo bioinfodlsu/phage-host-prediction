@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "--threads",
-        help="Number of threads used for training (set to -1 to use all threads)",
+        help="Number of threads to be used for training (default: -1, that is, use all threads)",
         type=int,
         default=-1,
     )

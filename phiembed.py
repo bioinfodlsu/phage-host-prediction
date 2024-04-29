@@ -81,7 +81,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output",
         required=True,
-        help="Path to the file to which the results of running PHIEmbed will be written",
+        help="Path to the directory to which the results of running PHIEmbed will be written",
     )
 
     args = parser.parse_args()
