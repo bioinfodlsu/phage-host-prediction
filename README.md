@@ -40,6 +40,8 @@ If you find our work useful, please consider citing:
 
 ## 📰 News
 
+-   **02 May 2024** - We compressed the serialized version of our trained model to prevent long downloading times and reduce the storage requirements. Instructions and updated link to trained model [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#running-phiembed).
+
 -   **24 Apr 2024** - We added scripts to simplify running and training our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage).
 
 -   **23 Feb 2024** - We presented our work at the **eAsia AMR Workshop 2024** held virtually and in person in Tokyo, Japan. Slides [here](https://docs.google.com/presentation/d/1rnMAg5fIVFuK5JxIQQOAh5311GYgiOOeVVvdttcRY6I/edit?usp=sharing).
