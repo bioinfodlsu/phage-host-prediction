@@ -53,4 +53,4 @@ if __name__ == "__main__":
     )
 
     clf.fit(X_train.values, y_train.values.ravel())
-    joblib.dump(clf, "phiembed_trained.joblib")
+    joblib.dump(clf, "phiembed_trained.joblib.gz", compress=True)
