@@ -40,8 +40,6 @@ If you find our work useful, please consider citing:
 
 ## 📰 News
 
--   **02 May 2024** - We compressed the serialized version of our trained model to prevent long downloading times and reduce the storage requirements. Instructions and updated link to trained model [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#running-phiembed).
-
 -   **24 Apr 2024** - We added scripts to simplify running and training our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage).
 
 -   **23 Feb 2024** - We presented our work at the **eAsia AMR Workshop 2024** held virtually and in person in Tokyo, Japan, and attended by antimicrobial resistance (AMR) researchers from Thailand, USA, Australia, Japan, and the Philippines. Slides [here](https://docs.google.com/presentation/d/1rnMAg5fIVFuK5JxIQQOAh5311GYgiOOeVVvdttcRY6I/edit?usp=sharing).
@@ -75,7 +73,7 @@ python3 phiembed.py --input <input_fasta> --model <model_joblib> --output <resul
 ```
 
 -   `input_fasta` is the path to the FASTA file containing the receptor-binding protein sequences. A sample FASTA file is provided [here](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/sample.fasta).
--   `model_joblib` is the path to the trained model (recognized format: joblib or compressed joblib, framework: scikit-learn). Download the trained model from this [link](https://drive.google.com/file/d/1nWEMmm-rUzKFQ0FGJxQuMC7mD2_ynGPm/view?usp=sharing). No need to uncompress, but doing so will speed up loading the model at the cost of additional storage requirements. Refer to this [guide](https://joblib.readthedocs.io/en/latest/generated/joblib.dump.html) for the list of accepted compressed formats.
+-   `model_joblib` is the path to the trained model (recognized format: joblib or compressed joblib, framework: scikit-learn). Download the trained model from this [link](https://drive.google.com/file/d/1bRloKMtPnp8QTOHx5IvSx_-8BspdVKNQ/view?usp=sharing). No need to uncompress, but doing so will speed up loading the model at the cost of additional storage requirements. Refer to this [guide](https://joblib.readthedocs.io/en/latest/generated/joblib.dump.html) for the list of accepted compressed formats.
 -   `results_dir` is the path to the directory to which the results of running PHIEmbed will be written. The results of running PHIEmbed on the sample FASTA file are provided [here](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/sample_results).
 
 The results for each protein are written to a CSV file (without a header row). Each row contains two comma-separated values: a host genus and the corresponding prediction score (class probability). The rows are sorted in order of decreasing prediction score. Hence, the first row pertains to the top-ranked prediction.
