@@ -13,7 +13,6 @@ class EDAUtil(object):
         """
         Constructor
         """
-        pass
 
     def get_rbps(self, directory):
         """

@@ -18,7 +18,6 @@ class RBPPredictionUtil(object):
         """
         Constructor
         """
-        pass
 
     def predict_rbps(
         self, xgb_rbp_prediction, hypothetical_genbank_dir, complete_genbank_dir

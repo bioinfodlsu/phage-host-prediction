@@ -12,19 +12,15 @@ https://github.com/Superzchen/iFeature
 
 # IMPORT LIBRARIES
 # --------------------------------------------------
-import datetime as dt
 import math
 import os
 import warnings
 
 import matplotlib.pyplot as plt
 import numpy as np
-import scipy as sp
-from Bio import Entrez, SeqIO, pairwise2
+from Bio import Entrez, SeqIO
 from Bio.Blast import NCBIWWW, NCBIXML
 from Bio.Blast.Applications import NcbiblastpCommandline
-from Bio.SubsMat import MatrixInfo as matlist
-from numba import jit
 from sklearn.exceptions import UndefinedMetricWarning
 from sklearn.metrics import (
     accuracy_score,
@@ -1080,11 +1076,9 @@ def blast_top_prediction(sequence, email, treshold=0.01, top3=True):
         except urllib.error.URLError as err:
             time.sleep(1)
             print("Having connection issues... trying again.")
-            pass
         except IndexError:
             time.sleep(1)
             print("IndexError...trying again.")
-            pass
 
     # define patterns for re matching
     pattern_gi = "gi.[0-9]+."
@@ -1112,7 +1106,6 @@ def blast_top_prediction(sequence, email, treshold=0.01, top3=True):
             except urllib.error.HTTPError as err:
                 print(gi)
                 error = 1
-                pass
                 # if err.code == 400:
 
             # check host
@@ -1211,7 +1204,6 @@ def blast_host_predictor(sequence, email, treshold=1e-4):
             except urllib.error.HTTPError as err:
                 print(gi)
                 error = 1
-                pass
                 # if err.code == 400:
 
             # check host
