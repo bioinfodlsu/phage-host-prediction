@@ -264,7 +264,7 @@ Moreover, generating protein embeddings should ideally be done on a machine with
 | [`transformers`](https://huggingface.co/docs/transformers/index) | Provides pretrained models to perform tasks on different modalities such as text, vision, and audio                                                                                        | Apache License 2.0                                |
 | [`sentencepiece`](https://github.com/google/sentencepiece)       | Unsupervised text tokenizer and detokenizer mainly for neural network-based text generation systems                                                                                        | Apache License 2.0                                |
 | [`matplotlib`](https://matplotlib.org/)                          | Provides functions for creating static, animated, and interactive visualizations                                                                                                           | Matplotlib License (BSD-Compatible)               |
-| [`umap-learn`](https://umap-learn.readthedocs.io/en/latest/)     | Implements uniform manifold approximation and projection, a dimension reduction technique that can be used for visualisation similarly and general non-linear dimension reduction          | BSD 3-Clause "New" or "Revised" License           |
+| [`umap-learn`](https://umap-learn.readthedocs.io/en/latest/)     | Implements uniform manifold approximation and projection, a dimension reduction technique that can be used for visualization and general non-linear dimension reduction          | BSD 3-Clause "New" or "Revised" License           |
 
 _The descriptions are taken from their respective websites._
 
