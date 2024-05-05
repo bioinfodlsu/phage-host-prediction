@@ -10,7 +10,7 @@
 [![Actions Status](https://github.com/bioinfodlsu/phage-host-prediction/workflows/Run%20Black%20formatter/badge.svg)](https://github.com/bioinfodlsu/phage-host-prediction/actions)
 ![badge][badge-github-actions]
 
-**PHIEmbed** is a phage-host interaction prediction tool that uses protein language models to represent the receptor-binding proteins of phages. It presents improvements over handcrafted (manually feature-engineered) sequence properties and eliminates the need to manually extract and select features from sequences.
+**PHIEmbed** is a phage-host interaction prediction tool that uses protein language models to represent the receptor-binding proteins of phages. It presents improvements over handcrafted (manually feature-engineered) sequence properties and eliminates the need to manually extract and select features from phage sequences.
 
 If you find our work useful, please consider citing:
 
