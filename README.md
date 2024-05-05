@@ -30,6 +30,8 @@ If you find our work useful, please consider citing:
 }
 ```
 
+You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
+
 ## Table of Contents
 
 -   [📰 News](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-news)
