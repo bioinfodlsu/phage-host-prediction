@@ -12,10 +12,10 @@ import argparse
 import os
 import re
 
-from Bio import SeqIO
 import joblib
 import torch
-from transformers import T5Tokenizer, T5EncoderModel
+from Bio import SeqIO
+from transformers import T5EncoderModel, T5Tokenizer
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 tokenizer = T5Tokenizer.from_pretrained(

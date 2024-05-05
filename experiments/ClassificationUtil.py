@@ -5,22 +5,20 @@ This script contains the utility functions for classification.
 ==============================================================
 """
 
-import os
 import copy
 import math
+import os
 import pickle
 
-import pandas as pd
 import numpy as np
-
-from ete3 import NCBITaxa
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, precision_recall_fscore_support
-from sklearn.ensemble import RandomForestClassifier
-from joblib import dump
-
-from RBPPredictionUtil import RBPPredictionUtil
+import pandas as pd
 from ConstantsUtil import ConstantsUtil
+from ete3 import NCBITaxa
+from joblib import dump
+from RBPPredictionUtil import RBPPredictionUtil
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, precision_recall_fscore_support
+from sklearn.model_selection import train_test_split
 
 
 class ClassificationUtil(object):

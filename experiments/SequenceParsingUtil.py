@@ -5,12 +5,12 @@ This script contains the utility functions for sequence preprocessing.
 ======================================================================
 """
 
-import regex as re
 import os
 from collections import defaultdict
 
-import numpy as np
 import nltk
+import numpy as np
+import regex as re
 from Bio import SeqIO
 
 

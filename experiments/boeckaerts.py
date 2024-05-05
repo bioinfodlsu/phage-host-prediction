@@ -12,29 +12,31 @@ https://github.com/Superzchen/iFeature
 
 # IMPORT LIBRARIES
 # --------------------------------------------------
-import os
+import datetime as dt
 import math
+import os
 import warnings
+
+import matplotlib.pyplot as plt
 import numpy as np
 import scipy as sp
-import datetime as dt
-from numba import jit
-import matplotlib.pyplot as plt
+from Bio import Entrez, SeqIO, pairwise2
 from Bio.Blast import NCBIWWW, NCBIXML
-from Bio import SeqIO, Entrez, pairwise2
-from Bio.SubsMat import MatrixInfo as matlist
-from sklearn.preprocessing import label_binarize
-from sklearn.exceptions import UndefinedMetricWarning
 from Bio.Blast.Applications import NcbiblastpCommandline
-from sklearn.model_selection import GridSearchCV, GroupKFold
+from Bio.SubsMat import MatrixInfo as matlist
+from numba import jit
+from sklearn.exceptions import UndefinedMetricWarning
 from sklearn.metrics import (
     accuracy_score,
-    make_scorer,
+    auc,
     f1_score,
+    make_scorer,
+    precision_recall_curve,
     precision_score,
     recall_score,
 )
-from sklearn.metrics import precision_recall_curve, auc
+from sklearn.model_selection import GridSearchCV, GroupKFold
+from sklearn.preprocessing import label_binarize
 
 
 # DNA FEATURES

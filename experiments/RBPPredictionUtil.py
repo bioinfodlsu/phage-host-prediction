@@ -7,11 +7,9 @@ This script contains the utility functions for the computational prediction of r
 
 import os
 
-from SequenceParsingUtil import SequenceParsingUtil
-
-import pandas as pd
 import numpy as np
-
+import pandas as pd
+from SequenceParsingUtil import SequenceParsingUtil
 from xgboost import XGBClassifier
 
 
