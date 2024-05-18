@@ -274,10 +274,11 @@ _The descriptions are taken from their respective websites._
 ## 💻 Authors
 
 -   **Mark Edward M. Gonzales** <br>
-    mark_gonzales@dlsu.edu.ph
+    gonzales.markedward@gmail.com
 
 -   **Ms. Jennifer C. Ureta** <br>
-    jennifer.ureta@dlsu.edu.ph
+    jennifer.ureta@gmail.com
+    
 -   **Dr. Anish M.S. Shrestha** <br>
     anish.shrestha@dlsu.edu.ph
 
