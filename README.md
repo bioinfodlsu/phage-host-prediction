@@ -74,9 +74,9 @@ conda activate PHIEmbed
 python3 phiembed.py --input <input_fasta> --model <model_joblib> --output <results_dir>
 ```
 
--   `input_fasta` is the path to the FASTA file containing the receptor-binding protein sequences. A sample FASTA file is provided [here](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/sample.fasta).
--   `model_joblib` is the path to the trained model (recognized format: joblib or compressed joblib, framework: scikit-learn). Download our trained model from this [link](https://drive.google.com/file/d/1bRloKMtPnp8QTOHx5IvSx_-8BspdVKNQ/view?usp=sharing). No need to uncompress, but doing so will speed up loading the model albeit at the cost of additional storage requirements. Refer to this [guide](https://joblib.readthedocs.io/en/latest/generated/joblib.dump.html) for the list of accepted compressed formats.
--   `results_dir` is the path to the directory to which the results of running PHIEmbed will be written. The results of running PHIEmbed on the sample FASTA file are provided [here](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/sample_results).
+-   Replace `<input_fasta>` with the path to the FASTA file containing the receptor-binding protein sequences. A sample FASTA file is provided [here](https://github.com/bioinfodlsu/phage-host-prediction/blob/main/sample.fasta).
+-   Replace `<model_joblib>` with the path to the trained model (recognized format: joblib or compressed joblib, framework: scikit-learn). Download our trained model from this [link](https://drive.google.com/file/d/1bRloKMtPnp8QTOHx5IvSx_-8BspdVKNQ/view?usp=sharing). No need to uncompress, but doing so will speed up loading the model albeit at the cost of additional storage requirements. Refer to this [guide](https://joblib.readthedocs.io/en/latest/generated/joblib.dump.html) for the list of accepted compressed formats.
+-   Replace `<results_dir>` with the path to the directory to which the results of running PHIEmbed will be written. The results of running PHIEmbed on the sample FASTA file are provided [here](https://github.com/bioinfodlsu/phage-host-prediction/tree/main/sample_results).
 
 The results for each protein are written to a CSV file (without a header row). Each row contains two comma-separated values: a host genus and the corresponding prediction score (class probability). The rows are sorted in order of decreasing prediction score. Hence, the first row pertains to the top-ranked prediction.
 
@@ -88,7 +88,7 @@ Under the hood, this script first converts each sequence into a protein embeddin
 python3 train.py --input <training_dataset>
 ```
 
--   `training_dataset` is the path to the training dataset. A sample can be downloaded [here](https://drive.google.com/file/d/1icEenU5Sv-7i9pUycaQfNC1Imhrg3sEN/view?usp=sharing).
+-   Replace `<training_dataset>` with the path to the training dataset. A sample can be downloaded [here](https://drive.google.com/file/d/1icEenU5Sv-7i9pUycaQfNC1Imhrg3sEN/view?usp=sharing).
 -   The number of threads to be used for training can be specified using `--threads`. By default, it is set to -1 (that is, all threads are to be used).
 
 The training dataset should be formatted as a CSV file (without a header row) where each row corresponds to a training sample. The first column is for the protein IDs, the second column is for the host genera, and the next 1,024 columns are for the components of the ProtT5 embeddings.
