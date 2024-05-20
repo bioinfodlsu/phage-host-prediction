@@ -75,7 +75,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model",
         required=True,
-        help="Path to the trained model (recognized format: joblib, framework: scikit-learn)",
+        help="Path to the trained model (recognized format: joblib or compressed joblib, framework: scikit-learn)",
     )
 
     parser.add_argument(
