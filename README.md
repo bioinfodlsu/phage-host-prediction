@@ -56,6 +56,13 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 
 **Operating System**: Windows, Linux, or macOS <br>
 
+Clone the repository:
+
+```
+git clone https://github.com/bioinfodlsu/phage-host-prediction
+cd phage-host-prediction
+```
+
 Create a virtual environment with all the necessary dependencies installed via Conda (we recommend using [Miniconda](https://docs.anaconda.com/free/miniconda/index.html)):
 
 ```
