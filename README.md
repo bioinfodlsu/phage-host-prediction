@@ -12,6 +12,8 @@
 
 **PHIEmbed** is a phage-host interaction prediction tool that uses protein language models to represent the receptor-binding proteins of phages. It presents improvements over using handcrafted (manually feature-engineered) sequence properties and eliminates the need to manually extract and select features from phage sequences.
 
+**Paper**: https://doi.org/10.1371/journal.pone.0289030
+
 If you find our work useful, please consider citing:
 
 ```
