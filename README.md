@@ -37,6 +37,7 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 ## Table of Contents
 
 -   [📰 News](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-news)
+-   [♾️ Run on Google Colab](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#%EF%B8%8F-run-on-google-colab)
 -   [🚀 Installation & Usage](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage)
 -   [📚 Description](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-description)
 -   [🧪 Reproducing Our Results](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-reproducing-our-results)
@@ -44,6 +45,8 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 
 ## 📰 News
 
+-   **1 Sep 2024** - We created a Google Colab notebook for running our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#%EF%B8%8F-run-on-google-colab).
+  
 -   **24 Apr 2024** - We added scripts to simplify running and training our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage).
 
 -   **23 Feb 2024** - We presented our work at the **eAsia AMR Workshop 2024** held virtually and in person in Tokyo, Japan, and attended by antimicrobial resistance (AMR) researchers from Thailand, USA, Australia, Japan, and the Philippines. Slides [here](https://docs.google.com/presentation/d/1rnMAg5fIVFuK5JxIQQOAh5311GYgiOOeVVvdttcRY6I/edit?usp=sharing).
@@ -53,6 +56,12 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 -   **07 Jul 2023** - Our [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030) was accepted for publication in _**PLOS ONE**_.
 
 ↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
+
+## ♾️ Run on Google Colab
+
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://bit.ly/PHIEmbed)
+
+**You can readily run PHIEmbed on Google Colab, without the need to install anything on your own computer: [https://bit.ly/PHIEmbed](https://bit.ly/PHIEmbed)**
 
 ## 🚀 Installation & Usage
 
