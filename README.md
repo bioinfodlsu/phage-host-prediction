@@ -91,6 +91,8 @@ The results for each protein are written to a CSV file (without a header row). E
 
 Under the hood, this script first converts each sequence into a protein embedding using ProtT5 (the top-performing protein language model based on our experiments) and then passes the embedding to a random forest classifier trained on our entire [dataset](https://drive.google.com/file/d/1icEenU5Sv-7i9pUycaQfNC1Imhrg3sEN/view?usp=sharing). If your machine has a GPU, it will automatically be used to accelerate the protein embedding generation step.
 
+**Note:** Running this script for the first time may take a few extra minutes since it involves downloading a model (ProtT5, around 2 GB) from Hugging Face.
+
 ### Training PHIEmbed
 
 ```
