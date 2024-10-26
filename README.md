@@ -61,7 +61,7 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://phiembed.bioinfodlsu.com/)
 
-**You can readily run PHIEmbed on Google Colab, without the need to install anything on your own computer: [http://phiembed.bioinfodlsu.com/](http://phiembed.bioinfodlsu.com/)**
+**You can readily run PHIEmbed on Google Colab, without the need to install anything on your own computer: [http://phiembed.bioinfodlsu.com](http://phiembed.bioinfodlsu.com)**
 
 ## 🚀 Installation & Usage
 
