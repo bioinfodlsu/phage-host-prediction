@@ -45,7 +45,7 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 
 ## 📰 News
 
--   **1 Sep 2024** - We created a Google Colab notebook for running our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#%EF%B8%8F-run-on-google-colab).
+-   **01 Sep 2024** - We created a Google Colab notebook for running our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#%EF%B8%8F-run-on-google-colab).
   
 -   **24 Apr 2024** - We added scripts to simplify running and training our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage).
 
