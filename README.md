@@ -45,6 +45,8 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 
 ## 📰 News
 
+-   **13 Jan 2025** - We released a new phage-host interaction prediction tool, **PHIStruct** (published in [_Bioinformatics_](https://doi.org/10.1093/bioinformatics/btaf016)), which incorporates protein structure information and works especially well for phages with receptor-binding proteins that have low sequence similarity to those of known phages. Learn more about it [here](https://github.com/bioinfodlsu/PHIStruct).
+
 -   **01 Sep 2024** - We created a Google Colab notebook for running our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#%EF%B8%8F-run-on-google-colab).
   
 -   **24 Apr 2024** - We added scripts to simplify running and training our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage).
@@ -53,7 +55,7 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 
 -   **01 Dec 2023** - Presenting this work, the lead author (Mark Edward M. Gonzales) won **2nd Prize at the 2023 Magsaysay Future Engineers/Technologists Award**. This award is conferred by the National Academy of Science and Technology, the highest recognition and scientific advisory body of the Philippines, to recognize outstanding research outputs on engineering and technology at the collegiate level. Presentation [here](https://fb.watch/oKx7G6gwLi/) (29:35&ndash;39:51) and slides [here](https://docs.google.com/presentation/d/1Rdjy6l3gnIzcRnAccq2sddltEdJV4g-V1frYc4ge4tQ/edit?usp=sharing).
 
--   **07 Jul 2023** - Our [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030) was accepted for publication in _**PLOS ONE**_.
+-   **24 Jul 2023** - Our [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030) is now published in _**PLOS ONE**_.
 
 ↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
 
