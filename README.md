@@ -37,7 +37,6 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 ## Table of Contents
 
 -   [📰 News](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-news)
--   [♾️ Run on Google Colab](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#%EF%B8%8F-run-on-google-colab)
 -   [🚀 Installation & Usage](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage)
 -   [📚 Description](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-description)
 -   [🧪 Reproducing Our Results](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-reproducing-our-results)
@@ -46,8 +45,6 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 ## 📰 News
 
 -   **13 Jan 2025** - We released a new phage-host interaction prediction tool, **PHIStruct** (published in [_Bioinformatics_](https://doi.org/10.1093/bioinformatics/btaf016)), which incorporates protein structure information and works especially well for phages with receptor-binding proteins that have low sequence similarity to those of known phages. Learn more about it [here](https://github.com/bioinfodlsu/PHIStruct).
-
--   **01 Sep 2024** - We created a Google Colab notebook for running our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#%EF%B8%8F-run-on-google-colab).
   
 -   **24 Apr 2024** - We added scripts to simplify running and training our tool. Instructions [here](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#-installation--usage).
 
@@ -58,12 +55,6 @@ You can also find PHIEmbed on [bio.tools](https://bio.tools/phiembed).
 -   **24 Jul 2023** - Our [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289030) is now published in _**PLOS ONE**_.
 
 ↑ _Return to [Table of Contents](https://github.com/bioinfodlsu/phage-host-prediction?tab=readme-ov-file#table-of-contents)._
-
-## ♾️ Run on Google Colab
-
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://phiembed.bioinfodlsu.com/)
-
-**You can readily run PHIEmbed on Google Colab, without the need to install anything on your own computer: [http://phiembed.bioinfodlsu.com](http://phiembed.bioinfodlsu.com)**
 
 ## 🚀 Installation & Usage
 
